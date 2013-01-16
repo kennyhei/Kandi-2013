@@ -2,6 +2,6 @@
 
 Artikkelissa pohditaan miksi kirjoittajien yliopistoista (University of Colorado, Stanford University)
 valmistuneiden tietojenkäsittelytieteen opiskelijoiden ryhmätyöskentelytaidot ovat puutteelliset. Aiheeseen
-pureudutaan miettimällä millaista ryhmätyöskentely yleisesti ottaen on ja miten vallitseva opiskelijakulttuuri
-vaikuttaa opiskelijoiden asenteisiin ryhmätyöskentelyä kohtaan. Artikkelin lopuksi esitetään ratkaisuja, joilla
-ryhmätyöskentelytaitoja ja -asenteita on saatu parannettua.
+pureudutaan miettimällä millaista ryhmätyöskentely yleisesti ottaen on ja miten kyseisissä yliopistoissa
+vallitseva opiskelukulttuuri vaikuttaa opiskelijoiden asenteisiin ryhmätyöskentelyä kohtaan. Artikkelin lopuksi
+esitetään ratkaisuja, joilla ryhmätyöskentelytaitoja ja -asenteita on saatu parannettua.
