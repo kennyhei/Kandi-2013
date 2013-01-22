@@ -1,4 +1,25 @@
-\documentclass[finnish]{article}
+% --- Template for thesis / report with tktltiki2 class ---
+
+\documentclass[finnish]{../tktltiki2}
+
+% tktltiki2 automatically loads babel, so you can simply
+% give the language parameter (e.g. finnish, swedish, english, british) as
+% a parameter for the class: \documentclass[finnish]{tktltiki2}.
+% The information on title and abstract is generated automatically depending on
+% the language, see below if you need to change any of these manually.
+% 
+% Class options:
+% - grading                 -- Print labels for grading information on the front page.
+% - disablelastpagecounter  -- Disables the automatic generation of page number information
+%                              in the abstract. See also \numberofpagesinformation{} command below.
+%
+% The class also respects the following options of article class:
+%   10pt, 11pt, 12pt, final, draft, oneside, twoside,
+%   openright, openany, onecolumn, twocolumn, leqno, fleqn
+%
+% The default font size is 11pt. The paper size used is A4, other sizes are not supported.
+%
+% rubber: module pdftex
 
 % --- General packages ---
 
@@ -7,29 +28,84 @@
 \usepackage{microtype}
 \usepackage{amsfonts,amsmath,amssymb,amsthm,booktabs,color,enumitem,graphicx}
 \usepackage[pdftex,hidelinks]{hyperref}
-\usepackage[finnish]{babel}
+
+% Automatically set the PDF metadata fields
+\makeatletter
+\AtBeginDocument{\hypersetup{pdftitle = {\@title}, pdfauthor = {\@author}}}
+\makeatother
+
+% --- Language-related settings ---
+%
+% these should be modified according to your language
 
 % babelbib for non-english bibliography using bibtex
 \usepackage[fixlanguage]{babelbib}
 \selectbiblanguage{finnish}
 
-% add bibliography to the table of contents
+% add bibliography to the  of contents
 \usepackage[nottoc,numbib]{tocbibind}
 % tocbibind renames the bibliography, use the following to change it back
 \settocbibname{Lähteet}
 
+% --- Theorem environment definitions ---
+
+\newtheorem{lau}{Lause}
+\newtheorem{lem}[lau]{Lemma}
+\newtheorem{kor}[lau]{Korollaari}
+
+\theoremstyle{definition}
+\newtheorem{maar}[lau]{Määritelmä}
+\newtheorem{ong}{Ongelma}
+\newtheorem{alg}[lau]{Algoritmi}
+\newtheorem{esim}[lau]{Esimerkki}
+
+\theoremstyle{remark}
+\newtheorem*{huom}{Huomautus}
+
+
+% --- tktltiki2 options ---
+%
+% The following commands define the information used to generate title and
+% abstract pages. The following entries should be always specified:
+
 \title{Opiskelijayhteisön vaikutus ryhmätyöskentelyyn liittyviin asenteisiin}
 \author{Kenny Heinonen}
 \date{\today}
-\newpage
+\level{Referaatti}
+%\abstract{Tiivistelmä.}
+
+% The following can be used to specify keywords and classification of the paper:
+
+\keywords{avainsana 1, avainsana 2, avainsana 3}
+\classification{} % classification according to ACM Computing Classification System (http://www.acm.org/about/class/)
+                  % This is probably mostly relevant for computer scientists
+
+% If the automatic page number counting is not working as desired in your case,
+% uncomment the following to manually set the number of pages displayed in the abstract page:
+%
+% \numberofpagesinformation{16 sivua + 10 sivua liitteissä}
+%
+% If you are not a computer scientist, you will want to uncomment the following by hand and specify
+% your department, faculty and subject by hand:
+%
+%\faculty{Matemaattis-luonnontieteellinen}
+% \department{Tietojenkäsittelytieteen laitos}
+% \subject{Tietojenkäsittelytiede}
+%
+% If you are not from the University of Helsinki, then you will most likely want to set these also:
+%
+% \university{Helsingin Yliopisto}
+% \universitylong{HELSINGIN YLIOPISTO --- HELSINGFORS UNIVERSITET --- UNIVERSITY OF HELSINKI} % displayed on the top of the abstract page
+% \city{Helsinki}
+%
+
 
 \begin{document}
 
 % --- Front matter ---
 
 \maketitle        % title page
-\newpage
-%\makeabstract     % abstract page
+\makeabstract     % abstract page
 
 \tableofcontents  % table of contents
 \newpage          % clear page after the table of contents
@@ -44,73 +120,96 @@
 % Esimerkkilause ja lähdeviite~\cite{esimerkki}.
 
 Tämä työ on referaatti William M. Waiten, Michele H. Jacksonin, Amer Diwanin ja Paul M. Leonardin kirjoittamasta artikkelista \emph{"Student culture vs group work in computer science"} \cite{Waite:2004:SCV:1028174.971308}.
-Artikkelissa em. mainitut henkilöt pohtivat miksi heidän yliopistoissa (University of Colorado, Stanford University) opiskelevien tietojenkäsittelytieteen opiskelijoiden ryhmätyötaidot ovat puutteelliset. Waite ym. tarkastelevat asiaa tutkimalla ryhmätyöskentelyä ja sen hyödyllisyyttä. Lisäksi tarkastellaan miten opiskelijoiden ja näiden yliopistojen muodostama opiskelijakulttuuri vaikuttaa opiskelijoiden asenteisiin ryhmätyöskentelyä kohtaan. Lopuksi esitetään ratkaisuja, joilla rohkaistaan opiskelijoita yhteistyön tekemiseen.\\
+Artikkelin kirjoittajat pohtivat miksi heidän yliopistoissa (University of Colorado, Stanford University) opiskelevien tietojenkäsittelytieteen opiskelijoiden ryhmätyötaidot ovat puutteelliset. Waite ym. tarkastelevat asiaa tutkimalla ryhmätyöskentelyä ja sen hyödyllisyyttä. Lisäksi he tarkastelevat miten opiskelijoiden ja näiden yliopistojen muodostama opiskelijakulttuuri vaikuttaa opiskelijoiden asenteisiin ryhmätyöskentelyä kohtaan. Lopuksi he esittävät ratkaisuja, joilla rohkaistaan opiskelijoita yhteistyön tekemiseen.\\
 
-Selvittääkseen mistä huonot ryhmätyötaidot opiskelijoilla johtuivat, Waite ym. panivat alulle tutkimuksen, jossa he haastattelivat opiskelijoita ja he sijoittivat kolmelle tietojenkäsittelytieteen kurssille tarkkailijoita tekemään havaintoja opetuksesta ja opiskelijoista. Nopeasti selvisi, että lähes kaikki opiskelijat suosivat työskentelemistä yksin. Tilannetta ei parantanut ryhmätöiden lisääminen kursseilla vaan se jopa huononsi opiskelijoiden tietotaitoja, sillä ryhmätöissä jotkin opiskelijat eivät tehneet mitään ja menestyivät muiden ryhmän jäsenten vaivannäöllä.
+Ryhmätyötaitojen puute tuli ilmi Waitelle ym. eri yritysten antamien palautteiden kautta, joihin valmistuneet opiskelijat ovat työllistyneet. Yrityksien antamien palautteiden mukaan opiskelijat ovat teknisesti taitavia, mutta heillä on puutteita ryhmätyöskentelytaidoissa. Selvittääkseen mistä huonot ryhmätyötaidot opiskelijoilla johtuivat, Waite ym. panivat alulle tutkimuksen, jossa he haastattelivat opiskelijoita. He myös sijoittivat kolmelle tietojenkäsittelytieteen kurssille tarkkailijoita tekemään havaintoja opetuksesta ja opiskelijoista. Nopeasti selvisi, että lähes kaikki opiskelijat suosivat työskentelemistä yksin. Tilannetta ei parantanut ryhmätöiden lisääminen kursseilla vaan se heikensi opiskelijoiden teknistä osaamista, sillä ryhmätöissä jotkut opiskelijat menestyivät muiden ryhmän jäsenten vaivannäöllä.
 
 \section{Ryhmätyöskentelyn strategiat}
 
 Waite ym. aloittivat tutkimaan ryhmätyöskentelyä ja miettimään onko siitä edes erityistä hyötyä. He havaitsivat neljä erilaista taktiikkaa, joilla ryhmätyötä pystyi lähestymään:
 
-Ensimmäisessä taktiikassa on ideana, että ryhmän jäsenet työskentelevät tehtävän kimpussa "peräkkäisesti"~eli toinen jatkaa siitä mihin toinen jäi. Toisessa taktiikassa tehtävä jaetaan osiin ryhmän jäsenille ja jokainen suorittaa oman osansa. Kolmannessa taktiikassa ryhmän jäsenet tekevät kaikki oman ratkaisunsa, josta valitaan sitten paras tai vaihtoehtoisesti valitaan ryhmästä taitavimmat jäsenet tekemään koko työ. Neljäs taktiikka edustaa eniten ryhmätyöskentelyn ideaa eli yhteistyötä, sillä siinä ryhmän jäsenet ovat vuorovaikutuksessa toistensa kanssa säännöllisesti tehtävän teon ajan.\\
+Ensimmäisessä taktiikassa on ideana, että ryhmän jäsenet työskentelevät tehtävän kimpussa "peräkkäisesti"~eli toinen jatkaa siitä mihin toinen jäi. Toisessa taktiikassa tehtävä jaetaan osiin ryhmän jäsenille ja jokainen suorittaa oman osansa. Kolmannessa taktiikassa ryhmän jäsenet tekevät kaikki oman ratkaisunsa, joista valitaan sitten paras tai vaihtoehtoisesti valitaan ryhmästä taitavimmat jäsenet tekemään koko työ. Neljäs taktiikka edustaa eniten ryhmätyöskentelyn ideaa eli yhteistyötä, sillä siinä ryhmän jäsenet ovat vuorovaikutuksessa toistensa kanssa säännöllisesti tehtävän teon ajan.\\
 
-Opiskelijat valitsivat useimmiten jonkin kolmesta ensimmäisestä taktiikasta, jotka painottavat yksin työskentelyä. Kuitenkin neljäs vaihtoehto, joka korostaa yhteistyötä on kaikista hyödyllisin. Tehtävää suorittaessa opiskelijat huomioivat usein erilaisia asioita, jotka ovat keskeisiä tehtävän suorittamisen kannalta. Ilman minkäänlaista vuorovaikutusta toisten ryhmän jäsenien kanssa nämä asiat eivät tule ryhmän yhteiseen tietoon. Myös yhteiset keskustelut tehostavat oppimista ja oikeiden päätelmien tekemistä ongelmiin liittyen verrattuna siihen, että näitä asioita pohtisi yksin. Kirjoittajat päätyivät tästä johtopäätökseen, että oikeanlaiset ryhmätyöskentelytaidot ovat hyvinkin tarpeellisia ja niihin tulisi panostaa.
+Opiskelijat valitsivat useimmiten jonkin kolmesta ensimmäisestä taktiikasta, jotka painottavat yksin työskentelyä. Kuitenkin neljäs vaihtoehto, joka korostaa yhteistyötä on hyödyllisin. Tehtävää suorittaessa opiskelijat huomioivat usein erilaisia asioita, jotka ovat keskeisiä tehtävän suorittamisen kannalta. Ilman minkäänlaista vuorovaikutusta toisten ryhmän jäsenien kanssa nämä asiat eivät tule ryhmän yhteiseen tietoon. Myös yhteiset keskustelut tehostavat oppimista ja oikeiden päätelmien tekemistä ongelmiin liittyen verrattuna siihen, että näitä asioita pohtisi yksin. Waite ym. päätyivät tästä johtopäätökseen, että oikeanlaiset ryhmätyöskentelytaidot ovat hyvinkin tarpeellisia ja niihin tulisi panostaa.
 
 \section{Opiskelijayhteisön vaikutus}
 
-Seuraavaksi Waite ym. lähtivät tutkimaan kys. yliopistoissa vallitsevaa opiskelijakulttuuria, jonka voi käsittää myös eräänlaiseksi yhteisöksi. Tällainen yhteisö luo ja säilyttää tiettyjä kulttuurillisia asioita, joihin sisältyy mm. erilaiset käytösmallit, ajattelu- ja toimintatavat tehtävien tekoon ja työskentelyyn liittyen. Aikaisemmin mainittu Waiten ym. tekemä tutkimustyö ja opiskelijoiden haastattelu valotti opiskelijoiden käyttäytymistä ja toimintatapoja, jotka auttavat mm. ymmärtämään miksi he suosivat yksin työskentelyä ja miten nämä ajattelu-, toimintatavat ja käyttäytymismallit haittaavat mahdollista ryhmätyöskentelemistä. Näitä asioita tarkastellaan seuraavaksi.
+Seuraavaksi Waite ym. lähtivät tutkimaan yliopistoissa vallitsevaa opiskelijakulttuuria, jonka voi käsittää myös eräänlaiseksi yhteisöksi. Tällainen yhteisö luo ja vaalii tiettyjä kulttuurillisia asioita, joihin sisältyy mm. erilaiset käytösmallit, ajattelu- ja toimintatavat tehtävien tekoon ja työskentelyyn liittyen. Aikaisemmin mainittu Waiten ym. tekemä tutkimustyö ja opiskelijoiden haastattelu valotti opiskelijoiden käyttäytymistä ja toimintatapoja, jotka auttavat ymmärtämään, miksi he suosivat yksin työskentelyä ja miten nämä ajattelu-, toimintatavat ja käyttäytymismallit haittaavat mahdollista ryhmätyöskentelemistä. Näitä asioita tarkastellaan seuraavaksi.
 
-\subsection{Yksin työskentelyn suosiminen}
+\begin{itemize}
 
-Tutkimukseen osallistuneet suosivat yksin työskentelemistä. Suurin syy tälle oli, että opiskelijat näkivät tehtävät ns. tuotteina. Suoritettu tehtävä on valmis tuote, jonka laatu määrittää arvosanan. Ts. lopputulos on prosessia tärkeämpi. Muita syitä olivat, että opiskelijat eivät halunneet "raahata perässään"~osaamattomampia opiskelijoita ja he eivät halunneet joutua selvittelemään mahdollisia ryhmän jäsenten välisiä ongelmia (esim. aikataulutus).
+\item {\bf Yksin työskentelyn suosiminen}
 
-\subsection{Tehtävän teon lykkääminen}
+Tutkimukseen osallistuneet suosivat yksin työskentelemistä. Suurin syy tälle oli, että opiskelijat näkivät tehtävät \emph{tuotteina} ("product"). Suoritettu tehtävä on valmis tuote, jonka laatu määrittää arvosanan. Lopputulos on siis prosessia tärkeämpi. Muita syitä olivat, että opiskelijat eivät halunneet "raahata perässään"~osaamattomampia opiskelijoita ja he eivät halunneet joutua selvittelemään mahdollisia ryhmän jäsenten välisiä ongelmia (esimerkiksi aikataulutus).
 
-Suunnilleen jokainen haastateltava kertoi lykkäävänsä tehtävien tekoa, vaikkakin tälle ei löytynyt selvää perustelua. Tehtävien tekemisen viivyttäminen on haitallista yhteis- ja ryhmätyötä ajatellen, koska tällöin jää vähemmän aikaa yhteisille keskusteluille.
+\item {\bf Tehtävän teon lykkääminen}
 
-\subsection{Välinpitämättömyys prosessia kohtaan}
+Lähes jokainen haastateltava kertoi lykkäävänsä tehtävien tekoa, vaikkakaan tälle ei löytynyt selvää perustelua. Tehtävien tekemisen viivyttäminen on haitallista yhteis- ja ryhmätyötä ajatellen, koska tällöin jää vähemmän aikaa yhteisille keskusteluille.
 
-Opiskelijoita lähtökohtaisesti ei kiinnostanut tehtävän suorittamisessa mikään muu kuin lopputulos ja siitä saatava arvosana. Tämä vahvistaa sitä, että opiskelijat näkevät tehtävänannon tuotteena sen sijaan, että se olisi mahdollisuus oppia uusia asioita.
+\item {\bf Kokeilu}
 
-\subsection{Kilpailu}
+Opiskelijat eivät kokeilleet lähestyä tehtävää monella eri tavalla. Näin ollen heillä saattoi olla vain rajallinen määrä eri lähestymistapoja, jotka eivät soveltuneet hyvin tiettyjen tehtävien ratkaisemiseksi. Ryhmäkes\-kustelun avulla opiskelijat voivat oppia toisiltaan erilaisia tapoja, joita soveltaa tehokkaasti erityyppisiin tehtäviin.
 
-Useimmat opiskelijat esittävät omia mielipiteitään vahvasti ja hyljeksivät kanssaopiskelijoidensa mielipiteitä. Näillä opiskelijoilla on vahva käsitys omasta paremmuudestaan. Tällaisen ajattelutavan voi nähdä seurauksena yksin työskentelemisestä: kun asioita katsoo vain omien näkemyksiensä kautta, asiat tuntuvat paljon yksiulotteisemmilta. Tällainen ajattelutapa ehkäisee keskinäistä yhteisymmärrystä ja siten yhteistyötä.
+\item {\bf Välinpitämättömyys prosessia kohtaan}
 
-\subsection{Haluttomuus tukea muita}
+Opiskelijoita ei lähtökohtaisesti kiinnostanut tehtävän suorittamisessa muu kuin lopputulos ja siitä saatava arvosana. Tämä vahvistaa sitä, että opiskelijat näkevät tehtävän tuotteena sen sijaan, että se olisi mahdollisuus oppia uusia asioita.
 
-Monet haastateltavat tunsivat, etteivät he saa tarpeeksi tukea muilta ihmisiltä. Toiset taas mainitsivat avoimesti kieltäytyvän antamasta minkäänlaista tukea toisille. Syynä tähän nähdään, että opiskelijat haluavat muiden oivaltavan asian itse. Lisäksi avun ja tuen antamista ehkäisee käytössä olevat plagiarismiin liittyvät menettelytavat, jotka nykyisellään asettavat rajoja yhteistyölle rangaistuksen uhalla. Kuitenkin tuen antaminen ja auttaminen on tärkeä tekijä ryhmän onnistumiselle ja siten on erittäin haitallista yhteistyön kannalta, jos tätä yritetään estää tai sitä ei tehdä.
+\item {\bf Kilpailu}
 
-\subsection{Innokkuuden puuttuminen}
+Useimmat opiskelijat esittävät omia mielipiteitään vahvasti ja hyljeksivät kanssaopiskelijoidensa mielipiteitä. Näillä opiskelijoilla on vahva käsitys omasta paremmuudestaan. Tällaisen ajattelutavan voi nähdä seurauksena yksin työskentelemisestä: kun asioita katsoo vain omien näkemyksiensä kautta, asiat tuntuvat yksiulotteisemmilta. Tällainen ajattelutapa ehkäisee keskinäistä yhteisymmärrystä ja siten yhteistyötä.
+
+\item {\bf Haluttomuus tukea muita}
+
+Monet haastateltavat tunsivat, etteivät he saa tarpeeksi tukea muilta ihmisiltä. Toiset taas mainitsivat avoimesti kieltäytyvän antamasta minkäänlaista tukea toisille. Opiskelijat perustelevat tämän sanomalla, että he haluavat muiden oivaltavan asian itse. Lisäksi avun ja tuen antamista ehkäisevät käytössä olevat plagiarismiin liittyvät menettelytavat, jotka nykyisellään asettavat rajoja yhteistyölle rangaistuksen uhalla. Kuitenkin tuen antaminen ja auttaminen on tärkeä tekijä ryhmän onnistumiselle. On erittäin haitallista yhteistyön kannalta, jos tätä yritetään estää tai sitä ei tehdä.
+
+\item {\bf Innokkuuden puuttuminen}
 
 Yhteistyö voi vaatia etenkin aluksi paljon työtä ja ilman yhteistä kiinnostusta tehtävää kohtaan ryhmätyöskentely voi käydä vaikeaksi. Monet opiskelijat kertoivat ryhmätöiden suistuneen sivuraiteille ryhmän jäsenten välisten ongelmien ja kiistojen vuoksi. Näistä ongelmista on yleensä helpompi päästä yli, jos ryhmän jäseniä aidosti kiinnostaa annettu tehtävä.
 
+\end{itemize}
+
 \section{Yhteistyön vaaliminen}
 
-Parantaakseen opiskelijoiden yhteistyöhalukkuutta ja -taitoja, Waiten ym. mielestä em. opiskelijayhteisöön pitää tehdä kulttuurillisia muutoksia. Tämä onnistuu luomalla olosuhteita, jotka suosivat yhteistyön sulautumista yhteisöön. Kirjoittajat kehittivät kolme erilaista tapaa vaikuttaakseen yhteisöön.
+Parantaakseen opiskelijoiden yhteistyöhalukkuutta ja -taitoja Waiten ym. mielestä opiskelijayhteisöön tulee tehdä kulttuurillisia muutoksia. Tämä onnistuu luomalla olosuhteita, jotka suosivat yhteistyön sulautumista yhteisöön. Kirjoittajat tuovat esiin kolme erilaista tapaa vaikuttaakseen yhteisöön.
 
-\subsection{Vuorovaikutteinen luokkahuone}
+\begin{itemize}
 
-\emph{"The conversational classroom"} eli vuorovaikutteinen luokkahuone  on strategia, jolla opiskelijat saadaan näkemään yhteistyön etuja. Tässä strategiassa professori panee aluille keskustelua kurssimateriaaliin liittyen sen sijaan, että pitäisi luennon kurssimateriaalista itse. Täten professori luovuttaa informaatiovuon "oikeudet"~opiskelijoille. Tämä pakottaa opiskelijat keskustelemaan keskenään materiaalista. Tämä kokeilu on ollut erittäin onnistunut ja perinteisen luennon sijaan se on kehittänyt opiskelijoiden oppimista ja ryhmätaitoja.
+\item {\bf Vuorovaikutteinen luokkahuone}
 
-\subsection{Ryhmässä päätöksen tekeminen}
+\emph{"The conversational classroom"} eli vuorovaikutteinen luokkahuone  on strategia, jolla opiskelijat saadaan näkemään yhteistyön etuja. Tässä strategiassa professori panee aluille keskustelua kurssimateriaaliin liittyen sen sijaan, että pitäisi luennon kurssimateriaalista itse. Täten professori kannustaa opiskelijoita keskustelemaan keskenään materiaalista. Näin opiskelijat oppivat toisiltaan asioita. Tämä kokeilu on ollut erittäin onnistunut ja perinteisen luennon sijaan se on kehittänyt opiskelijoiden oppimista ja ryhmätaitoja.
 
-Opiskelijat eivät usein halunneet työskennellä ryhmissä epäonnistuneiden päätösten takia: ryhmä pohti ratkaisuja tiettyyn ongelmaan pääsemättä mihinkään lopputulokseen, jonka seurauksena haastateltava turhautui ja ratkaisi ongelman yksin. Päätöksentekoon liittyy vahvasti opiskelijoiden piirre puolustaa omia näkemyksiään ja lytätä muiden mielipiteitä, jolloin kriteerit, joihin päätös pitäisi perustaa, jäivät vähemmälle huomiolle.\\
+\item {\bf Ryhmässä päätöksen tekeminen}
 
-Tämän ongelman ratkaisemiseksi keksittiin eräälle kurssille harjoitus, jossa opiskelijoiden piti valita kääntäjä-projektiin sopiva AST-tietorakenne (abstract syntax tree). Kaikkien opiskelijoiden piti ehdottaa sopivaa puuta projektia varten ja kaikista ehdotuksista jokainen valitsi omasta mielestään sopivimman puun. Seuraavalla tunnilla koko luokka yhdessä kehitti joukon kriteereitä AST-puun valitsemista varten. Lopuksi opiskelijat menivät verkkoon arvioimaan näiden eri kriteerien tärkeyden numeroarvioinnilla ja arvioivat ehdotetuille AST-puille kuinka hyvin ne täyttävät yksittäisen kriteerin ehdot. Näin saatiin jokaiselle AST-puulle oma pisteytys ja paras näistä valittiin opiskelijoiden käyttöön kurssin loppuajaksi. Muutoksia valittuun puuhun sai tehdä vain ja ainoastaan, jos kaikki opiskelijat suostuivat siihen ja jos ja vain jos AST-puun pisteytys nousi korkeammaksi muutoksesta.
+Opiskelijat eivät usein halunneet työskennellä ryhmissä epäonnistunei\-den päätösten takia: ryhmä pohti ratkaisuja tiettyyn ongelmaan pääse\-mättä mihinkään lopputulokseen, jonka seurauksena haastateltava turhautui ja ratkaisi ongelman yksin. Päätöksentekoon liittyy vahvasti opiskelijoiden piirre puolustaa omia näkemyksiään ja jättää muiden mielpiteet omaan arvoonsa, jolloin kriteerit, joihin päätös pitäisi perustaa, jäivät vähemmälle huomiolle.\\
 
-\subsection{Tehtävän merkityksen pienentäminen}
+Tämän ongelman ratkaisemiseksi keksittiin eräälle kurssille harjoitus, jossa opiskelijoiden piti valita kääntäjä-projektiin sopiva AST-tietorakenne (abstract syntax tree). Kaikkien opiskelijoiden piti ehdottaa sopivaa puuta projektia varten ja kaikista ehdotuksista jokainen valitsi omasta mielestään sopivimman puun. Seuraavalla tunnilla koko luokka yhdessä kehitti joukon kriteereitä AST-puun valitsemista varten. Lopuksi opiskelijat arvioivat verkossa näiden eri kriteerien tärkeyden numeroarvioinnilla ja arvioivat ehdotetuille AST-puille kuinka hyvin ne täyttävät yksittäisen kriteerin ehdot. Näin saatiin jokaiselle AST-puulle oma pisteytys ja paras näistä valittiin opiskelijoiden käyttöön kurssin loppuajaksi. Muutoksia valittuun puuhun sai tehdä vain ja ainoastaan, jos kaikki opiskelijat suostuivat siihen ja jos ja vain jos AST-puun pisteytys nousi korkeammaksi muutoksesta.
 
-Eri kursseilla annettujen isompien tehtävien ongelmana on, että ne vievät usein paljon aikaa ja siten on oikeutettua, että niiden suorittamisesta palkitaan hyvin. Tämä ei rohkaise opiskelijoita yhteistyöhön vaan vahvistaa tehtävän "tuotteistamista", jossa lopputulos ratkaisee.\\
+\item {\bf Tehtävän merkityksen pienentäminen}
 
-Waite ym. ovat lähestyneet ongelmaa vähentämällä isompien tehtävien merkitystä arvostelun kannalta ja painottamalla, että kys. tehtävät eivät ole "tuotteita"~ja ainut perustelu antaa pisteitä tehtävästä on toimia pienenä kannustimena. Tehtävän teon viivyttelyä on ehkäisty antamalla viikottaiset deadlinet. Tehtävien pieni painoarvo rohkaisee opiskelijoita kokeilemaan heille tuntemattomia tekniikoita, koska jos opiskelija epäonnistuu, menetys ei ole suuri. Näiden kaikkien asioiden pitäisi rohkaista opiskelijoita yhteistyöhön, mutta näin ei kuitenkaan pakoteta tekemään.\\
+Eri kursseilla annettujen isompien tehtävien ongelmana on, että ne vievät usein paljon aikaa ja siten on opiskelijoiden mielestä oikeutettua, että niiden suorittamisesta palkitaan hyvin. Tämä ei rohkaise opiskelijoita yhteistyöhön vaan vahvistaa tehtävän "tuotteistamista", jossa lopputulos ratkaisee.\\
 
-Kirjoittajien mukaan tämä kokeilu on ollut onnistunut. Opiskelijat käyttävät edelleen yhtä paljon aikaa tehtäviin, mutta kokevat niiden teon opettavaisempina kuin ennen, kun tehtävän lopputulos ei ole etusijalla.
+Waite ym. ovat lähestyneet ongelmaa vähentämällä isompien tehtävien merkitystä arvostelun kannalta ja painottamalla, että tehtävät eivät ole "tuotteita"~ja ainut perustelu antaa pisteitä tehtävästä on toimia pienenä kannustimena. Tehtävän teon viivyttelyä on ehkäisty antamalla viikottaiset deadlinet. Tehtävien pieni painoarvo rohkaisee opiskelijoita kokeilemaan heille tuntemattomia tekniikoita, koska jos opiskelija epäonnistuu, menetys ei ole suuri. Näiden kaikkien asioiden pitäisi rohkaista opiskelijoita yhteistyöhön, mutta näin ei kuitenkaan pakoteta tekemään.\\
+
+Kirjoittajien mukaan edellä mainittu kokeilu on ollut onnistunut. Opiskelijat käyttävät edelleen yhtä paljon aikaa tehtäviin, mutta kokevat niiden teon opettavaisempina kuin ennen, kun tehtävän lopputulos ei ole etusijalla.
+
+\end{itemize}
 
 \section{Yhteenveto}
 
-Tutkimus osoittaa, että opiskelijoiden yhteis- ja ryhmätyötaitoja kannattaa parantaa. Opiskelijayhteisön ja opetustoiminnan tarkastelu paljasti asioita, jotka jarruttavat yhteistyön mielekkyyttä. Kirjoittajat löysivät kolme tapaa vahvistaakseen yhteistyön harjoittamista, jotka ovat perinteisten luentojen korvaaminen avoimella keskustelulla ja sulauttamalla yhteistyötä painottavia prosesseja tehtäviin, kuten kappaleessa 4.2 nähtiin. Kolmas tapa on painottaa tehtävänantoa siihen suuntaan, että prosessi on tulosta tärkeämpi. Tulokset ovat osoittaneet selvää parannusta opiskelijoiden opintomenestyksessä ja ryhmätaidoissa.
+Waiten ym. tekemän tutkimuksen perusteella he ovat sitä mieltä, että opiskelijoiden yhteis- ja ryhmätyötaitoja kannattaa parantaa. Opiskelijayhteisön ja opetustoiminnan tarkastelu paljasti asioita, jotka jarruttavat yhteistyön mielekkyyttä. Kirjoittajat löysivät kolme tapaa vahvistaakseen yhteistyön harjoittamista, jotka ovat perinteisten luentojen korvaaminen avoimella keskustelulla ja sulauttamalla yhteistyötä painottavia prosesseja tehtäviin, kuten kappaleessa 4.2 nähtiin. Kolmas tapa on painottaa tehtävänantoa siihen suuntaan, että prosessi on tulosta tärkeämpi. Tulokset ovat osoittaneet selvää parannusta opiskelijoiden opintomenestyksessä ja ryhmätaidoissa.
+
+% --- Back matter ---
+%
+% bibtex is used to generate the bibliography. The babplain style
+% will generate numeric references (e.g. [1]) appropriate for theoretical
+% computer science. If you need alphanumeric references (e.g [Tur90]), use
+%
+% \bibliographystyle{babalpha}
+%
+% instead.
 
 \bibliographystyle{babplain}
 \bibliography{../lahteet}
+
 
 \end{document}
