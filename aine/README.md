@@ -1,4 +1,4 @@
-##[Personality types in software engineering](http://dx.doi.org/10.1016/S1071-5819(02)00137-4)
+##[Personality types in software engineering](http://www.sciencedirect.com.libproxy.helsinki.fi/science/article/pii/S1071581902001374)
 
 Nykypäivänä ohjelmistoala on erittäin monipuolinen työtarjonnaltaan ja ohjelmistoalalle hakee hyvin erilaisia
 ihmisiä töihin. Artikkelissa "Personality types in software engineering" Capretz tutkii millaiset
