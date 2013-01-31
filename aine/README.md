@@ -13,3 +13,11 @@ Työelämässä ohjelmoijat suunnittelevat ja toteuttavat ohjelmistot usein ryhm
 opiskelijat useimmiten ohjelmoivat yksin. Artikkelissa "An Infrastructure for Teaching Skills for Group Decision Making and Problem Solving in Programming Projects"
 Diwan, Waite ja Jackson Coloradon yliopistolta esittelevät kehittämänsä ohjelmiston ryhmätyöskentelytaitojen parantamiseksi. Ohjelmisto on tarkoitettu
 käytettäväksi eri kursseilla. Diwan ja kumppanit kertovat kuinka ohjelmisto toimii ja kuinka se auttaa opiskelijoita saamaan kokemusta tarvittavista ryhmätyöskentelytaidoista.
+
+##[Making Sense of Software Development and Personality Types](http://dx.doi.org/10.1109/MITP.2010.33)
+
+Ohjelmistokehitys on usein monivaiheista ja eri vaiheissa tarvitaan erilaisia ihmisiä niin teknisiltä taidoiltaan kuin
+persoonallisuuksiltaan. Artikkelissa "Making Sense of Software Development and Personality Types" Capretz ja Ahmed
+väittävät projektin onnistuvan suuremmalla todennäköisyydellä, jos eri kehityksen vaiheisiin sijoitetaan tietynlaisia ihmisiä
+luonteenpiirteiltään. Myers–Briggsin tyyppi-indikaattoria käyttäen, he perustelevat millaisilla luonteenpiirteillä on positiivisesti suurin
+vaikutus vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja ylläpitoon.
