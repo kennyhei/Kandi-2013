@@ -21,3 +21,10 @@ persoonallisuuksiltaan. Artikkelissa "Making Sense of Software Development and P
 väittävät projektin onnistuvan suuremmalla todennäköisyydellä, jos eri kehityksen vaiheisiin sijoitetaan luonteenpiirteiltään tietynlaisia ihmisiä.
 Myers–Briggsin tyyppi-indikaattoria käyttäen, he perustelevat millaisilla luonteenpiirteillä on positiivisesti suurin
 vaikutus vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja ylläpitoon.
+
+##[Software developer perceptions about software project failure: a case study](http://www.sciencedirect.com.libproxy.helsinki.fi/science/article/pii/S0164121299000941)
+
+Vuosikymmenien saatossa erilaiset ohjelmistoprojektit ovat epäonnistuneet lukuisista syistä. Syitä tähän tarkastellaan pintapuolisesti
+sanomalla esimerkiksi, että projekti ei pysynyt aikataulussa tai toteutus ei vastannut vaatimuksia. Artikkelissa "Software developer perceptions about software project failure: a case study" Linberg tutkii projektien
+epäonnistumista pintaa syvemmältä haastattelemalla eri ohjelmistokehittäjiä. Nämä kehittäjät ovat olleet epäonnistuneissa projekteissa mukana. Hän selvittää
+heiltä mitä projektin "sisällä" tapahtuu ja mitkä eri asiat vaikuttavat projektin onnistumiseen.
