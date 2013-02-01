@@ -24,7 +24,7 @@ vaikutus vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja yll
 
 ##[Software developer perceptions about software project failure: a case study](http://www.sciencedirect.com.libproxy.helsinki.fi/science/article/pii/S0164121299000941)
 
-Vuosikymmenien saatossa erilaiset ohjelmistoprojektit ovat epäonnistuneet lukuisista syistä. Syitä tähän tarkastellaan pintapuolisesti
+Vuosikymmenien saatossa erilaiset ohjelmistoprojektit ovat epäonnistuneet lukuisista syistä. Syitä tähän tarkastellaan usein pintapuolisesti
 sanomalla esimerkiksi, että projekti ei pysynyt aikataulussa tai toteutus ei vastannut vaatimuksia. Artikkelissa "Software developer perceptions about software project failure: a case study" Linberg tutkii projektien
 epäonnistumista pintaa syvemmältä haastattelemalla eri ohjelmistokehittäjiä. Nämä kehittäjät ovat olleet epäonnistuneissa projekteissa mukana. Hän selvittää
 heiltä mitä projektin "sisällä" tapahtuu ja mitkä eri asiat vaikuttavat projektin onnistumiseen.
