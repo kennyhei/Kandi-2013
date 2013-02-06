@@ -45,3 +45,12 @@ Haastatteluista myös paljastuu, että kehittäjillä on "lempeämpi" näkemys s
 Kirjassaan "The Art Of Agile Development" James Shore puhuu pariohjelmoinnista ("pair programming"). Shore kertoo mitä pariohjelmointi on
 ja antaa neuvoja, jotta kokemus olisi sitä harjoittaville mahdollisimman mukava. Hän myös kertoo pariohjelmoinnin haasteista. Shoren mukaan
 pariohjelmointi vähentää virheiden määrää, auttaa ihmisiä jakamaan tietämystään toistensa kanssa ja parantaa koodin laatua sekä yksilön keskittymiskykyä.
+
+##[Understanding Communication within Pair Programming](http://dl.acm.org.libproxy.helsinki.fi/citation.cfm?id=2384716.2384738&coll=DL&dl=ACM&CFID=273890905&CFTOKEN=79351225)
+
+Pariohjelmoinnissa kommunikointi parien kesken on suuressa roolissa. Artikkelissa "Understanding Communication within Pair Programming" Mark Zarb väittää, että
+oikeanlainen kommunikointi pariohjelmoijien kesken vaikuttaa vahvasti heidän työskentelynsä onnistumiseen. Zarb tutkii pariohjelmoijien työskentelyä
+saadakseen selville kuinka kommunikointi sujuu ja millaista se on. Hän toivoo löytävänsä tutkimustensa perusteella kommunikointimalleja, jotka parantavat
+pariohjelmointia tällä saralla. Zarbin tutkimustyö artikkelissa on kesken, mutta hänellä on kaksi hypoteesia
+tutkimukseensa liittyen. Ensimmäinen on, että aloittelijoita voidaan kouluttaa käyttämään hyviä kommunikointitapoja, jotta pariohjelmoinnista tulisi mieluisempaa
+ja koodista laadukkaampaa. Toinen on, että pariohjelmoijien kommunikoinnin ymmärtäminen johtaa menestyksekkäämpään pariohjelmointiin.
