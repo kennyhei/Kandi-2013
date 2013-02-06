@@ -39,3 +39,9 @@ epäonnistumista pintaa syvemmältä haastattelemalla eri ohjelmistokehittäjiä
 heiltä mitä projektin "sisällä" tapahtuu ja mitkä eri asiat vaikuttavat projektin onnistumiseen. Eri tekijöitä projektin onnistumiselle ovat muun muassa
 johtajuus, työkalut, prosessimalli, motivaation taso, projektin haastavuus ja johtotason toiminta.
 Haastatteluista myös paljastuu, että kehittäjillä on "lempeämpi" näkemys siitä mitä projektin epäonnistuminen tarkoittaa verrattuna nykyiseen määritelmään.
+
+##[The Art Of Agile Development: Pair Programming](http://www.jamesshore.com/Agile-Book/pair_programming.html)
+
+Kirjassaan "The Art Of Agile Development" James Shore puhuu pariohjelmoinnista ("pair programming"). Shore kertoo mitä pariohjelmointi on
+ja antaa neuvoja, jotta kokemus olisi sitä harjoittaville mahdollisimman mukava. Hän myös kertoo pariohjelmoinnin haasteista. Shoren mukaan
+pariohjelmointi vähentää virheiden määrää, auttaa ihmisiä jakamaan tietämystään toistensa kanssa ja parantaa koodin laatua sekä yksilön keskittymiskykyä.
