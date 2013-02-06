@@ -54,3 +54,15 @@ saadakseen selville kuinka kommunikointi sujuu ja millaista se on. Hän toivoo l
 pariohjelmointia tällä saralla. Zarbin tutkimustyö artikkelissa on kesken, mutta hänellä on kaksi hypoteesia
 tutkimukseensa liittyen. Ensimmäinen on, että aloittelijoita voidaan kouluttaa käyttämään hyviä kommunikointitapoja, jotta pariohjelmoinnista tulisi mieluisempaa
 ja koodista laadukkaampaa. Toinen on, että pariohjelmoijien kommunikoinnin ymmärtäminen johtaa menestyksekkäämpään pariohjelmointiin.
+
+##[Pair Programming: What's in it for Me?](http://doi.acm.org/10.1145/1414004.1414026)
+
+Pariohjelmoinnin vaikutuksia opetuksessa on tutkittu paljon, mutta itse ohjelmistoalalla siitä ei ole tehty yhtä paljon tutkimusta. Artikkelissa
+"Pair Programming: What's in it for Me?" Begel ja Nagappan tekevät tutkimusta pariohjelmoinnin merkityksestä työelämässä. He suorittavat kyselyn
+Microsoftin työntekijöille, joiden joukossa on johtotason miehiä, kehittäjiä ja testaajia. Kyselyssä he haluavat tietää niiltä, joilla on pariohjelmoinnista
+kokemusta, että miten he suhtautuvat pariohjelmointiin ja mitkä ovat sen suurimmat hyödyt ja haitat. Lisäksi Begel ja Nagappan kysyvät mitkä piirteet
+tekevät yksilöstä hyvän parin ja mitkä piirteet tekevät hyvän tiimin pariohjelmointia käytettäessä. Oleellisimmat tulokset olivat, että enemmistö kyselyyn
+vastanneista pitävät pariohjelmoinnista ja uskovat sen johtavan parempaan koodin laatuun. Merkittävin hyöty oli bugien vähentyminen ja suurin haitta on,
+että pariohjelmointi on kallista, koska siinä annetaan kahden ihmisen tehdä työtä, jonka yksikin henkilö pystyisi tekemään. Hyvän parin tärkein piirre on,
+että tämän tekniset taidot täydentävät omia taitoja. Hyvän ryhmän tärkein piirre taas on, että kommunikointi sujuu jokaiselta ryhmän jäseneltä hyvin.
+Kyselyn tulokset eroavat hiukan artikkelissa mainituista aiemmista tutkimuksista, joten Begel ja Nagappan aikovat jatkaa tutkimuksia pariohjelmointiin liittyen.
