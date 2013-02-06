@@ -119,7 +119,7 @@
 
 % Write some science here.
 
-Ohjelmistoalalla tarvitaan monenlaisia teknisiä taitoja, jotta etenkin suuremmissa projekteissa saadaan toteutettua kaikki kehityksen vaiheet kattavasti. Nämä ohjelmistokehityksen vaiheet voidaan jakaa karkeasti vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja ylläpitoon \cite{Capretz:2010:MSS:1726559.1726574}. Sen lisäksi, että eri vaiheet vaativat eri taitoja, myös yksittäinen vaihe kysyy laajaa osaamista. Tämän seurauksena tulee tarve koota joukko osaavia ihmisiä toteuttamaan yhteistyössä kaikki kehityksen vaiheet. Onkin hyvin tavanomaista, että ohjelmistoprojektit toteutetaan ryhmätyönä. Useat prosessimallit jopa sanelevat miten ryhmätyöskentely tapahtuu, jotta kehitys sujuisi luontevammin ja tuotteliaammin.\\
+Ohjelmistoalalla tarvitaan monenlaisia teknisiä taitoja, jotta etenkin suuremmissa projekteissa saadaan toteutettua kaikki kehityksen vaiheet kattavasti. Nämä ohjelmistokehityksen vaiheet voidaan jakaa karkeasti vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja ylläpitoon~\cite{Capretz:2010:MSS:1726559.1726574}. Sen lisäksi, että eri vaiheet vaativat eri taitoja, myös yksittäinen vaihe kysyy laajaa osaamista. Tämän seurauksena tulee tarve koota joukko osaavia ihmisiä toteuttamaan yhteistyössä kaikki kehityksen vaiheet. Onkin hyvin tavanomaista, että ohjelmistoprojektit toteutetaan ryhmätyönä. Useat prosessimallit jopa sanelevat miten ryhmätyöskentely tapahtuu, jotta kehitys sujuisi luontevammin ja tuotteliaammin.\\
 
 Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, joissa ryhmät sijaitsevat samoissa oloissa, mutta työskentelevät silti täysin erillään toisistaan. Tämän seurauksena kommunikointi kärsii ja voi olla epäsäännöllistä. Ketterät menetelmät sen sijaan suosivat, että yksittäisen ryhmän jäsenillä on yhteinen työtila ja kommunikointi on mahdollisimman kasvokkaista. Asioista neuvottelu on tällöin nopeaa, suoraviivaista ja väärinkäsitysten mahdollisuus pienenee. Seuraavissa osioissa tarkastellaan muutamia ketteriä prosessimalleja nähdäksemme miten ryhmätyöskentely ja kommunikointi otetaan niissä huomioon.
 
@@ -127,7 +127,25 @@ Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, joissa 
 
 \subsubsection{Pariohjelmointi}
 
-\emph{Extreme Programming} (XP) on eräs ketterä menetelmä, jonka käytänteisiin kuuluu \emph{pariohjelmointi} ("pair programming"). Käytännössä pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman tietokoneen. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan heille on nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen \emph{navigoija} ("the navigator"). Ajajan tehtävänä on yksinkertaisesti kirjoittaa koodia. Navigoijan tehtävänä on analysoida jatkuvasti kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee milloinkin toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin väliajoin henkilöt voivat vaihtaa rooleja. Pariohjelmointi voidaan nähdä ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää saavuttaakseen saman päämäärän. \cite{Shore:2007:AAD:1407480}
+\emph{Extreme Programming} (XP) on eräs ketterä menetelmä, jonka käytänteisiin kuuluu \emph{pariohjelmointi} ("pair programming"). Käytännössä pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman tietokoneen. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan heille on nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen \emph{navigoija} ("the navigator"). Ajajan tehtävänä on yksinkertaisesti kirjoittaa koodia. Navigoijan tehtävänä on analysoida jatkuvasti kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee milloinkin toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin väliajoin henkilöt voivat vaihtaa rooleja. Pariohjelmointi voidaan nähdä ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää saavuttaakseen saman päämäärän.~\cite{Shore:2007:AAD:1407480} \\
+
+Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia etuja, jotka tekevät hyvää sekä yksilölle, ryhmälle että projektille. Tarkastellaan näitä etuja seuraavaksi. 
+
+\begin{itemize}
+
+\item {\bf Koodin laatu}
+
+Kun kaksi henkilöä pariohjelmoivat ja ratkaisevat samaa ongelmaa, lopputulos on usein tehokkaampi verrattuna siihen, että yksi henkilö tekisi kaiken. Parit pystyvät helposti keskustelemaan keskenään siitä mitä heidän tulisi seuraavaksi tehdä ja he voivat jakaa ideoita saadakseen koodista laadukkaamman tai ratkaistakseen jonkin ongelman. Kuten sanottua, ajaja ohjelmoi ja navigoija katselmoi koodia. Näin navigoija pystyy tekemään tärkeitä huomioita ja pohtimaan kuinka koodista saataisiin laadukkaampi, kun taas ajaja voi keskittyä kirjoittamiseen.
+
+\item {\bf Keskittymiskyky ja itsekuri}
+
+Pariohjelmoinnin on todettu parantavan keskittymiskykyä sillä toisen henkilön läsnäolo estää herkemmin yksilöä laiskottelemasta tai rikkomaan XP:n käytänteitä, kuten TDD:tä (Test Driven Development).
+
+\item {\bf Oppiminen}
+
+%~\cite{Begel:2008:PPW:1414004.1414026}
+
+\end{itemize}
 
 \subsection{Scrum}
 
@@ -155,7 +173,7 @@ Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, joissa 
 % instead.
 
 \bibliographystyle{babplain}
-\bibliography{../lahteet}
+\bibliography{lahteet}
 
 
 \end{document}
