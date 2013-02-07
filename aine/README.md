@@ -66,3 +66,10 @@ vastanneista pitävät pariohjelmoinnista ja uskovat sen johtavan parempaan kood
 että pariohjelmointi on kallista, koska siinä annetaan kahden ihmisen tehdä työtä, jonka yksikin henkilö pystyisi tekemään. Hyvän parin tärkein piirre on,
 että tämän tekniset taidot täydentävät omia taitoja. Hyvän ryhmän tärkein piirre taas on, että kommunikointi sujuu jokaiselta ryhmän jäseneltä hyvin.
 Kyselyn tulokset eroavat hiukan artikkelissa mainituista aiemmista tutkimuksista, joten Begel ja Nagappan aikovat jatkaa tutkimuksia pariohjelmointiin liittyen.
+
+##[What can we learn from Extreme Programming](http://dl.acm.org/citation.cfm?id=775339.775368)
+
+Artikkelissa Smith ja Stoecklin kertovat lyhyesti mitä on Extreme Programming. He esittelevät XP:n käytänteitä, jotka saattaisivat
+olla hyödyksi tietojenkäsittelytieteen opiskelijoiden opettamisessa. Nämä käytänteet ovat pariohjelmointi, refaktorointi, testaus,
+jatkuva integrointi ja jatkuva suunnittelu. Smith ja Stoecklinin mukaan millekään näistä ei ole annettu kovin paljon painotusta
+opetusohjelmassa. Vaikka käytänteet vaikuttavat sopivan opetukseen, Smith ja Stoecklin haluavat lisää tutkimusta aiheeseen liittyen.
