@@ -129,21 +129,29 @@ Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, joissa 
 
 \emph{Extreme Programming} (XP) on eräs ketterä menetelmä, jonka käytänteisiin kuuluu \emph{pariohjelmointi} ("pair programming"). Käytännössä pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman tietokoneen. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan heille on nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen \emph{navigoija} ("the navigator"). Ajajan tehtävänä on yksinkertaisesti kirjoittaa koodia. Navigoijan tehtävänä on analysoida jatkuvasti kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee milloinkin toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin väliajoin henkilöt voivat vaihtaa rooleja. Pariohjelmointi voidaan nähdä ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää saavuttaakseen saman päämäärän.~\cite{Shore:2007:AAD:1407480} \\
 
-Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia etuja, jotka tekevät hyvää sekä yksilölle, ryhmälle että projektille. Tarkastellaan näitä etuja seuraavaksi. 
+Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia hyötyjä, jotka tekevät hyvää sekä yksilölle, ryhmälle että projektille~\cite{Begel:2008:PPW:1414004.1414026}. Tarkastellaan näitä hyötyjä seuraavaksi. 
 
 \begin{itemize}
 
 \item {\bf Koodin laatu}
 
-Kun kaksi henkilöä pariohjelmoivat ja ratkaisevat samaa ongelmaa, lopputulos on usein tehokkaampi verrattuna siihen, että yksi henkilö tekisi kaiken. Parit pystyvät helposti keskustelemaan keskenään siitä mitä heidän tulisi seuraavaksi tehdä ja he voivat jakaa ideoita saadakseen koodista laadukkaamman tai ratkaistakseen jonkin ongelman. Kuten sanottua, ajaja ohjelmoi ja navigoija katselmoi koodia. Näin navigoija pystyy tekemään tärkeitä huomioita ja pohtimaan kuinka koodista saataisiin laadukkaampi, kun taas ajaja voi keskittyä kirjoittamiseen.
+Kun kaksi henkilöä pariohjelmoivat ja ratkaisevat samaa ongelmaa, lopputulos on usein tehokkaampi verrattuna siihen, että yksi henkilö tekisi kaiken. Parit pystyvät helposti keskustelemaan keskenään siitä mitä heidän tulisi seuraavaksi tehdä ja he voivat jakaa ideoita saadakseen koodista laadukkaamman tai ratkaistakseen jonkin ongelman. Sivustakatsojana navigoija pystyy tekemään tärkeitä huomioita ja pohtimaan kuinka koodista saataisiin laadukkaampi, kun taas ajaja voi keskittyä ohjelmoimiseen. Navigoija tekee ajoittain ehdotuksia ajajalle, jolla koodista saataisiin parempaa.
+Pariohjelmoinnin ansiosta tapahtuva laajamittaisempi koodin katselmointi vähentää virheiden määrää. Vaihtoehtoisesti
+niitä ei edes synny, kun parit keskenään kommunikoivat miettien hyviä ratkaisuja.
 
-\item {\bf Keskittymiskyky ja itsekuri}
-
-Pariohjelmoinnin on todettu parantavan keskittymiskykyä sillä toisen henkilön läsnäolo estää herkemmin yksilöä laiskottelemasta tai rikkomaan XP:n käytänteitä, kuten TDD:tä (Test Driven Development).
+Pariohjelmointi parantaa myös keskittymiskykyä. Toisen henkilön läsnäolo estää herkemmin yksilöä laiskottelemasta tai rikkomaan XP:n
+vaalimia käytänteitä, kuten TDD:tä. Käytänteiden noudattaminen taas johtaa parempaan koodin laatuun ja toteutukseen.
 
 \item {\bf Oppiminen}
 
-%~\cite{Begel:2008:PPW:1414004.1414026}
+Kun henkilöt "pariutuvat"~toistensa kanssa, niin usein osaaminen leviää kehittäjien kesken. Monet tykkäävät neuvoa toisiaan ja ryhmän jäsenillä
+on eri taitoja ja tietämystä asioista. Esimerkiksi ryhmän jäsenet, jotka pääsevät heitä taitavampien ihmisten pareiksi voivat oppia
+paljon uusia tekniikoita. Parhaimmassa tapauksessa koko ryhmän sisällä kaikki voivat oppia toisiltaan jotakin.
+Oppimiseen sisältyy myös se, että ymmärrys kehitettävästä ohjelmasta parantuu. Jos henkilöt vaihtavat
+pareja eri ihmisten kanssa, he pääsevät näkemään erilaisia kehityksessä olevia ohjelman osia. He myös samalla osallistuvat tämän yhden osan
+kehitykseen, jolloin ymmärrys koko projektista kasvaa korkeammalle tasolle.\\
+
+Tästä voidaan päätellä, että pariohjelmointi on suuressa roolissa XP:ssä ja ryhmän jäsenien keskinäisellä vuorovaikutuksella on suuri hyöty projektin laadun kannalta. Kaikkien näiden pariohjelmoinnin hyvien puolien yhteisenä tekijänä on se, että parit kommunikoivat toistensa kanssa. Ilman keskinäistä vuorovaikutusta ei voi odottaa, että edellä mainitut asiat toteutuisivat. Pariohjelmointi kuitenkin rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla huolta~\cite{Zarb:2012:UCW:2384716.2384738}.
 
 \end{itemize}
 
