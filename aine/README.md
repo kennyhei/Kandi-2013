@@ -71,5 +71,5 @@ Kyselyn tulokset eroavat hiukan artikkelissa mainituista aiemmista tutkimuksista
 
 Artikkelissa Smith ja Stoecklin kertovat lyhyesti mitä on Extreme Programming. He esittelevät XP:n käytänteitä, jotka saattaisivat
 olla hyödyksi tietojenkäsittelytieteen opiskelijoiden opettamisessa. Nämä käytänteet ovat pariohjelmointi, refaktorointi, testaus,
-jatkuva integrointi ja jatkuva suunnittelu. Smith ja Stoecklinin mukaan millekään näistä ei ole annettu kovin paljon painotusta
+jatkuva integrointi ja jatkuva suunnittelu. Smithin ja Stoecklinin mukaan millekään näistä ei ole annettu kovin paljon painotusta
 opetusohjelmassa. Vaikka käytänteet vaikuttavat sopivan opetukseen, Smith ja Stoecklin haluavat lisää tutkimusta aiheeseen liittyen.
