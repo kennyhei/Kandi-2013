@@ -73,3 +73,12 @@ Artikkelissa Smith ja Stoecklin kertovat lyhyesti mitä on Extreme Programming. 
 olla hyödyksi tietojenkäsittelytieteen opiskelijoiden opettamisessa. Nämä käytänteet ovat pariohjelmointi, refaktorointi, testaus,
 jatkuva integrointi ja jatkuva suunnittelu. Smithin ja Stoecklinin mukaan millekään näistä ei ole annettu kovin paljon painotusta
 opetusohjelmassa. Vaikka käytänteet vaikuttavat sopivan opetukseen, Smith ja Stoecklin haluavat lisää tutkimusta aiheeseen liittyen.
+
+##[Empirical Study of How Personality, Team Processes and Task Characteristics Relate to Satisfaction and Software Quality](http://doi.acm.org/10.1145/1414004.1414056)
+
+Artikkelissa Acuña, Gómez ja Lara tutkivat persoonallisuuden, koheesion, konfliktien, tehtävien piirteiden, tuotteen laadun ja tyytyväisyyden suhdetta
+ryhmissä, jotka kehittävät ohjelmistoja. Acuñan ja kumppaneiden päätelmä on, että tyytyväisimmät kehitysryhmät koostuvat jäsenistä, jotka
+ovat myötätuntoisia ja yhteistyöhaluisia. Heillä on myös itsekuria, toimivat vastuuntuntoisesti ja suunnitelmallisesti saavuttaakseen tavoitteet.
+Ryhmän tyytyväisyys ja koheesio sen sijaan laskee mitä enemmän ryhmän jäsenillä on yhteenottoja suoritettavasta tehtävästä. Acuña ja kumppanit havaitsivat
+lisäksi merkittävän korrelaation ekstroverttiuden ja ohjelmiston laadun välillä. Luonteenpiirteet, kuten sosiaalisuus, puheliaisuus, ystävällisyys ja
+avoimuus vaikuttavat edistävän sekä kehitettävän tuotteen laatua että ryhmän jäsenien tyytyväisyyttä. 
