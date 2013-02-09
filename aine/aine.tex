@@ -119,77 +119,186 @@
 
 % Write some science here.
 
-Ohjelmistoalalla tarvitaan monenlaisia teknisiä taitoja, jotta etenkin suuremmissa projekteissa saadaan toteutettua kaikki kehityksen vaiheet kattavasti. Nämä ohjelmistokehityksen vaiheet voidaan jakaa karkeasti vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja ylläpitoon~\cite{Capretz:2010:MSS:1726559.1726574}. Sen lisäksi, että eri vaiheet vaativat eri taitoja, myös yksittäinen vaihe kysyy laajaa osaamista. Tämän seurauksena tulee tarve koota joukko osaavia ihmisiä toteuttamaan yhteistyössä kaikki kehityksen vaiheet. Onkin hyvin tavanomaista, että ohjelmistoprojektit toteutetaan ryhmätyönä. Useat prosessimallit jopa sanelevat miten ryhmätyöskentely tapahtuu, jotta kehitys sujuisi luontevammin ja tuotteliaammin.\\
+Ohjelmistoalalla tarvitaan monenlaisia teknisiä taitoja, jotta etenkin 
+suuremmissa projekteissa saadaan toteutettua kaikki kehityksen vaiheet 
+kattavasti. Nämä ohjelmistokehityksen vaiheet voidaan jakaa karkeasti 
+vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja 
+ylläpitoon~\cite{Capretz:2010:MSS:1726559.1726574}. Sen lisäksi, että 
+eri vaiheet vaativat eri taitoja, myös yksittäinen vaihe kysyy laajaa 
+osaamista. Tämän seurauksena tulee tarve koota joukko osaavia ihmisiä 
+toteuttamaan yhteistyössä kaikki kehityksen vaiheet. Onkin hyvin 
+tavanomaista, että ohjelmistoprojektit toteutetaan ryhmätyönä. Useat 
+prosessimallit jopa sanelevat miten ryhmätyöskentely tapahtuu, jotta 
+kehitys sujuisi luontevammin ja tuotteliaammin.\\
 
-Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, joissa ryhmät sijaitsevat samoissa oloissa, mutta työskentelevät silti täysin erillään toisistaan. Tämän seurauksena kommunikointi kärsii ja voi olla epäsäännöllistä. Ketterät menetelmät pohjautuvat 12 ketterän kehityksen periaatteeseen [AgileManifesto]. Ryhmätyöskentelyllä ja yhteistyöllä on ketterissä
-menetelmissä suuri painoarvo. Esimerkiksi eräs periaate on, että "parhaat arkkitehtuurit, vaatimukset ja suunnitelmat syntyvät itseorganisoituvissa
-tiimeissä". Tämä tarkoittaa pitkälti sitä, että tiimit työskentelevät yhdessä päättäen näistä asioista ilman, että kukaan ulkopuolinen tulee
-kertomaan heille mitä tehdä. Toisin sanoen tiimiä johtaa tiimi itse, tiimillä ei ole johtajaa tai projektipäällikköä. Periaatteissa painotetaan
-myös informaation välittämistä kasvokkain käytävillä keskusteluilla. Ryhmillä tulisi olla yhteiset työtilat, jolloin tämä periaate toteutuisi.
-Kasvokkainen kommunikointi virtaviivaistaa tiedon kulkua ja pienentää väärinkäsitysten mahdollisuutta.
-Ketterissä menetelmissä toimivan ohjelmiston tuottaminen säännöllisin väliajoin on tärkeää ja sillä halutaan pitää asiakas tyytyväisenä.
-Tuotteen kehitys siis tehdään iteratiivisesti ja inkrementaalisesti. Tämä tarkoittaa sitä, että tuotetta kehitetään lyhyissä kehityssykleissä pala kerrallaan, saaden jatkuvaa palautetta asiakkaalta. Seuraavissa osioissa tarkastellaan muutamia ketteriä prosessimalleja nähdäksemme miten ryhmätyöskentely ja kommunikointi otetaan niissä huomioon.
+Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, 
+joissa ryhmät sijaitsevat samoissa oloissa, mutta työskentelevät silti 
+täysin erillään toisistaan. Tämän seurauksena kommunikointi kärsii ja 
+voi olla epäsäännöllistä. Ketterät menetelmät pohjautuvat 12 ketterän 
+kehityksen periaatteeseen~\cite{AgileManifesto}. Ryhmätyöskentelyllä 
+ja yhteistyöllä on ketterissä
+menetelmissä suuri painoarvo. Esimerkiksi eräs periaate on, että 
+"parhaat arkkitehtuurit, vaatimukset ja suunnitelmat syntyvät 
+itseorganisoituvissa
+tiimeissä". Tämä tarkoittaa pitkälti sitä, että tiimit työskentelevät 
+yhdessä päättäen näistä asioista ilman, että kukaan ulkopuolinen tulee
+kertomaan heille mitä tehdä. Toisin sanoen tiimiä johtaa tiimi itse, 
+tiimillä ei ole johtajaa tai projektipäällikköä. Periaatteissa 
+painotetaan
+myös informaation välittämistä kasvokkain käytävillä keskusteluilla. 
+Ryhmillä tulisi olla yhteiset työtilat, jolloin tämä periaate 
+toteutuisi.
+Kasvokkainen kommunikointi virtaviivaistaa tiedon kulkua ja pienentää 
+väärinkäsitysten mahdollisuutta.
+Ketterissä menetelmissä toimivan ohjelmiston tuottaminen säännöllisin 
+väliajoin on tärkeää ja sillä halutaan pitää asiakas tyytyväisenä.
+Tuotteen kehitys siis tehdään iteratiivisesti ja inkrementaalisesti. 
+Tämä tarkoittaa sitä, että tuotetta kehitetään lyhyissä 
+kehityssykleissä pala kerrallaan, saaden jatkuvaa palautetta 
+asiakkaalta. Seuraavissa osioissa tarkastellaan muutamia ketteriä 
+prosessimalleja nähdäksemme miten ryhmätyöskentely ja kommunikointi 
+otetaan niissä huomioon.
 
 \subsection{Extreme Programming}
 
-\emph{Extreme Programming} (XP) on ketterä menetelmä, jonka tunnettu ohjelmistokehittäjä Kent Beck on luonut. XP on iteratiivinen ja
-inkrementaalinen prosessimalli, jonka tarkoituksena on tuottaa asiakkaalle mahdollisimman paljon arvoa mahdollisimman tehokkaasti.
-XP:ssä kehitys tapahtuu lyhyissä iteraatioissa, jolloin vaatimusten muutoksiin on helpompi varautua, kun tavoitteet on asetettu lähitulevaisuuteen. Yhteistyö ja kommunikointi on XP:n tärkeimpiä piirteitä. Kommunikointia tapahtuu säännöllisesti asiakkaan kanssa, jotta kehittäjät voivat saada arvokasta palautetta tekemästään työstä ja siten tehdä parannuksia. Asiakas pysyy tyytyväisenä, kun saa olla jatkuvasti osana projektia ja näkee työn edistymistä. Myös ryhmän sisäinen kommunikointi on suuressa osassa sillä hyvät ratkaisut saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} ("pair programming"), joka on yksi XP:n keskeisimpiä käytänteitä.
+\emph{Extreme Programming} (XP) on ketterä menetelmä, jonka tunnettu 
+ohjelmistokehittäjä Kent Beck on luonut. XP on iteratiivinen ja
+inkrementaalinen prosessimalli, jonka tarkoituksena on tuottaa 
+asiakkaalle mahdollisimman paljon arvoa mahdollisimman tehokkaasti.
+XP:ssä kehitys tapahtuu lyhyissä iteraatioissa, jolloin vaatimusten 
+muutoksiin on helpompi varautua, kun tavoitteet on asetettu 
+lähitulevaisuuteen. Yhteistyö ja kommunikointi on XP:n tärkeimpiä 
+piirteitä. Kommunikointia tapahtuu säännöllisesti asiakkaan kanssa, 
+jotta kehittäjät voivat saada arvokasta palautetta tekemästään työstä 
+ja siten tehdä parannuksia. Asiakas pysyy tyytyväisenä, kun saa olla 
+jatkuvasti osana projektia ja näkee työn edistymistä. Myös ryhmän 
+sisäinen kommunikointi on suuressa osassa sillä hyvät ratkaisut 
+saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön 
+merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} ("pair 
+programming"), joka on yksi XP:n keskeisimpiä käytänteitä.
 Tutustutaan pariohjelmointiin tarkemmin.
 
 \subsubsection{Pariohjelmointi}
 
-Pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman tietokoneen. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan heille on 
-nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen \emph{navigoija} ("the navigator"). Ajajan tehtävänä on yksinkertaisesti 
-kirjoittaa koodia. Navigoijan tehtävänä on analysoida jatkuvasti kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee milloinkin 
-toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin väliajoin henkilöt vaihtavat rooleja. Pariohjelmointi voidaan nähdä 
-ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää saavuttaakseen saman päämäärän.~\cite{Shore:2007:AAD:1407480}\\
+Pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman 
+tietokoneen. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan 
+heille on 
+nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen 
+\emph{navigoija} ("the navigator"). Ajajan tehtävänä on 
+yksinkertaisesti 
+kirjoittaa koodia. Navigoijan tehtävänä on analysoida jatkuvasti 
+kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee 
+milloinkin 
+toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin 
+väliajoin henkilöt vaihtavat rooleja. Pariohjelmointi voidaan nähdä 
+ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää 
+saavuttaakseen saman päämäärän.~\cite{Shore:2007:AAD:1407480}\\
 
-Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia hyötyjä, jotka tekevät hyvää sekä ryhmän jäsenelle, ryhmälle että 
-projektille~\cite{Begel:2008:PPW:1414004.1414026}. Tarkastellaan näitä hyötyjä seuraavaksi. 
+Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia 
+hyötyjä, jotka tekevät hyvää sekä ryhmän jäsenelle, ryhmälle että 
+projektille~\cite{Begel:2008:PPW:1414004.1414026}. Tarkastellaan näitä 
+hyötyjä seuraavaksi. 
 
 \begin{itemize}
 
 \item {\bf Koodin laatu}
 
-Kun kaksi henkilöä pariohjelmoivat ja ratkaisevat samaa ongelmaa, lopputulos on usein tehokkaampi verrattuna siihen, että yksi henkilö tekisi kaiken. Parit pystyvät helposti keskustelemaan keskenään siitä mitä heidän tulisi seuraavaksi tehdä ja he voivat jakaa ideoita saadakseen koodista laadukkaamman tai ratkaistakseen jonkin ongelman. Sivustakatsojana navigoija pystyy tekemään tärkeitä huomioita ja pohtimaan kuinka koodista saataisiin laadukkaampi, kun taas ajaja voi keskittyä ohjelmoimiseen. Navigoija tekee ajoittain ehdotuksia ajajalle, jolla koodista saataisiin parempaa.
-Pariohjelmoinnin ansiosta tapahtuva laajamittaisempi koodin katselmointi vähentää virheiden määrää. Vaihtoehtoisesti
-niitä ei edes synny, kun parit keskenään kommunikoivat miettien hyviä ratkaisuja.
+Kun kaksi henkilöä pariohjelmoivat ja ratkaisevat samaa ongelmaa, 
+lopputulos on usein tehokkaampi verrattuna siihen, että yksi henkilö 
+tekisi kaiken. Parit pystyvät helposti keskustelemaan keskenään siitä 
+mitä heidän tulisi seuraavaksi tehdä ja he voivat jakaa ideoita 
+saadakseen koodista laadukkaamman tai ratkaistakseen jonkin ongelman. 
+Sivustakatsojana navigoija pystyy tekemään tärkeitä huomioita ja 
+pohtimaan kuinka koodista saataisiin laadukkaampi, kun taas ajaja voi 
+keskittyä ohjelmoimiseen. Navigoija tekee ajoittain ehdotuksia 
+ajajalle, jolla koodista saataisiin parempaa.
+Pariohjelmoinnin ansiosta tapahtuva laajamittaisempi koodin 
+katselmointi vähentää virheiden määrää. Vaihtoehtoisesti
+niitä ei edes synny, kun parit keskenään kommunikoivat miettien hyviä 
+ratkaisuja.
 
-Pariohjelmointi parantaa myös keskittymiskykyä. Toisen henkilön läsnäolo estää herkemmin yksilöä laiskottelemasta tai rikkomaan XP:n
-vaalimia käytänteitä, kuten TDD:tä. Käytänteiden noudattaminen taas johtaa parempaan koodin laatuun ja toteutukseen.
+Pariohjelmointi parantaa myös keskittymiskykyä. Toisen henkilön 
+läsnäolo estää herkemmin yksilöä laiskottelemasta tai rikkomaan XP:n
+vaalimia käytänteitä, kuten TDD:tä. Käytänteiden noudattaminen taas 
+johtaa parempaan koodin laatuun ja toteutukseen.
 
 \item {\bf Oppiminen}
 
-Kun henkilöt "pariutuvat"~toistensa kanssa, niin usein osaaminen leviää kehittäjien kesken. Monet tykkäävät neuvoa toisiaan ja ryhmän jäsenillä
-on eri taitoja ja tietämystä asioista. Esimerkiksi ryhmän jäsenet, jotka pääsevät heitä taitavampien ihmisten pareiksi voivat oppia
-paljon uusia tekniikoita. Parhaimmassa tapauksessa koko ryhmän sisällä kaikki voivat oppia toisiltaan jotakin.
-Oppimiseen sisältyy myös se, että ymmärrys kehitettävästä ohjelmasta parantuu. Jos henkilöt vaihtavat
-pareja eri ihmisten kanssa, he pääsevät näkemään erilaisia kehityksessä olevia ohjelman osia. He myös samalla osallistuvat tämän yhden osan
-kehitykseen, jolloin ymmärrys koko projektista kasvaa korkeammalle tasolle.\\
+Kun henkilöt "pariutuvat"~toistensa kanssa, niin usein osaaminen 
+leviää kehittäjien kesken. Monet tykkäävät neuvoa toisiaan ja ryhmän 
+jäsenillä
+on eri taitoja ja tietämystä asioista. Esimerkiksi ryhmän jäsenet, 
+jotka pääsevät heitä taitavampien ihmisten pareiksi voivat oppia
+paljon uusia tekniikoita. Parhaimmassa tapauksessa koko ryhmän sisällä 
+kaikki voivat oppia toisiltaan jotakin.
+Oppimiseen sisältyy myös se, että ymmärrys kehitettävästä ohjelmasta 
+parantuu. Jos henkilöt vaihtavat
+pareja eri ihmisten kanssa, he pääsevät näkemään erilaisia 
+kehityksessä olevia ohjelman osia. He myös samalla osallistuvat tämän 
+yhden osan
+kehitykseen, jolloin ymmärrys koko projektista kasvaa korkeammalle 
+tasolle.\\
 
-Tästä voidaan päätellä, että pariohjelmointi on suuressa roolissa XP:ssä ja ryhmän jäsenien keskinäisellä vuorovaikutuksella on suuri hyöty projektin laadun kannalta. Kaikkien näiden pariohjelmoinnin hyvien puolien yhteisenä tekijänä on se, että parit kommunikoivat toistensa kanssa. Ilman keskinäistä vuorovaikutusta ei voi odottaa, että edellä mainitut asiat toteutuisivat. Pariohjelmointi kuitenkin rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla huolta~\cite{Zarb:2012:UCW:2384716.2384738}.
+Tästä voidaan päätellä, että pariohjelmointi on suuressa roolissa 
+XP:ssä ja ryhmän jäsenien keskinäisellä vuorovaikutuksella on suuri 
+hyöty projektin laadun kannalta. Kaikkien näiden pariohjelmoinnin 
+hyvien puolien yhteisenä tekijänä on se, että parit kommunikoivat 
+toistensa kanssa. Ilman keskinäistä vuorovaikutusta ei voi odottaa, 
+että edellä mainitut asiat toteutuisivat. Pariohjelmointi kuitenkin 
+rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla 
+huolta~\cite{Zarb:2012:UCW:2384716.2384738}.
 
 \end{itemize}
 
 \subsection{Scrum}
 
-Scrum on prosessimalli, joka painottaa tiimien yhteistyötä projektin kehityksessä~\cite{ScrumORG}. Scrum, kuten XP, on myös iteratiivinen ja inkrementaalinen
-eli kehitys tapahtuu lyhyissä sykleissä, \emph{"Sprinteissä"}, rakentaen kehitettävää tuotetta tietyt toiminnallisuudet kerrallaan. Lyhyet kehityssyklit sallivat tiimien mukautuvan asiakkaalta saatavaan palautteeseen ja vaatimusten muutoksiin. Näin tuotteeseen voidaan tehdä ajoissa
-muutoksia ilman suuria kuluja ja tuote "hioutuu"~yhä lähemmäs sitä mitä asiakas sen haluaa olevan.\\
+Scrum on prosessimalli, joka painottaa tiimien yhteistyötä projektin 
+kehityksessä~\cite{ScrumORG}. Scrum, kuten XP, on myös iteratiivinen 
+ja inkrementaalinen
+eli kehitys tapahtuu lyhyissä 1-4 viikon sykleissä, 
+\emph{"Sprinteissä"}, rakentaen kehitettävää tuotetta tietyt 
+toiminnallisuudet kerrallaan. Lyhyet kehityssyklit sallivat tiimien 
+mukautuvan asiakkaalta saatavaan palautteeseen ja vaatimusten 
+muutoksiin. Näin tuotteeseen voidaan tehdä ajoissa
+muutoksia ilman suuria kuluja ja tuote "hioutuu"~yhä lähemmäs sitä 
+mitä asiakas sen haluaa olevan.\\
+
+\subsubsection{Projektin elinkaari}
 
 Projektin alussa luodaan lista toiminnallisuuksista,
-joita asiakas haluaa toteutettavan. Lista on niin sanottu \emph{tuotteen kehitysjono} ("product backlog"). Kehitysjonon sisältämät asiat priorisoidaan siten, että tärkeimmät toiminnallisuudet ovat listan kärjessä. Yksittäinen tiimi valitsee Sprinttiin kehitysjonon kärjestä sen verran
-toteutettavia asioita, jonka verran he uskovat pystyvänsä toteuttamaan Sprintin loppuun mennessä. Tavoitteena on toteuttaa nämä vaatimukset niin,
-että tuote on "valmis"~eli toimii näiden vaatimusten osalta moitteettomasti, vaikka tuote itsessään ei sisältäisikään vielä kaikkia niitä
-toiminnallisuuksia, joita asiakas haluaa. Sprintin lopuksi on \emph{Sprintin katselmus} ("Sprint review"), jossa tiimi näyttää asiakkaalle
-aikaansaannoksiaan. Näin asiakas näkee projektin edistymistä säännöllisesti ja voi samalla antaa mielipiteensä tiimin tekemästä työstä. Asiakkaan
-antama palaute otetaan huomioon ja asiakkaan vaatimat muutokset kirjataan kehitysjonoon.\\
+joita asiakas haluaa toteutettavan. Lista on niin sanottu 
+\emph{tuotteen kehitysjono} ("product backlog"). Kehitysjonon 
+sisältämät asiat priorisoidaan siten, että tärkeimmät 
+toiminnallisuudet ovat listan kärjessä. Yksittäinen tiimi valitsee 
+Sprinttiin kehitysjonon kärjestä sen verran
+toteutettavia asioita, jonka verran he uskovat pystyvänsä toteuttamaan 
+Sprintin loppuun mennessä. Tavoitteena on toteuttaa nämä vaatimukset 
+niin,
+että tuote on "valmis"~eli toimii näiden vaatimusten osalta 
+moitteettomasti, vaikka tuote itsessään ei sisältäisikään vielä 
+kaikkia niitä
+toiminnallisuuksia, joita asiakas haluaa. Sprintin lopuksi on 
+\emph{Sprintin katselmus} ("Sprint review"), jossa tiimi näyttää 
+asiakkaalle
+aikaansaannoksiaan. Näin asiakas näkee projektin edistymistä 
+säännöllisesti ja voi samalla antaa mielipiteensä tiimin tekemästä 
+työstä. Asiakkaan
+antama palaute otetaan huomioon ja asiakkaan vaatimat muutokset 
+kirjataan kehitysjonoon.~\cite{ScrumHandBook}\\
 
-Scrumissa tiimit koostuvat \emph{monitaitoisista} ("cross-functional") jäsenistä, joilta löytyy tarpeellinen tekninen osaaminen, jota vaaditaan
-tuotteen toteuttamiseksi. Tiimillä ei ole johtajaa tai projektipäällikköä, jotka määräisivät tiimin tekemisistä. Sen sijaan tiimi itse
-saa päättää tavoitteet joka Sprintille ja sen miten nämä tavoitteet saavutetaan. Toisin sanoen tiimi on \emph{itseorganisoituva}
-("self-organizing"). Tämä on Scrumille olennaista ja siitä näkee kuinka suuressa arvossa tiimin jäsenten välistä yhteistyötä pidetään.~\cite{ScrumHandBook}
+\subsubsection{Tiimi}
+
+Scrumissa tiimit koostuvat \emph{monitaitoisista} ("cross-functional") 
+jäsenistä, joilta löytyy tarpeellinen tekninen osaaminen, jota 
+vaaditaan
+tuotteen toteuttamiseksi. Tiimillä ei ole johtajaa tai 
+projektipäällikköä, jotka määräisivät tiimin tekemisistä. Sen sijaan 
+tiimi itse
+saa päättää tavoitteet joka Sprintille ja sen miten nämä tavoitteet 
+saavutetaan. Toisin sanoen tiimi on \emph{itseorganisoituva}
+("self-organizing"). Tämä on Scrumille olennaista ja siitä näkee 
+kuinka suuressa arvossa tiimin jäsenten välistä yhteistyötä 
+pidetään.~\cite{ScrumHandBook}
 
 \subsubsection{Sprintin retrospektiivi}
 
