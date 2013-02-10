@@ -81,4 +81,20 @@ ryhmissä, jotka kehittävät ohjelmistoja. Acuñan ja kumppaneiden päätelmä 
 ovat myötätuntoisia ja yhteistyöhaluisia. Heillä on myös itsekuria, toimivat vastuuntuntoisesti ja suunnitelmallisesti saavuttaakseen tavoitteet.
 Ryhmän tyytyväisyys ja koheesio sen sijaan laskee mitä enemmän ryhmän jäsenillä on yhteenottoja suoritettavasta tehtävästä. Acuña ja kumppanit havaitsivat
 lisäksi merkittävän korrelaation ekstroverttiuden ja ohjelmiston laadun välillä. Luonteenpiirteet, kuten sosiaalisuus, puheliaisuus, ystävällisyys ja
-avoimuus vaikuttavat edistävän sekä kehitettävän tuotteen laatua että ryhmän jäsenien tyytyväisyyttä. 
+avoimuus vaikuttavat edistävän sekä kehitettävän tuotteen laatua että ryhmän jäsenien tyytyväisyyttä.
+
+##[Towards best practices in software teamwork](http://dl.acm.org/citation.cfm?id=948785.948797)
+
+Ohjelmistojen kehittäminen vaatii ryhmätyöskentelyä ja erilaiset oppilaitokset ovat vähitellen alkaneet ymmärtää
+ryhmätaitojen kehittämisen tärkeyden. Opetusohjelmista löytyy erinäisiä ryhmissä toteutettavia projektitöitä, mutta
+tietojenkäsittelytieteen opiskelijoilla harvoin on tarpeeksi kattavat ryhmätaidot, että projektit sujuisivat
+mutkattomasti. Kaikilla oppilaitoksilla ei ole edes selvyyttä siitä miten ryhmätaitoja tulisi opettaa. Artikkelissa
+"Towards best practices in software teamwork" Cushing, Cunningham ja Freeman pyrkivät tunnistamaan ryhmätyöskentelytaitoja,
+jotka ovat opiskelijoille kriittistä oppia.  Cushing ja kumppanit kertovat myös kahdesta käytännön harjoituksesta, joiden
+tavoitteena on parantaa ryhmätyötaitoja ja panna opiskelijat miettimään harjoituksissa ryhmän sekä ryhmän jäsenien toimintaa.
+Cushing ym. luokittelevat tarpeelliset ryhmätaidot kolmeen kategoriaan, jotka ovat taktiset projektitaidot, intra- ja interpersoonalliset
+taidot sekä johtamistaidot. Taktisiin projektitaitoihin kuuluu työn organisointi, päätöksenteko ja ongelmanratkaisukyky.
+Intra- ja interpersoonallisiin taitoihin kuuluu jäsenten välinen vuorovaikutus ja kommunikointitaidot.
+Johtamistaitoihin kuuluu kyky koordinoida eri toimintoja ja vaikuttaa ihmisiin sekä järjestää tapaamisia.
+Cushing ja kumppanit haluaisivat saada lisää tietoa kuinka opettaa tiettyjä ryhmätaitoja ohjelmistoalaa opiskeleville ja
+kuinka saada heidät arvostamaan näitä taitoja ja siten ottamaan mahdolliset harjoitukset vakavasti.
