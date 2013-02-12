@@ -68,7 +68,7 @@
 % The following commands define the information used to generate title and
 % abstract pages. The following entries should be always specified:
 
-\title{Esimerkkiotsikko}
+\title{Ohjelmistoala ja ryhmätyöskentely}
 \author{Kenny Heinonen}
 \date{\today}
 \level{Aine}
@@ -181,7 +181,7 @@ Tutustutaan pariohjelmointiin tarkemmin.
 \subsubsection{Pariohjelmointi}
 
 Pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman 
-tietokoneen. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan 
+tietokoneen~\cite{Shore:2007:AAD:1407480}. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan 
 heille on 
 nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen 
 \emph{navigoija} ("the navigator"). Ajajan tehtävänä on 
@@ -192,7 +192,7 @@ milloinkin
 toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin 
 väliajoin henkilöt vaihtavat rooleja. Pariohjelmointi voidaan nähdä 
 ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää 
-saavuttaakseen saman päämäärän.~\cite{Shore:2007:AAD:1407480}\\
+saavuttaakseen saman päämäärän.\\
 
 Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia 
 hyötyjä, jotka tekevät hyvää sekä ryhmän jäsenelle, ryhmälle että 
@@ -224,7 +224,7 @@ johtaa parempaan koodin laatuun ja toteutukseen.
 
 \item {\bf Oppiminen}
 
-Kun henkilöt "pariutuvat"~toistensa kanssa, niin usein osaaminen 
+Kun henkilöt "pariutuvat"~toistensa kanssa, niin osaaminen 
 leviää kehittäjien kesken. Monet tykkäävät neuvoa toisiaan ja ryhmän 
 jäsenillä
 on eri taitoja ja tietämystä asioista. Esimerkiksi ryhmän jäsenet, 
@@ -246,7 +246,7 @@ hyvien puolien yhteisenä tekijänä on se, että parit kommunikoivat
 toistensa kanssa. Ilman keskinäistä vuorovaikutusta ei voi odottaa, 
 että edellä mainitut asiat toteutuisivat. Pariohjelmointi kuitenkin 
 rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla 
-huolta.~\cite{Zarb:2012:UCW:2384716.2384738}
+huolta~\cite{Zarb:2012:UCW:2384716.2384738}.
 
 \end{itemize}
 
@@ -254,39 +254,16 @@ huolta.~\cite{Zarb:2012:UCW:2384716.2384738}
 
 Scrum on prosessimalli, joka painottaa tiimien yhteistyötä projektin 
 kehityksessä~\cite{ScrumORG}. Scrum, kuten XP, on myös iteratiivinen 
-ja inkrementaalinen
-eli kehitys tapahtuu lyhyissä 1-4 viikon sykleissä, 
-\emph{"Sprinteissä"}, rakentaen kehitettävää tuotetta tietyt 
+ja inkrementaalinen menetelmä.
+Kehitys tapahtuu lyhyissä 1-4 viikon sykleissä, 
+\emph{"Sprinteissä"}, joissa toteutetaan kehitettävää tuotetta tietyt 
 toiminnallisuudet kerrallaan. Lyhyet kehityssyklit sallivat tiimien 
 mukautuvan asiakkaalta saatavaan palautteeseen ja vaatimusten 
 muutoksiin. Näin tuotteeseen voidaan tehdä ajoissa
 muutoksia ilman suuria kuluja ja tuote "hioutuu"~yhä lähemmäs sitä 
-mitä asiakas sen haluaa olevan.
-
-\subsubsection{Projektin elinkaari}
-
-\textbf{Tämä osio vielä paloihin?}\\
-
-Projektin alussa luodaan lista toiminnallisuuksista,
-joita asiakas haluaa toteutettavan. Lista on niin sanottu 
-\emph{tuotteen kehitysjono} ("product backlog")~\cite{ScrumFinnishGuide}. Kehitysjonon 
-sisältämät asiat priorisoidaan siten, että tärkeimmät 
-toiminnallisuudet ovat listan kärjessä. Yksittäinen tiimi valitsee 
-Sprinttiin kehitysjonon kärjestä sen verran
-toteutettavia asioita, jonka verran he uskovat pystyvänsä toteuttamaan 
-Sprintin loppuun mennessä. Tavoitteena on toteuttaa nämä vaatimukset 
-niin,
-että tuote on "valmis"~eli toimii näiden vaatimusten osalta 
-moitteettomasti, vaikka tuote itsessään ei sisältäisikään vielä 
-kaikkia niitä
-toiminnallisuuksia, joita asiakas haluaa. Sprintin lopuksi on 
-\emph{Sprintin katselmus} ("Sprint review"), jossa tiimi näyttää 
-asiakkaalle
-aikaansaannoksiaan. Näin asiakas näkee projektin edistymistä 
-säännöllisesti ja voi samalla antaa mielipiteensä tiimin tekemästä 
-työstä. Asiakkaan
-antama palaute otetaan huomioon ja asiakkaan vaatimat muutokset 
-kirjataan kehitysjonoon.~\cite{ScrumHandBook}
+mitä asiakas sen haluaa olevan. Scrum tekee projektin kehityksestä
+monivaiheisen. Seuraavissa osioissa kerrotaan millainen Scrum-tiimi
+on ja mistä vaiheista projektin elinkaari koostuu.
 
 \subsubsection{Tiimi}
 
@@ -300,13 +277,60 @@ saa päättää tavoitteet joka Sprintille ja sen miten nämä tavoitteet
 saavutetaan. Toisin sanoen tiimi on \emph{itseorganisoituva}
 ("self-organizing"). Tämä on Scrumille olennaista ja siitä näkee 
 kuinka suuressa arvossa tiimin jäsenten välistä yhteistyötä 
-pidetään.~\cite{ScrumHandBook}
+pidetään~\cite{ScrumHandBook}.
+
+\subsubsection{Scrumin aloitus}
+
+Scrumin ensimmäinen askel on luoda visio tuotteen vaatimista
+ei-toiminnallisista ja toiminnallisista vaatimuksista. Vaatimukset
+kootaan listaksi, jota kutsutaan \emph{tuotteen kehitysjonoksi} ("product backlog")~\cite{ScrumFinnishGuide}. Kehitysjono on priorisoitu siten, että tärkeimmät vaatimukset ovat kehitysjonon kärjessä. Kehitysjono on jatkuvan muutoksen alaisena: uusia vaatimuksia
+voi tulla lisää asiakkaan toimesta, tarpeettomia vaatimuksia karsitaan ja olemassaolevia muokataan tai tarkennetaan. Edellä mainitut tehtävät
+ovat niin kutsutun \emph{tuoteomistajan} ("product owner") vastuulla,
+joka on yksittäinen henkilö ja pitää huolen tuotteen arvon ja kehitystiimin työn arvon maksimoimisesta. Tuoteomistaja voi kuitenkin pyytää kehitystiimiä auttamaan edellä mainituissa tehtävissä.
+
+\subsubsection{Sprintin suunnittelupalaveri}
+
+Jokaisen Sprintin aluksi järjestetään kokous, jota kutsutaan \emph{Sprintin suunnittelupalaveriksi} ("Sprint planning meeting")~\cite{ScrumHandBook}. Palaveri on kaksiosainen.
+Ensimmäisessä osassa tuoteomistaja ja kehitystiimi neuvottelevat
+siitä mitkä vaatimukset tiimin tulisi toteuttaa alkavassa
+Sprintissä. Päätösvastuu on kuitenkin tiimin jäsenillä.\\
+
+Toisessa osassa tiimi valitsee toteutettavat vaatimukset, jotka
+he sitoutuvat tekemään Sprintin loppuun mennessä. Vaatimukset
+valitaan aina kehitysjonon kärjestä ylhäältä alas järjestyksessä.
+Kun vaatimukset on valittu, ne hajotetaan pienemmiksi, teknisiksi
+tehtäviksi. Nämä tehtävät kirjataan \emph{Sprintin tehtävälistaan} ("Sprint backlog") aika-arvioineen, mitä tiimi käyttää hyödykseen Sprintin ajan. Tiimi saa siis itse valita toteutettavat vaatimukset alkavalle Sprintille ja suunnitella miten ne toteutetaan.
+
+\subsubsection{Scrumin päiväpalaveri}
+
+Kun Sprintti alkaa, sen aikana harjoitetaan erästä Scrumin käytäntöä:
+\emph{päiväpalaveria} ("Daily Scrum"). Tämä on lyhyt, noin 15 minuuttia kestävä kokoontuminen joka päivä samaan aikaan, johon
+kaikki tiimin jäsenet osallistuvat. Jokainen tiimin jäsen saa
+mahdollisuuden raportoida kolme asiaa muille tiimin jäsenille:
+mitä henkilö on saanut aikaan viime tapaamisen jälkeen, mitä henkilö
+aikoo saada aikaan ennen seuraavaa tapaamista ja onko mitään
+esteitä työn etenemiselle? Näin tiimin jäsenet säännöllisesti tietävät
+kuinka muiden työ edistyy ja palaverin jälkeen mahdollisia raportoituja
+ongelmia voidaan yhdessä ratkoa. Huomionarvoista on, että on yleisesti
+suositeltua, että päiväpalaveriin ei osallistu esimiehiä tai muita
+ulkopuolisia henkilöitä~\cite{ScrumHandBook}. Jos näin käy, on riski,
+että henkilöt tuntevat olevansa tarkkailun alaisena ja tämä voi
+tuottaa heille paineita oman edistymisen tai ongelmien raportoinnista.
+
+\subsubsection{Sprintin katselmointi}
+
+Sprintin lopussa järjestetään \emph{Sprintin katselmointi} ("Sprint review"), jossa tiimi esittelee Sprintin aikana toteuttamiaan
+vaatimuksia tuoteomistajalle ja asiakkaalle. Asiakas ja tuoteomistaja
+tietävät näin miten projekti on edistynyt ja tiimi vastaavasti saa
+arvokasta palautetta kyseisiltä henkilöiltä. Tämä on motivoivaa
+kaikille osapuolille. Annettu palaute kirjataan mahdollisina muutoksina
+vaatimuksiin tai uusina vaatimuksina tuotteen kehitysjonoon.
 
 \subsubsection{Sprintin retrospektiivi}
 
-Sprintin lopuksi järjestetään \emph{Sprintin retrospektiivi}
+Viimeisenä asiana Sprintin lopuksi järjestetään \emph{Sprintin retrospektiivi}
 ("Sprint retrospective"), jossa tiimi keskustelee kuinka heidän
-oma työprosessinsa sujui Sprintin aikana. Käytännössä jäsenet
+oma työprosessinsa sujui Sprintin aikana~\cite{Scrumprimer}. Käytännössä jäsenet
 keskustelevat yhdessä mikä Sprintissä sujui hyvin ja missä
 asioissa pitäisi parantaa. Jäsenien antama palaute ja kritiikki
 voi esimerkiksi kohdistua yksittäisen jäsenen työskentelytapoihin.
@@ -314,9 +338,15 @@ Jos mahdollisia ongelmakohtia on, tiimin tulisi yhdessä päättää
 miten nämä ongelmat ratkaistaan. Retrospektiivi on tärkeä vaihe
 ryhmätyöskentelyn kannalta sillä se on Scrumin pääasiallisin
 mekanismi tuoda tiimin ongelmat näkyville ja ratkaista ne siten,
-että ryhmän työskentely vahvistuu ja paranee.~\cite{Scrumprimer}
+että ryhmän työskentely vahvistuu ja paranee.\\
 
-\subsection{Lean/FDD?}
+Kun nämä kaikki edellä mainitut vaiheet on käyty läpi, alkaa uusi
+Sprintti. Käytännössä siis aloitetaan uusi sykli aloittaen
+Sprintin suunnittelupalaverista. Tätä periaatteessa jatketaan
+niin kauan, kunnes tuote on valmis eli asiakkaan kaikki vaatimukset
+on toteutettu. Kuten monista asioista kävi ilmi, kehitystiimin jäsenillä on paljon valtaa sen suhteen mitä he tekevät ja miten he
+sen tekevät. Suunnittelutyö ja toteutus on asia, jonka tiimin
+jäsenten pitää yhteisymmärryksessä päättää kommunikoiden toistensa kanssa.
 
 \section{Persoonallisuuden vaikutus}
 
