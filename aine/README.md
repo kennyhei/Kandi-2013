@@ -78,6 +78,20 @@ Ryhmän tyytyväisyys ja koheesio sen sijaan laskee mitä enemmän ryhmän jäse
 lisäksi merkittävän korrelaation ekstroverttiuden ja ohjelmiston laadun välillä. Luonteenpiirteet, kuten sosiaalisuus, puheliaisuus, ystävällisyys ja
 avoimuus vaikuttavat edistävän sekä kehitettävän tuotteen laatua että ryhmän jäsenien tyytyväisyyttä.
 
+##[Communication: The Neglected Technical Skill?](http://doi.acm.org/10.1145/1235000.1235043)
+
+Kommunikointi on huomattu yhä useampien tutkimusten perusteella erittäin tärkeäksi asiaksi ohjelmistokehityksessä.
+Hyvä ja tehokas kommunikointi vaikuttaa suuresti projektin onnistumiseen. Kuitenkin, vaikka teoriassa ymmärretään kommunikoinnin
+tärkeys, monissa prosessimalleissa, kuten CMM:ssä (Capability Maturity Model) sitä ei ole otettu huomioon.
+Artikkelissa "Communication: The Neglected Technical Skill?" Hall, Wilson, Rainer ja Jagielska tutkivat ohjelmistokehityksessä tapahtuvaa
+kommunikointia. He haastattelevat ohjelmistokehitystiimiä selvittääkseen kuinka paljon tiimi arvostaa kommunikointia ja
+miten se heiltä sujuu. Haastatteluissa kysyttiin muun muassa, että mitkä asiat ovat projektissa olleet positiivisa ja mitkä negatiivisia.
+Hall ja kumppanit halusivat myös tietää haastateltavilta, että mitkä piirteet tekevät hyvän kehittäjän. Haastattelujen perusteella kehittäjien mielestä
+on tärkeää, että projektissa käytetään uusimpia työkaluja ja tekniikoita, tiimi on osaava ja tiimin sisäinen kommunikointi sujuu hyvin.
+Hyvä ohjelmistokehittäjä on taas proaktiivinen, jakaa tietämystään muiden kanssa, osaa kommunikoida ja on teknisesti taitava.
+Haastatteluista Hall ym. havaitsivat myös, että ulkoisten osapuolien (esimerkiksi toinen osasto, projektipäälliköt) kanssa kommunikointi oli ongelma.
+Lopuksi Hall ja kumppanit ehdottavat, että projekteihin tulisi sisällyttää ohjeistusta siitä kuinka kommunikointia harjoitetaan.
+
 #3. Ryhmätaitojen parantaminen
 
 ##[An Infrastructure for Teaching Skills for Group Decision Making and Problem Solving in Programming Projects](http://doi.acm.org/10.1145/563517.563447)
