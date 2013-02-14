@@ -92,6 +92,17 @@ Hyvä ohjelmistokehittäjä on taas proaktiivinen, jakaa tietämystään muiden 
 Haastatteluista Hall ym. havaitsivat myös, että ulkoisten osapuolien (esimerkiksi toinen osasto, projektipäälliköt) kanssa kommunikointi oli ongelma.
 Lopuksi Hall ja kumppanit ehdottavat, että projekteihin tulisi sisällyttää ohjeistusta siitä kuinka kommunikointia harjoitetaan.
 
+##[Who should work with whom? Building effective software project teams](http://doi.acm.org/10.1145/990680.990684)
+
+Artikkelissa Gorla ja Lam tutkivat millaisia persoonallisuuspiirteitä ohjelmoijilla, suunnittelijoilla ja tiimin johtajilla tulisi olla,
+että pienten tiimien suorituskyky paranisi ohjelmistoja kehitettäessä. Gorla ja Lamin teettämässä tutkimuksessa pyydettiin 92 ohjelmistoalan ammattilaista
+vastaamaan kyselylomakkeeseen, jonka tarkoituksena oli mitata heidän tiiminsä tehokkuutta. Vastaajien persoonallisuustyypit määriteltiin käyttäen
+Myers-Briggsin tyyppi-indikaattoria. Tutkimustulosten perusteella Gorla ja Lam listaavat millaisia henkilöitä kannattaa värvätä johtajiksi, ohjelmoijiksi ja
+niin edelleen. Tiimin johtajan tulisi olla intuitiivinen, koska he osaavat hahmottaa kokonaiskuvan paremmin kehitettävää järjestelmää mietittäessä ja ovat innovatiivisempiä.
+Johtajan tulisi olla myös tunteva ajattelevan sijaan eli tekee päätöksiä henkilökohtaisiin arvoihin perustuen ja ottaa päätöksissään tiimin jäsenet enemmän huomioon
+luoden positiivisemman ilmapiirin. Suunnittelijoiden tulisi olla loogisia ajattelijoita heidän miettiessään toteutettavalle järjestelmälle parasta ratkaisua.
+Pienissä tiimeissä ekstrovertit ohjelmoijat paransivat tiimin suorituskykyä, koska ohjelmoijan työ vaatii myös paljon kommunikointia muiden ihmisten kanssa.
+
 #3. Ryhmätaitojen parantaminen
 
 ##[An Infrastructure for Teaching Skills for Group Decision Making and Problem Solving in Programming Projects](http://doi.acm.org/10.1145/563517.563447)
