@@ -116,7 +116,6 @@ epävarmuutta johtuen pienestä otoskoosta, joten he aikovat suorittaa lisätutk
 perusteella he kuitenkin tekevät johtopäätöksen, että yhtiöiden tulisi tutkia työntekijöidensä persoonallisia vahvuuksia nimittäessään heitä eri työtehtäviin.
 
 
-
 #3. Ryhmätaitojen parantaminen
 
 ##[An Infrastructure for Teaching Skills for Group Decision Making and Problem Solving in Programming Projects](http://doi.acm.org/10.1145/563517.563447)
