@@ -103,6 +103,20 @@ Johtajan tulisi olla myös tunteva ajattelevan sijaan eli tekee päätöksiä he
 luoden positiivisemman ilmapiirin. Suunnittelijoiden tulisi olla loogisia ajattelijoita heidän miettiessään toteutettavalle järjestelmälle parasta ratkaisua.
 Pienissä tiimeissä ekstrovertit ohjelmoijat paransivat tiimin suorituskykyä, koska ohjelmoijan työ vaatii myös paljon kommunikointia muiden ihmisten kanssa.
 
+##[Does personality matter? An analysis of code-review ability](http://doi.acm.org/10.1145/1230819.1241672)
+
+Useissa tutkimuksissa on huomattu, että ohjelmistoalalla teknisen osaamisen lisäksi myös persoonallisuus ja luonteenpiirteet vaikuttavat
+siihen kuinka hyvin henkilö suoriutuu jostakin tehtävästä. Artikkelissa Da Cunha ja Greathead tutkivat kuinka hyvin
+64 toisen vuoden tietojenkäsittelytieteen opiskelijaa suoriutuvat tehtävästä, jossa koodia katselmoidaan. Da Cunha ja Greathead arvioivat
+MBTI:tä käyttäen opiskelijoiden persoonallisuustyypit ja pisteyttävät heidän suorituksensa tehtävässä. Pisteytykseen vaikutti bugien haastavuus.
+Tehtävästä suoriutuvat parhaiten opiskelijat, jotka olivat intuitiivisia (N) ja ajattelevia (T). Huonoiten tehtävästä suoriutuivat tosiasialliset (S)
+ja tuntevat (F). Da Cunha ja Greathead päättelevät, että NT-opiskelijoiden menestys johtui siitä, että he ajattelevat loogisesti, mutta samalla
+luottavat intuitioonsa ja miettivät eri asioiden yhteyksiä ja mahdollisuuksia. Da Cunhan ja Greatheadin mukaan tutkimuksessa on kuitenkin liikaa
+epävarmuutta johtuen pienestä otoskoosta, joten he aikovat suorittaa lisätutkimusta varmistuakseen saamistaan tuloksista. Tämän tutkimusten tulosten
+perusteella he kuitenkin tekevät johtopäätöksen, että yhtiöiden tulisi tutkia työntekijöidensä persoonallisia vahvuuksia nimittäessään heitä eri työtehtäviin.
+
+
+
 #3. Ryhmätaitojen parantaminen
 
 ##[An Infrastructure for Teaching Skills for Group Decision Making and Problem Solving in Programming Projects](http://doi.acm.org/10.1145/563517.563447)
