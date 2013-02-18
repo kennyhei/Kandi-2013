@@ -162,19 +162,15 @@ otetaan niissä huomioon.
 \subsection{Extreme Programming}
 
 \emph{Extreme Programming} (XP) on ketterä menetelmä, jonka tunnettu 
-ohjelmistokehittäjä Kent Beck on luonut. XP on iteratiivinen ja
-inkrementaalinen prosessimalli, jonka tarkoituksena on tuottaa 
-asiakkaalle mahdollisimman paljon arvoa mahdollisimman tehokkaasti.
-XP:ssä kehitys tapahtuu lyhyissä iteraatioissa, jolloin vaatimusten 
+ohjelmistokehittäjä Kent Beck on luonut. XP:n tarkoituksena on tuottaa 
+asiakkaalle mahdollisimman paljon arvoa mahdollisimman tehokkaasti ja nopeasti.
+XP:ssä kehitys tapahtuu lyhyissä, 1-3 viikon iteraatioissa, jolloin vaatimusten 
 muutoksiin on helpompi varautua, kun tavoitteet on asetettu 
-lähitulevaisuuteen. Yhteistyö ja kommunikointi on XP:n tärkeimpiä 
-piirteitä. Kommunikointia tapahtuu säännöllisesti asiakkaan kanssa, 
-jotta kehittäjät voivat saada arvokasta palautetta tekemästään työstä 
-ja siten tehdä parannuksia. Asiakas pysyy tyytyväisenä, kun saa olla 
-jatkuvasti osana projektia ja näkee työn edistymistä. Myös ryhmän 
-sisäinen kommunikointi on suuressa osassa sillä hyvät ratkaisut 
-saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön 
-merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} ("pair 
+lähitulevaisuuteen. XP painottaa ketterien menetelmien tapaan kommunikointia.
+
+\subsubsection{Kommunikointi}
+
+Kasvokkaista ja usein tapahtuvaa kommunikointia painotetaan järjestämällä tiimin jäsenet yhteiseen tilaan. Tämän lisäksi projektia varten on hankittu vähintään yksi paikan päällä oleva asiakas, joka on osana kehitystiimiä nähdäkseen projektin edistymisen. Paikan päällä olevan asiakkaan kanssa keskustellaan kehityksen jokaisesta vaiheesta ja hän päättää tuotteen vaatimuksista ja niiden priorisoinnista. Asiakkaan läsnäolo on suuri etu, sillä tiimi voi kysyä häneltä hetkessä esimerkiksi jonkin toteutettavan vaatimuksen yksityiskohdista ja asiakas vastaavasti voi antaa heti palautetta työstä. Ryhmän sisäinen kommunikointi on myös suuressa osassa sillä hyvät ratkaisut saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} ("pair 
 programming"), joka on yksi XP:n keskeisimpiä käytänteitä.
 Tutustutaan pariohjelmointiin tarkemmin.
 
@@ -191,11 +187,11 @@ kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee
 milloinkin 
 toteuttaa. Näin ajaja voi keskittyä pelkästään ohjelmointiin. Sovituin 
 väliajoin henkilöt vaihtavat rooleja. Pariohjelmointi voidaan nähdä 
-ryhmätyöskentelynä - kaksi ihmistä suorittavat yhteistä tehtävää 
+ryhmätyöskentelynä --- kaksi ihmistä suorittavat yhteistä tehtävää 
 saavuttaakseen saman päämäärän.\\
 
 Pariohjelmointi korostaa yhteistyötä ja kommunikointia. Tästä on monia 
-hyötyjä, jotka tekevät hyvää sekä ryhmän jäsenelle, ryhmälle että 
+hyötyjä, jotka tekevät hyvää sekä ryhmän jäsenille, ryhmälle että 
 projektille~\cite{Begel:2008:PPW:1414004.1414026}. Tarkastellaan näitä 
 hyötyjä seuraavaksi. 
 
@@ -249,6 +245,26 @@ rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla
 huolta~\cite{Zarb:2012:UCW:2384716.2384738}.
 
 \end{itemize}
+
+\subsubsection{Julkaisusuunnittelun kokous}
+
+Kun asiakas on tehnyt listan vaatimuksia, joita kehitettävän järjestelmän pitää sisältää, aloitetaan XP:n prosessi \emph{julkaisusuunnittelun kokouksella} ("Release Planning Meeting"),
+jossa on tarkoituksena tehdä \emph{julkaisusuunnitelma} ("Release Plan"). XP:ssä on tapana iteraatioiden lopuksi julkaista uusin, toimiva versio asiakkaiden käyttöön. Julkaisusuunnitelma määrittelee mitkä vaatimukset toteutetaan missäkin iteraatiossa ja siten ovat valmiina iteraation lopuksi tehtävässä julkaisussa. Näille vaatimuksille määritellään myös päivämäärät.\\
+
+Kokouksessa kehitystiimin tehtävänä on estimoida kuinka paljon yksittäinen vaatimus vie työaikaa. Estimointien perusteella asiakas
+tekee päätöksen vaatimusten prioriteeteista. Tämän jälkeen tiimin jäsenet
+yhdessä asiakkaan kanssa sijoittavat vaatimukset tietyille iteraatioille toteutettaviksi.
+
+\subsubsection{Iteraatiosuunnittelun kokous}
+
+Ennen kuin varsinainen iteraatio alkaa, jossa itse tuotteen tiettyjen toiminnallisuuksien
+kehitys tapahtuu, järjestetään \emph{iteraatiosuunnittelun kokous} ("Iteration Planning Meeting"), jossa tehdään \emph{iteraatiosuunnitelma} ("Iteration Plan"). Iteraatiosuunnittelun tavoitteena on päättää mitä iteraation aikana tehdään, joka kirjataan iteraatiosuunnitelmaan.\\
+
+Suunnittelun alussa asiakas valitsee julkaisusuunnitelmasta korkeimman prioriteetin omaavat vaatimukset alkavaan iteraatioon. Kehittäjät pilkkovat nämä vaatimukset pieniksi, toteutettaviksi tehtäviksi. Tämän jälkeen kehittäjät päättävät ketkä toteuttavat minkäkin tehtävän ja he estimoivat tehtäviin kuluvan työmäärän. Lopuksi vaatimukset, tehtävät ja niiden estimaatit kirjataan iteraatiosuunnitelmaan.
+
+\subsubsection{Iteraatio}
+
+
 
 \subsection{Scrum}
 
@@ -463,7 +479,6 @@ voivat itse omin aistein todistaa. Intuitiiviset etsivät asioille
 yhteyksiä teoreettisemman ja abstraktisemmankin tiedon pohjalta ja
 he miettivät eri asioista aiheutuvia mahdollisuuksia.
 
-\newpage
 \item Päätöksenteko: Ajatteleva (T) --- Tunteva (F)
 
 Ajattelevat perustavat päätöksensä miettimällä tarkasti päätöksen syitä, seurauksia ja loogisuutta. He siis perustavat päätöksensä puhtaaseen järjen käyttöön. Tuntevilla on taipumusta tehdä päätös
