@@ -155,7 +155,7 @@ esitetään ratkaisuja, joilla ryhmätyöskentelytaitoja ja -asenteita on saatu 
 
 Artikkelissa Lingard ja Berry tutkivat uudemman kerran onko tietojenkäsittelytieteen opiskelijoista koostuvilla tiimeillä vahva korrelaatio
 tiimin menestyksen ja sen synergian välillä. He selvittävät lisäksi, että vaikuttaako tiimin suoritukseen tiimin jäsenien ikä, sukupuoli,
-monikulttuurillisuus ja alaan liittyvä työkokemus tiimin menestykseen. Lopuksi Lingard ja Berry kertovat erilaisista harjoituksista, joilla
+monikulttuurillisuus ja alaan liittyvä työkokemus. Lopuksi Lingard ja Berry kertovat erilaisista harjoituksista, joilla
 tiimin jäsenet saadaan tutustumaan toisiinsa ja siten osallistumaan yhteisiin projektitöihin enemmän. Heidän tekemänsä tutkimuksen mukaan
 tiimin menestyksen ja sen synergian välillä on vahva positiivinen korrelaatio. Vastaavasti aiemmin listatut ryhmän jäsenien ominaisuudet
 eivät vaikuttaneet merkittävästi tiimin suoritukseen. Lingardin ja Berryn mielestä on tärkeää opettaa opiskelijoille ryhmädynamiikkaa
