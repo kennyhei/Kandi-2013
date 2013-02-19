@@ -115,7 +115,7 @@
 
 \section{Johdanto}
 
-\section{Ryhmätyöskentelyn merkitys ketterissä menetelmissä}
+\section{Ketterät menetelmät ja ryhmätyöskentely}
 
 % Write some science here.
 
@@ -138,9 +138,9 @@ voi olla epäsäännöllistä. Ketterät menetelmät pohjautuvat 12 ketterän
 kehityksen periaatteeseen~\cite{AgileManifesto}. Ryhmätyöskentelyllä 
 ja yhteistyöllä on ketterissä
 menetelmissä suuri painoarvo. Esimerkiksi eräs periaate on, että 
-"parhaat arkkitehtuurit, vaatimukset ja suunnitelmat syntyvät 
+\emph{"parhaat arkkitehtuurit, vaatimukset ja suunnitelmat syntyvät 
 itseorganisoituvissa
-tiimeissä". Tämä tarkoittaa pitkälti sitä, että tiimit työskentelevät 
+tiimeissä"}. Tämä tarkoittaa pitkälti sitä, että tiimit työskentelevät 
 yhdessä päättäen näistä asioista ilman, että kukaan ulkopuolinen tulee
 kertomaan heille mitä tehdä. Toisin sanoen tiimiä johtaa tiimi itse, 
 tiimillä ei ole johtajaa tai projektipäällikköä. Periaatteissa 
@@ -155,16 +155,18 @@ väliajoin on tärkeää ja sillä halutaan pitää asiakas tyytyväisenä.
 Tuotteen kehitys siis tehdään iteratiivisesti ja inkrementaalisesti. 
 Tämä tarkoittaa sitä, että tuotetta kehitetään lyhyissä 
 kehityssykleissä pala kerrallaan, saaden jatkuvaa palautetta 
-asiakkaalta. Seuraavissa osioissa tarkastellaan muutamia ketteriä 
-prosessimalleja nähdäksemme miten ryhmätyöskentely ja kommunikointi 
-otetaan niissä huomioon.
+asiakkaalta.\\
+
+Seuraavissa osioissa tutustumme kahteen tunnettuun
+ketterään menetelmään nimeltään \emph{Scrum} ja \emph{Extreme Programming}~\cite{ScrumFinnishGuide,Scrumprimer,ScrumHandBook,Beck:2004:EPE:1076267}. Muitakin menetelmiä toki on, mutta ne jätetään käsittelemättä. Osioissa kerrotaan millaisen prosessin nämä menetelmät
+määrittelevät projektin kehitykselle ja miten niissä otetaan ryhmätyöskentely ja kommunikointi huomioon.
 
 \subsection{Extreme Programming}
 
 \emph{Extreme Programming} (XP) on ketterä menetelmä, jonka tunnettu 
-ohjelmistokehittäjä Kent Beck on luonut. XP keskittyy asiakkaan tyytyväiseen~\cite{XP.ORG}. XP:n tarkoituksena on tuottaa 
+ohjelmistokehittäjä Kent Beck on luonut. XP keskittyy asiakkaan tyytyväiseen. XP:n tarkoituksena on tuottaa 
 asiakkaalle mahdollisimman paljon arvoa mahdollisimman tehokkaasti ja nopeasti.
-XP:ssä kehitys tapahtuu lyhyissä, 1-3 viikon iteraatioissa, jolloin vaatimusten 
+XP:ssä kehitys tapahtuu lyhyissä, 1-4 viikon iteraatioissa, jolloin vaatimusten 
 muutoksiin on helpompi varautua, kun tavoitteet on asetettu 
 lähitulevaisuuteen. XP painottaa ketterien menetelmien tapaan kommunikointia ja ryhmätyötä.
 
@@ -264,15 +266,20 @@ Suunnittelun alussa asiakas valitsee julkaisusuunnitelmasta korkeimman prioritee
 
 \subsubsection{Iteraatio}
 
-Iteraatiosuunnittelun ja onnistuneen suunnitelman tekemisen jälkeen voidaan aloittaa itse iteraatio. Iteraatio kestää 1-3 viikkoa, jonka aikana iteraatiosuunnitelmaan kirjatut vaatimukset ja niihin liittyvät tehtävät pitää toteuttaa. Kehitystyö tapahtuu pariohjelmoiden, jonka
+Iteraatiosuunnittelun ja onnistuneen suunnitelman tekemisen jälkeen voidaan aloittaa itse iteraatio. Iteraatio kestää 1-4 viikkoa, jonka aikana iteraatiosuunnitelmaan kirjatut vaatimukset ja niihin liittyvät tehtävät pitää toteuttaa. Kehitystyö tapahtuu pariohjelmoiden, jonka
 merkitystä ryhmätyöskentelyyn tarkasteltiin osiossa 2.1.2. Iteraatioon liittyy lisäksi päivittäinen palaveri, jossa ryhmän jäsenet raportoivat toisilleen mitä saivat viime palaverin jälkeen aikaan, mitä aikovat saada aikaan ennen seuraavaa palaveria ja onko heidän etenemisessään ongelmia. Näin tiimin jäsenet ovat jatkuvasti tietoisia
 muiden jäsenten sekä koko tiimin tilanteesta. Kuten edellä on mainittu, iteraation aikana on vähintään yksi asiakas läsnä joka päivä, jonka kanssa voi puhua ongelmatilanteissa toteutettavien vaatimusten yksityiskohdista ja neuvotella kehityksestä.\\
 
-Iteraation lopuksi suoritetaan \emph{hyväksymätestaus} ("Acceptance Testing"), jossa testataan iteraation aikana toteutettuja vaatimuksia ja varmistutaan siitä, että ne toimivat oikein. Asiakas on määritellyt tarkemmin mitä skenaarioita testien tulisi testata. Jos yksittäinen vaatimus läpäisee kaikki siihen kohdistuvat testit, on vaatimus toteutettu valmiiksi. Asiakas itse tarkistaa testitulokset ja päättää niiden perusteella onko viimeisin versio tuotteesta julkaisukelpoinen. Jos testauksen aikana löytyy ohjelmointivirheitä, ne kirjataan ylös ja korjataan seuraavan iteraation aikana.\\
+Iteraation lopuksi suoritetaan \emph{hyväksymätestaus} ("acceptance testing"), jossa testataan iteraation aikana toteutettuja vaatimuksia ja varmistutaan siitä, että ne toimivat oikein. Asiakas on määritellyt tarkemmin mitä skenaarioita testien tulisi testata. Jos yksittäinen vaatimus läpäisee kaikki siihen kohdistuvat testit, on vaatimus toteutettu valmiiksi. Asiakas itse tarkistaa testitulokset ja päättää niiden perusteella onko viimeisin versio tuotteesta julkaisukelpoinen. Jos testauksen aikana löytyy ohjelmointivirheitä, ne kirjataan ylös ja korjataan seuraavan iteraation aikana.\\
 
 Ketteränä menetelmänä XP on iteratiivinen, joten kun yksi iteraatio on loppunut, aloitetaan edellä mainittu prosessi uudestaan alkaen julkaisusuunnittelun kokouksella. Näin XP:n prosessia jatketaan, kunnes tuote on valmis. XP painottaa hyvin paljon asiakkaan kanssa kommunikointia ja läsnäoloa, jotta kehityksessä ei päädytä sivuraiteille. Asiakas on osana ryhmää ja hänen kanssaan tapahtuva kommunikointi ja yhteistyö vaikuttaa suuresti projektin onnistumiseen yhdessä ryhmän sisäisen kommunikoinnin kanssa.
 
 \subsection{Scrum}
+
+\begin{figure}[ht]
+     \includegraphics{scrum.png}
+     \caption{Scrumin prosessi~\cite{Scrumprimer}}\label{scrumprocess}
+\end{figure}
 
 Scrum on prosessimalli, joka painottaa tiimien yhteistyötä projektin 
 kehityksessä~\cite{ScrumORG}. Scrum, kuten XP, on myös iteratiivinen 
@@ -284,13 +291,8 @@ mukautuvan asiakkaalta saatavaan palautteeseen ja vaatimusten
 muutoksiin. Näin tuotteeseen voidaan tehdä ajoissa
 muutoksia ilman suuria kuluja ja tuote "hioutuu"~yhä lähemmäs sitä 
 mitä asiakas sen haluaa olevan. Scrum tekee projektin kehityksestä
-monivaiheisen. Seuraavissa osioissa kerrotaan millainen Scrum-tiimi
-on ja mistä vaiheista projektin elinkaari koostuu.
-
-\begin{figure}[ht]
-     \includegraphics{scrum.png}
-     \caption{Scrumin prosessi~\cite{Scrumprimer}}
-\end{figure}
+monivaiheisen, kuten kuvassa \ref{scrumprocess} näkyy. Nämä vaiheet tullaan käsittelemään myöhemmin. Seuraavissa osioissa kerrotaan millainen Scrum-tiimi
+on ja millainen projektin elinkaari on Scrumissa.
 
 \subsubsection{Tiimi}
 
