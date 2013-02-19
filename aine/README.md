@@ -150,3 +150,15 @@ valmistuneiden tietojenkäsittelytieteen opiskelijoiden ryhmätyöskentelytaidot
 pureudutaan miettimällä millaista ryhmätyöskentely yleisesti ottaen on ja miten kyseisissä yliopistoissa
 vallitseva opiskelukulttuuri vaikuttaa opiskelijoiden asenteisiin ryhmätyöskentelyä kohtaan. Artikkelin lopuksi
 esitetään ratkaisuja, joilla ryhmätyöskentelytaitoja ja -asenteita on saatu parannettua.
+
+##[Teaching teamwork skills in software engineering based on an understanding of factors affecting group performance](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=1158709)
+
+Artikkelissa Lingard ja Berry tutkivat uudemman kerran onko tietojenkäsittelytieteen opiskelijoista koostuvilla tiimeillä vahva korrelaatio
+tiimin menestyksen ja sen synergian välillä. He selvittävät lisäksi, että vaikuttaako tiimin suoritukseen tiimin jäsenien ikä, sukupuoli,
+monikulttuurillisuus ja alaan liittyvä työkokemus tiimin menestykseen. Lopuksi Lingard ja Berry kertovat erilaisista harjoituksista, joilla
+tiimin jäsenet saadaan tutustumaan toisiinsa ja siten osallistumaan yhteisiin projektitöihin enemmän. Heidän tekemänsä tutkimuksen mukaan
+tiimin menestyksen ja sen synergian välillä on vahva positiivinen korrelaatio. Vastaavasti aiemmin listatut ryhmän jäsenien ominaisuudet
+eivät vaikuttaneet merkittävästi tiimin suoritukseen. Lingardin ja Berryn mielestä on tärkeää opettaa opiskelijoille ryhmädynamiikkaa
+ja auttamaan heitä eri harjoitusten kautta tulemaan tehokkaammiksi ryhmän jäseniksi. Tämä auttaa opiskelijoita kehittämään heidän
+ryhmätyötaitoja ja ryhmätyöskentelystä tulee onnistuneempi kokemus, joka jättää opiskelijoille positiivisemman mielikuvan ryhmätyöstä ja
+auttaa heitä pärjäämään työelämässä.
