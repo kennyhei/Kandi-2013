@@ -528,12 +528,24 @@ kattavilta ja ristiriidattomilta, niin lopuksi vielä varmistetaan asiakkaalta, 
 edustavat sitä mielikuvaa tuotteesta, joka hänellä on.
 Lopuksi vaatimukset dokumentoidaan, jotta kehittäjät tietävät ja muistavat jatkossakin mitä heidän tulee toteuttaa sekä testata.\\
 
-[Tähän kohtaan asiaa sopivista persoonallisuustyypeistä vaatimusmäärittelyyn]
+Capretzilla ja Ahmedilla on selkeä käsitys millainen kehittäjä soveltuu
+parhaiten vaatimusmäärittelyyn~\cite{Capretz:2010:MSS:1726559.1726574}.
+Vaatimusmäärittelyyn tarvitaan kehittäjiä, jotka ymmärtävät asiakkaan tarpeet ja käsittävät mitkä ovat ohjelman keskeisimmät toiminnot.
+Vaatimusmäärittely vaatii paljon kommunikointia asiakkaan kanssa,
+joten ekstrovertit (E) soveltuvat tähän hyvin, koska he ovat parempia
+puhumaan ja saamaan asiakkaasta vastauksia irti toisin kuin introvertit (I), jotka eivät ole yhtä hyviä ilmaisemaan asioita selkeästi.
+Kehittäjän tulee myös osata asettumaan käyttäjän rooliin ja miettimään
+käyttäjän tarpeita. Tähän tarpeeseen on tuntevat (F) ihmiset hyviä. Optimaalisinta olisi siis määrätä vaatimusmäärittelyyn kehittäjiä, jotka ovat sekä ekstrovertteja että tuntevia (EF).\\
+
+Gorlan ja Lamin mielipiteet eroavat edellä mainitusta~\cite{Gorla:2004:WWB:990680.990684}. Heidän mukaan ajattelevat (T) kehittäjät ovat tuntevia (F) parempia tässä työssä, jos kyse on pienestä tiimistä. Pienemmissä tiimeissä vaatimusten määrittelyn lisäksi kehittäjä voi joutua tekemään paljon muutakin, kuten suunnittelua ja ohjelmointia, jolloin analyyttinen ajattelutapa on parempi.
 
 \subsubsection{Suunnittelu}
 
 Suunnittelussa hahmotellaan vaatimusten perusteella mistä komponenteista ja pienemmistä osasista järjestelmä koostuu ja mitkä ovat niiden tehtävät. Suunnittelussa mietitään miten järjestelmän eri osat ovat vuorovaikutuksessa toistensa kanssa, millaiset rajapinnat niillä on ja mitä palveluita ne tarvitsevat muilta järjestelmän osilta.
-Tarkoituksena on luoda ohjelmasta malli, joka toteuttaa kirjatut vaatimukset, ja jonka voi muuttaa ohjelmakoodiksi.
+Tarkoituksena on luoda ohjelmasta malli, joka toteuttaa kirjatut vaatimukset, ja jonka voi muuttaa ohjelmakoodiksi.\\
+
+Suunnittelu on luovaa ja tutkivaa työtä, jossa suunnittelija miettii mitkä ovat järjestelmän avainkomponentit, ja hahmottelee parhaita ratkaisuja erilaisten käyttötilanteiden avulla. Suunnittelijalla tulisi olla kokonaiskuva järjestelmästä ja kyky erotella relevantit asiat annetusta datasta, kuten vaatimuksista. Tämä vaatii intuitiota.
+Suunnittelijoiden tulisi siis olla intuitiivisia (N), koska tällaiset henkilöt ovat luovia ja innostuvat uusien asioiden luomisesta ja kokeilevat erilaisista asioista tapahtuvien mahdollisuuksien yhdistelyä. Hyvän tuloksen saamiseksi tarvitaan ongelmanratkaisutaitoja, joita ajattelevilla (T) on. On siis suositeltavaa, että suunnittelija on sekä intuitiivinen ja ajatteleva (NT)~\cite{Capretz:2010:MSS:1726559.1726574}.
 
 \subsubsection{Toteutus}
 
@@ -541,23 +553,29 @@ Kun suunnittelu on ohi ja ohjelmasta ollaan luotu jonkinlainen malli siitä mill
 ja mitkä ovat eri komponenttien tehtävät, voidaan ryhtyä toteuttamaan tätä mallia. Käytännössä tämä tarkoittaa
 mallin muuntamista koodiksi ja siten konkreettiseksi ohjelmaksi.\\
 
-[Tähän kohtaan asiaa sopivista persoonallisuustyypeistä toteutukseen + lisää viite]
+Toteutus on siis ohjelmointia. Ohjelmoijan tulee tunnistaa ohjelman
+osille tärkeät muuttujat, rakenteet ja tietorakenteet. Ohjelmoijan
+tulee luonnollisesti hallita ohjelmointikieli, jolla ohjelma kirjoitetaan. Siinä missä ohjelmalle tehty malli voi olla hyvinkin korkeatasoinen, koodin kirjoittaminen vaatii paneutumista yksityiskohtiin ja mallin sekä vaatimusten muuntaminen suoraviivaiseksi koodiksi vaatii loogista ajattelutapaa. Ajatteleva (T)
+henkilö soveltuu loogiseen ajatteluun paremmin kuin tunteva (F). Lisäksi yksityiskohtiin ja faktatietoihin paneutuminen on tosiasiallisen (S) ihmisen aluetta enemmän kuin intuitiivisen (N). Vaikka aiemmin on todettu kehityksen vaativan ryhmätyötä ja kommunikointia, Capretz ja Ahmed näkevät ohjelmoinnin teknisenä työnä, joka loppupeleissä vaatii itsenäistä työskentelyä ja keskittymiskykyä enemmän kuin ryhmätyöskentelyä. Täten introvertit (I) sopivat ohjelmoijiksi ekstrovertteja (E) paremmin. Ihanteellinen yhdistelmä ohjelmoijalle olisi siis, että hän on introvertti, tosiasiallinen ja ajatteleva (IST). Tätä väitettä tukee se, että monien tutkimusten mukaan useimmat ohjelmistokehittäjät ovat persoonallisuustyyppiä ISTJ~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574}.\\
+
+Gorlan ja Lamin havainnot poikkeavat ideaalista ohjelmoijasta~\cite{Gorla:2004:WWB:990680.990684}, kun kyse on pienistä tiimeistä. Tiimin suorituskyky on parempi, jos ohjelmoijat ovat ekstrovertteja (E). Pienissä tiimeissä ohjelmoijien pitää kommunikoida useiden osapuolten kanssa, kuten esimerkiksi muiden tiimin jäsenten kanssa. Lisäksi pienissä tiimeissä ohjelmoija voi joutua tekemään monia muitakin tehtäviä kuin vain ohjelmointia, kuten ohjelman suunnittelua ja kommunikointia asiakkaan tai käyttäjien kanssa. Tällöin ekstroverttius on eduksi.
 
 \subsubsection{Testaus}
 
 Testausvaiheessa on tarkoituksena tehdä testejä, joilla varmistetaan ohjelman toimivuus. Vaatimukset ovat ensisijaisia
 testauskohteita eli testien avulla tarkistetaan, että ohjelmalle asetetut vaatimukset, jotka ovat toteutettu, toimivat
-moitteettomasti. Testauksella pyritään myös löytämään ohjelmasta virheitä tekemällä testitilanteita, joissa yritetään
+moitteettomasti. Testauksella pyritään myös löytämään ohjelmasta mahdollisimman paljon virheitä tekemällä testitilanteita, joissa yritetään
 tehdä jotain luvatonta toimintaa, jota ohjelman ei tulisi sallia. Esimerkiksi, jos ohjelma on yksinkertainen laskin,
 joka pyytää syöttämään yhteenlaskua varten kaksi lukua ja käyttäjä syöttääkin kirjaimista koostuvan merkkijonon, ohjelman
 tulee osata varautua tähän ilman, että se hajoaa.\\
 
 Testausta on monenlaista, joita ovat muun muassa yksikkötestaus,
-integrointitestaus ja järjestelmätestaus.
+integrointitestaus ja järjestelmätestaus~\cite{Capretz:2010:MSS:1726559.1726574}.
 Yksikkötestauksessa testataan ohjelman sisältämiä komponentteja, luokkia
-ja metodeita yksilöllisesti. Integraatiotestauksessa varmistetaan, että nämä komponentit, luokat ja metodit toimivat niiden ollessa keskinäisessä vuorovaikutuksessa toistensa kanssa, pyytäen ja tarjoten palveluita toisilleen. Järjestelmätestauksessa ohjelmaa testataan sen rajapinnan eli useimmiten käyttöliittymän kautta. Järjestelmätestaus liittyy vahvasti vaatimuksiin, jotka määrittävät, että järjestelmällä pitäisi pystyä tekemään jotain ja järjestelmän tulisi vastata tähän toimintoon jotenkin.\\
+ja metodeita yksilöllisesti. Integraatiotestauksessa varmistetaan, että nämä komponentit, luokat ja metodit toimivat niiden ollessa keskinäisessä vuorovaikutuksessa toistensa kanssa, pyytäen ja tarjoten palveluita toisilleen. Järjestelmätestauksessa ohjelmaa testataan sen rajapinnan eli useimmiten käyttöliittymän kautta. Järjestelmätestaus liittyy vahvasti vaatimuksiin, jotka määrittävät, että järjestelmällä pitäisi pystyä tekemään jotain ja järjestelmän tulisi vastata tähän toimintoon vaatimusten mukaisesti.\\
 
-[Tähän kohtaan asiaa sopivista persoonallisuustyypeistä testaukseen + lisää viite]
+Testaukseen on monenlaisia strategioita, jotka noudattavat järjestelmällisiä lähestymistapoja. Testaus vaatii paneutumista yksityiskohtiin, jotta testaaja varmasti tarkistaa, että pienimmätkin ohjelman osat toimivat oikein. Tarkkuus ja järjestelmällisyys ovat
+haluttavia ominaisuuksia testaajalle, joita tosiasialliset (S) ja järjestelmälliset (J) henkilöt edustavat. Menestyvät testaajat olisivat siis sekä tosiasiallisia että järjestelmällisiä (SJ)~\cite{Capretz:2010:MSS:1726559.1726574}.
 
 \subsubsection{Ylläpito}
 
@@ -565,7 +583,9 @@ Ennen ylläpitoa ohjelma on jo julkaistu kohderyhmän käyttöön valmiina tuott
 tarkoituksena on parannella tai muokata ohjelmaa, jolla tarkoitetaan lähinnä ohjelmointivirheiden
 korjaamista ja optimointia. Ylläpidossa saatetaan lisätä myös aivan uusia toiminnallisuuksia
 ohjelmaan. Kaiken tämän tarkoituksena on pidentää ohjelman käyttöikää ja varmistaa käyttäjien
-tyytyväisyys.
+tyytyväisyys.\\
+
+Ohjelman ylläpitäminen ja parantelu sopii tosiasiallisille (S) kehittäjille, koska he suosivat tuttujen tehtävien tekoa, jotka eivät vaadi uusien asioiden kokeilua. Intuitiiviset (N) sen sijaan haluavat kokeilla jotain uutta ja luultavasti tylsistyisivät ylläpitoon, jossa tehdään jonkinlaisia parannuksia ja pieniä ohjelmointivirheiden korjauksia. Tosiasialliset suosivat töitä, joissa aiemmin opitun tiedon käyttö on riittävää tehtävän suorittamiseen sen sijaan, että tulisi keksiä uusia ratkaisuja. He myös osaavat keskittyä yksityiskohtiin ja haluavat tietää miten asiat toimivat, joten heillä olisi hyvä kokonaiskuva järjestelmästä, jota ylläpitäminen vaatii. Spontaanit (P) sopeutuvat muutoksiin, jolloin heitä ei haittaisi järjestelmän jatkuva muokkaaminen. Siten tosiasialliset ja spontaanit kehittäjät ovat hyviä ylläpitäjiä (SP)~\cite{Capretz:2010:MSS:1726559.1726574}. 
 
 \section{Ryhmätyötaitojen parantaminen}
 
