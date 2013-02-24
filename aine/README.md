@@ -162,3 +162,20 @@ eivät vaikuttaneet merkittävästi tiimin suoritukseen. Lingardin ja Berryn mie
 ja auttamaan heitä eri harjoitusten kautta tulemaan tehokkaammiksi ryhmän jäseniksi. Tämä auttaa opiskelijoita kehittämään heidän
 ryhmätyötaitoja ja ryhmätyöskentelystä tulee onnistuneempi kokemus, joka jättää opiskelijoille positiivisemman mielikuvan ryhmätyöstä ja
 auttaa heitä pärjäämään työelämässä.
+
+##[Participation Patterns in Student Teams]()
+
+Artikkelissa Pieterse, Thompson ja Marshall kuvailevat menetelmää nimeltä "Rocking the Boat" (RTB), jolla ryhmätyötaitoja voidaan opettaa
+ja parantaa. He soveltavat RTB:tä kolmannen vuoden opiskelijoiden ohjelmistotuotantoprojektin alkuun. Pietersen ja kumppanit kertovat neljästä
+eri luokittelusta, jolla kuvataan opiskelijan osallistumista ryhmätyöhön. Nämä ovat "diligent isolate", "insightful shaper", "compliant worker" ja
+"social loafer". "Diligent isolate"-tyypin opiskelijat haluavat tehdä työnsä yksin eivätkä luota muihin, he siis väheksyvät yhteistyötä. "Insightful shaper"-tyyppiä
+edustavat opiskelijat ottavat paljon vastuuta työstä, delegoivat tehtäviä muille jäsenille, motivoivat ryhmän jäseniä ja työskentelevät enemmän kuin mitä odotetaan.
+"Compliant worker"-tyypin opiskelijat eivät ole oma-aloitteisia, mutta tekevät sen mitä heiltä pyydetään.
+"Social loafer"-tyyppiä edustavat opiskelijat taas tekevät työtä vähemmän kuin mitä vaaditaan ja saattavat viedä kunnian muiden tekemästä työstä.
+RTB-menetelmän ideana on maksimoida todennäköisyys, että ryhmässä esiintyy "diligent isolate" & "social loafer"-tyyppisiä opiskelijoita, jolloin opiskelijat
+altistuvat ongelma- ja riitatilanteille ja joutuvat opettelemaan ryhmätaitoja, että he saavat nämä ongelmat ratkottua. Pieterse ja kumppanit tekevät neljä
+noin 1-2 viikon kierrosta, jossa he joka kierroksella muodostavat opiskelijoista uusia ryhmiä, aluksi satunnaisesti ja lopulta niin, että ryhmät ovat
+kolmannella kierroksella taidoiltaan ja asenteiltaan toisiaan täydentäviä ja neljännellä kierroksella samanlaisia. Tuloksena on, että opiskelijoiden
+osallistumisen taso vaihteli kierroksittain ja eri riskitekijät, kuten kokemattomuus, ryhmän homogeenisuus, ryhmän suuri koko yms. vaikuttivat osallistumisen tasoon. Mitä enemmän
+riskitekijöitä, sitä enemmän "diligent isolate" & "social loafer"-tyypin opiskelijoita esiintyi. RTB:n avulla opiskelijat tietävät paremmin syitä ja seurauksia sille
+miksi tämän tyypin opiskelijoita esiintyy ryhmätyössä ja ongelmatilanteiden avulla he oppivat ryhmätyötaitoja.
