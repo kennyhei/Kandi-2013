@@ -187,6 +187,7 @@ ryhmätyöskentelyn parantamista varten. Perinteisessä opetuksessa on ongelmana
 koulutusta kuinka tehdä yhteistyötä tehokkaasti. PBL:n tarkoituksena on pureutua näihin ongelmiin, jossa opiskelijoille annetaan haastava ongelma,
 joka ratkaistaan projektityön muodossa ryhmissä. Projektiin liittyy ongelmanratkaisua, päätöksentekoa ja yhteistyötä ryhmän jäsenten kesken sekä vertaisarviointia
 ja palautetta niin muilta opiskelijoilta kuin opettajiltakin. Opiskelijat määräävät yhteisymmärryksessä tehtävät, joista kukin on vastuussa ja säännölliset tapaamiset opettajan tai ohjaajan kanssa
-auttavat projektityön edistymisessä sekä panee opiskelijat miettimään ryhmätyötä itsessään. Projektityön lopuksi annetaan viimeinen raportti, jossa on dokumentaatio ja pohdintaa
-ryhmätyöstä. Tulosten mukaan opiskelijat ovat olleet tyytyväisiä, koska ovat saaneet tällä tavalla uusia ystävyyssuhteita ja kehittäneet ryhmätyötaitoja
-sekä oppineet luovuutta ja ongelmanratkaisutaidot ovat parantuneet. PBL-menetelmän käyttö on parantanut myös CST-opiskelijoiden työllistymisastetta.
+auttavat projektityön edistymisessä sekä panee opiskelijat miettimään ryhmätyötä itsessään. Ryhmätyöhön motivoidaan myös siten, että yksilön ryhmätyötaidot arvostellaan
+erikseen. Projektityön lopuksi annetaan viimeinen raportti, jossa on dokumentaatio ja pohdintaa ryhmätyöstä. Tulosten mukaan opiskelijat ovat olleet tyytyväisiä,
+koska ovat saaneet tällä tavalla uusia ystävyyssuhteita ja kehittäneet ryhmätyötaitoja sekä oppineet luovuutta ja ongelmanratkaisutaidot ovat parantuneet.
+PBL-menetelmän käyttö on parantanut myös CST-opiskelijoiden työllistymisastetta.
