@@ -179,3 +179,14 @@ kolmannella kierroksella taidoiltaan ja asenteiltaan toisiaan täydentäviä ja 
 osallistumisen taso vaihteli kierroksittain ja eri riskitekijät, kuten kokemattomuus, ryhmän homogeenisuus, ryhmän suuri koko yms. vaikuttivat osallistumisen tasoon. Mitä enemmän
 riskitekijöitä, sitä enemmän "diligent isolate" & "social loafer"-tyypin opiskelijoita esiintyi. RTB:n avulla opiskelijat tietävät paremmin syitä ja seurauksia sille
 miksi tämän tyypin opiskelijoita esiintyy ryhmätyössä ja ongelmatilanteiden avulla he oppivat ryhmätyötaitoja.
+
+##[Improving Undergraduates’ Teamwork Skills By Adapting Project-based Learning Methodology](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5593527)
+
+Artikkelissa Huang Jun China Jiliangin yliopistolta (China Jiliang University, CST) esittelee menetelmän nimeltä "Project-Based Learning" (PBL), jonka pystyy sulauttamaan tietojenkäsittelytieteen opetusohjelmiin
+ryhmätyöskentelyn parantamista varten. Perinteisessä opetuksessa on ongelmana, että opiskelijat työskentelevät yksin ja eivät saa minkäänlaista
+koulutusta kuinka tehdä yhteistyötä tehokkaasti. PBL:n tarkoituksena on pureutua näihin ongelmiin, jossa opiskelijoille annetaan haastava ongelma,
+joka ratkaistaan projektityön muodossa ryhmissä. Projektiin liittyy ongelmanratkaisua, päätöksentekoa ja yhteistyötä ryhmän jäsenten kesken sekä vertaisarviointia
+ja palautetta niin muilta opiskelijoilta kuin opettajiltakin. Opiskelijat määräävät yhteisymmärryksessä tehtävät, joista kukin on vastuussa ja säännölliset tapaamiset opettajan tai ohjaajan kanssa
+auttavat projektityön edistymisessä sekä panee opiskelijat miettimään ryhmätyötä itsessään. Projektityön lopuksi annetaan viimeinen raportti, jossa on dokumentaatio ja pohdintaa
+ryhmätyöstä. Tulosten mukaan opiskelijat ovat olleet tyytyväisiä, koska ovat saaneet tällä tavalla uusia ystävyyssuhteita ja kehittäneet ryhmätyötaitoja
+sekä oppineet luovuutta ja ongelmanratkaisutaidot ovat parantuneet. PBL-menetelmän käyttö on parantanut myös CST-opiskelijoiden työllistymisastetta.
