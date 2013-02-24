@@ -163,7 +163,7 @@ ja auttamaan heitä eri harjoitusten kautta tulemaan tehokkaammiksi ryhmän jäs
 ryhmätyötaitoja ja ryhmätyöskentelystä tulee onnistuneempi kokemus, joka jättää opiskelijoille positiivisemman mielikuvan ryhmätyöstä ja
 auttaa heitä pärjäämään työelämässä.
 
-##[Participation Patterns in Student Teams]()
+##[Participation Patterns in Student Teams](http://doi.acm.org/10.1145/2157136.2157218)
 
 Artikkelissa Pieterse, Thompson ja Marshall kuvailevat menetelmää nimeltä "Rocking the Boat" (RTB), jolla ryhmätyötaitoja voidaan opettaa
 ja parantaa. He soveltavat RTB:tä kolmannen vuoden opiskelijoiden ohjelmistotuotantoprojektin alkuun. Pietersen ja kumppanit kertovat neljästä
