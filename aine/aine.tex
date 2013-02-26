@@ -117,11 +117,11 @@
 
 Ohjelmistojen kehityksen perustana on ryhmätyöskentely, koska projektien
 kasvava kompleksisuus ja laajuus tekee niiden toteuttamisen yksilölle
-mahdottomaksi [viite].
+vaikeaksi~\cite{5593527}.
 Ohjelmistoalalla tarvitaan monenlaisia teknisiä taitoja, jotta projekteissa saadaan toteutettua kaikki kehityksen vaiheet 
 kattavasti. Nämä ohjelmistokehityksen vaiheet voidaan jakaa karkeasti 
 vaatimusmäärittelyyn, suunnitteluun, toteutukseen, testaukseen ja 
-ylläpitoon~\cite{Capretz:2010:MSS:1726559.1726574}. Sen lisäksi, että 
+ylläpitoon~\cite{Capretz:2010:MSS:1726559.1726574}\footnote{Capretz puhuu järjestelmäanalyysista, joka on sidoksissa vaatimusmäärittelyyn. Tässä tekstissä käsitellään järjestelmäanalyysin sijaan vaatimusmäärittelyä.}. Sen lisäksi, että 
 eri vaiheet vaativat eri taitoja, myös yksittäinen vaihe kysyy laajaa 
 osaamista. Tämän seurauksena tulee tarve koota joukko osaavia ihmisiä 
 toteuttamaan yhteistyössä kaikki kehityksen vaiheet. Onkin hyvin 
@@ -141,31 +141,27 @@ millä luonteenpiirteillä on vahvimmat positiiviset vaikutukset kehityksen eri 
 
 % Write some science here.
 
-Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, 
-joissa ryhmät sijaitsevat samoissa oloissa, mutta työskentelevät silti 
-täysin erillään toisistaan. Tämän seurauksena kommunikointi kärsii ja 
-voi olla epäsäännöllistä. Ketterät menetelmät pohjautuvat 12 ketterän 
+%Ryhmätyöskentelyä voi tehdä monin tavoin. On esimerkiksi tilanteita, joissa ryhmät sijaitsevat samoissa oloissa, mutta työskentelevät silti täysin erillään toisistaan.Tämän seurauksena kommunikointi kärsii ja voi olla epäsäännöllistä.
+Ketterät menetelmät pohjautuvat 12 ketterän 
 kehityksen periaatteeseen~\cite{AgileManifesto}. Ryhmätyöskentelyllä 
 ja yhteistyöllä on ketterissä
 menetelmissä suuri painoarvo. Esimerkiksi eräs periaate on, että 
 \emph{"parhaat arkkitehtuurit, vaatimukset ja suunnitelmat syntyvät 
 itseorganisoituvissa
 tiimeissä"}. Tämä tarkoittaa pitkälti sitä, että tiimit työskentelevät 
-yhdessä päättäen näistä asioista ilman, että kukaan ulkopuolinen tulee
-kertomaan heille mitä tehdä. Toisin sanoen tiimiä johtaa tiimi itse, 
+yhdessä päättäen asioista ilman, että kukaan ulkopuolinen tulee
+kertomaan heille mitä tehdä ja miten. Toisin sanoen tiimiä johtaa tiimi itse, 
 tiimillä ei ole johtajaa tai projektipäällikköä. Periaatteissa 
 painotetaan
 myös informaation välittämistä kasvokkain käytävillä keskusteluilla. 
 Ryhmillä tulisi olla yhteiset työtilat, jolloin tämä periaate 
 toteutuisi.
 Kasvokkainen kommunikointi virtaviivaistaa tiedon kulkua ja pienentää 
-väärinkäsitysten mahdollisuutta.
+väärinkäsitysten mahdollisuutta.\\
+
 Ketterissä menetelmissä toimivan ohjelmiston tuottaminen säännöllisin 
 väliajoin on tärkeää ja sillä halutaan pitää asiakas tyytyväisenä.
-Tuotteen kehitys siis tehdään iteratiivisesti ja inkrementaalisesti. 
-Tämä tarkoittaa sitä, että tuotetta kehitetään lyhyissä 
-kehityssykleissä pala kerrallaan, saaden jatkuvaa palautetta 
-asiakkaalta.\\
+Ketterät menetelmät perustuvatkin iteratiiviseen ja inkrementaaliseen kehitysmalliin, jossa tuotetta kehitetään lyhyissä kehityssykleissä osa kerrallaan~\cite{Cockburn:2008}. Kehitysmallissa ohjelmiston toteuttamiseen tarvittava työ pilkotaan osiin, jotka aikataulutetaan niin, että kukin osa kehitetään ajan myötä valmiiksi lyhyissä kehityssykleissä. Tuotetta rakennetaan valmiiksi säännöllisin väliajoin, jolloin asiakas näkee kehityksen ja voi antaa palautetta kertoen meneekö kehitys oikeaa suuntaa kohti.\\
 
 Seuraavissa osioissa tutustumme kahteen tunnettuun
 ketterään menetelmään nimeltään \emph{Scrum} ja \emph{Extreme Programming}~\cite{ScrumFinnishGuide,Scrumprimer,ScrumHandBook,Beck:2004:EPE:1076267}. Muitakin menetelmiä toki on, mutta ne jätetään käsittelemättä. Osioissa kerrotaan millaisen prosessin nämä menetelmät
@@ -182,8 +178,8 @@ lähitulevaisuuteen. XP painottaa ketterien menetelmien tapaan kommunikointia ja
 
 \subsubsection{Kommunikointi}
 
-Kasvokkaista ja usein tapahtuvaa kommunikointia painotetaan järjestämällä tiimin jäsenet yhteiseen tilaan. Tämän lisäksi projektia varten on hankittu vähintään yksi paikan päällä oleva asiakas, joka on osana kehitystiimiä nähdäkseen projektin edistymisen. Paikan päällä olevan asiakkaan kanssa keskustellaan kehityksen jokaisesta vaiheesta ja hän päättää tuotteen vaatimuksista ja niiden priorisoinnista. Asiakkaan läsnäolo on suuri etu, sillä tiimi voi kysyä häneltä hetkessä esimerkiksi jonkin toteutettavan vaatimuksen yksityiskohdista ja asiakas vastaavasti voi antaa heti palautetta työstä. Ryhmän sisäinen kommunikointi on myös suuressa osassa sillä hyvät ratkaisut saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} ("pair 
-programming"), joka on yksi XP:n keskeisimpiä käytänteitä.
+Kasvokkaista ja usein tapahtuvaa kommunikointia painotetaan järjestämällä tiimin jäsenet yhteiseen tilaan. Tämän lisäksi projektia varten on hankittu vähintään yksi paikan päällä oleva asiakas, joka on osana kehitystiimiä nähdäkseen projektin edistymisen. Paikan päällä olevan asiakkaan kanssa keskustellaan kehityksen jokaisesta vaiheesta ja hän päättää tuotteen vaatimuksista ja niiden priorisoinnista. Asiakkaan läsnäolo on suuri etu, sillä tiimi voi kysyä häneltä hetkessä esimerkiksi jonkin toteutettavan vaatimuksen yksityiskohdista ja asiakas vastaavasti voi antaa heti palautetta työstä. Ryhmän sisäinen kommunikointi on myös suuressa osassa sillä hyvät ratkaisut saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} (pair 
+programming), joka on yksi XP:n keskeisimpiä käytänteitä.
 Tutustutaan pariohjelmointiin tarkemmin.
 
 \subsubsection{Pariohjelmointi}
@@ -191,8 +187,8 @@ Tutustutaan pariohjelmointiin tarkemmin.
 Pariohjelmoinnissa kaksi henkilöä ohjelmoivat pareittain, jakaen saman 
 tietokoneen~\cite{Shore:2007:AAD:1407480}. Henkilöt eivät kuitenkaan ohjelmoi samaan aikaan, vaan 
 heille on 
-nimetty kaksi roolia: toinen on \emph{ajaja} ("the driver"), ja toinen 
-\emph{navigoija} ("the navigator"). Ajajan tehtävänä on 
+nimetty kaksi roolia: toinen on \emph{ajaja} (the driver), ja toinen 
+\emph{navigoija} (the navigator). Ajajan tehtävänä on 
 yksinkertaisesti 
 kirjoittaa koodia. Navigoijan tehtävänä on analysoida jatkuvasti 
 kirjoitettua koodia ja kertoa ajajalle mitä tehtäviä heidän tulee 
@@ -239,7 +235,7 @@ on eri taitoja ja tietämystä asioista. Esimerkiksi ryhmän jäsenet,
 jotka pääsevät heitä taitavampien ihmisten pareiksi voivat oppia
 paljon uusia tekniikoita. Parhaimmassa tapauksessa koko ryhmän sisällä 
 kaikki voivat oppia toisiltaan jotakin.
-Oppimiseen sisältyy myös se, että ymmärrys kehitettävästä ohjelmasta 
+Oppimiseen sisältyy, että ymmärrys kehitettävästä ohjelmasta 
 parantuu. Jos henkilöt vaihtavat
 pareja eri ihmisten kanssa, he pääsevät näkemään erilaisia 
 kehityksessä olevia ohjelman osia. He myös samalla osallistuvat tämän 
@@ -250,7 +246,7 @@ tasolle.\\
 Tästä voidaan päätellä, että pariohjelmointi on suuressa roolissa 
 XP:ssä ja ryhmän jäsenien keskinäisellä vuorovaikutuksella on suuri 
 hyöty projektin laadun kannalta. Kaikkien näiden pariohjelmoinnin 
-hyvien puolien yhteisenä tekijänä on se, että parit kommunikoivat 
+hyvien puolien yhteisenä tekijänä on, että parit kommunikoivat 
 toistensa kanssa. Ilman keskinäistä vuorovaikutusta ei voi odottaa, 
 että edellä mainitut asiat toteutuisivat. Pariohjelmointi kuitenkin 
 rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla 
@@ -260,17 +256,17 @@ huolta~\cite{Zarb:2012:UCW:2384716.2384738}.
 
 \subsubsection{Julkaisusuunnittelun kokous}
 
-Kun asiakas on tehnyt listan vaatimuksia, joita kehitettävän järjestelmän pitää sisältää, aloitetaan XP:n prosessi \emph{julkaisusuunnittelun kokouksella} ("Release Planning Meeting"),
-jossa on tarkoituksena tehdä \emph{julkaisusuunnitelma} ("Release Plan"). XP:ssä on tapana iteraatioiden lopuksi julkaista uusin, toimiva versio asiakkaiden käyttöön. Julkaisusuunnitelma määrittelee mitkä vaatimukset toteutetaan missäkin iteraatiossa ja siten ovat valmiina iteraation lopuksi tehtävässä julkaisussa. Näille vaatimuksille määritellään myös päivämäärät.\\
+Kun asiakas on tehnyt listan vaatimuksia, joita kehitettävän järjestelmän pitää sisältää, aloitetaan XP:n prosessi \emph{julkaisusuunnittelun kokouksella} (release planning meeting),
+jossa on tarkoituksena tehdä \emph{julkaisusuunnitelma} (release plan). XP:ssä on tapana iteraatioiden lopuksi julkaista uusin, toimiva versio asiakkaiden käyttöön. Julkaisusuunnitelma määrittelee, mitkä vaatimukset toteutetaan missäkin iteraatiossa ja siten ovat valmiina iteraation lopuksi tehtävässä julkaisussa. Näille vaatimuksille määritellään myös päivämäärät.\\
 
-Kokouksessa kehitystiimin tehtävänä on estimoida kuinka paljon yksittäinen vaatimus vie työaikaa. Estimointien perusteella asiakas
+Kokouksessa kehitystiimin tehtävänä on arvioida kuinka paljon yksittäinen vaatimus vie työaikaa. Estimointien perusteella asiakas
 tekee päätök\-sen vaatimusten prioriteeteista. Tämän jälkeen tiimin jäsenet
 yhdessä asiakkaan kanssa sijoittavat vaatimukset tietyille iteraatioille toteutettaviksi.
 
 \subsubsection{Iteraatiosuunnittelun kokous}
 
 Ennen kuin varsinainen iteraatio alkaa, jossa itse tuotteen tiettyjen toiminnallisuuksien
-kehitys tapahtuu, järjestetään \emph{iteraatiosuunnittelun kokous} ("Iteration Planning Meeting"), jossa tehdään \emph{iteraatiosuunnitelma} ("Iteration Plan"). Iteraatiosuunnittelun tavoitteena on päättää mitä iteraation aikana tehdään, joka kirjataan iteraatiosuunnitelmaan.\\
+kehitys tapahtuu, järjestetään \emph{iteraatiosuunnittelun kokous} (iteration planning meeting), jossa tehdään \emph{iteraatiosuunnitelma} (iteration plan). Iteraatiosuunnittelun tavoitteena on päättää mitä iteraation aikana tehdään, joka kirjataan iteraatiosuunnitelmaan.\\
 
 Suunnittelun alussa asiakas valitsee julkaisusuunnitelmasta korkeimman prioriteetin omaavat vaatimukset alkavaan iteraatioon. Kehittäjät pilkkovat nämä vaatimukset pieniksi, toteutettaviksi tehtäviksi. Tämän jälkeen kehittäjät päättävät ketkä toteuttavat minkäkin tehtävän ja he estimoivat tehtäviin kuluvan työmäärän. Lopuksi vaatimukset, tehtävät ja niiden estimaatit kirjataan iteraatiosuunnitelmaan.
 
@@ -280,7 +276,7 @@ Iteraatiosuunnittelun ja onnistuneen suunnitelman tekemisen jälkeen voidaan alo
 merkitystä ryhmätyöskentelyyn tarkasteltiin osiossa 2.1.2. Iteraatioon liittyy lisäksi päivittäinen palaveri, jossa ryhmän jäsenet raportoivat toisilleen mitä saivat viime palaverin jälkeen aikaan, mitä aikovat saada aikaan ennen seuraavaa palaveria ja onko heidän etenemisessään ongelmia. Näin tiimin jäsenet ovat jatkuvasti tietoisia
 muiden jäsenten sekä koko tiimin tilanteesta. Kuten edellä on mainittu, iteraation aikana on vähintään yksi asiakas läsnä joka päivä, jonka kanssa voi puhua ongelmatilanteissa toteutettavien vaatimusten yksityiskohdista ja neuvotella kehityksestä.\\
 
-Iteraation lopuksi suoritetaan \emph{hyväksymätestaus} ("acceptance testing"), jossa testataan iteraation aikana toteutettuja vaatimuksia ja varmistutaan siitä, että ne toimivat oikein. Asiakas on määritellyt tarkemmin mitä skenaarioita testien tulisi testata. Jos yksittäinen vaatimus läpäisee kaikki siihen kohdistuvat testit, on vaatimus toteutettu valmiiksi. Asiakas itse tarkistaa testitulokset ja päättää niiden perusteella onko viimeisin versio tuotteesta julkaisukelpoinen. Jos testauksen aikana löytyy ohjelmointivirheitä, ne kirjataan ylös ja korjataan seuraavan iteraation aikana.\\
+Iteraation lopuksi suoritetaan \emph{hyväksymätestaus} (acceptance testing), jossa testataan iteraation aikana toteutettuja vaatimuksia ja varmistutaan siitä, että ne toimivat oikein. Asiakas on määritellyt tarkemmin mitä skenaarioita testien tulisi testata. Jos yksittäinen vaatimus läpäisee kaikki siihen kohdistuvat testit, on vaatimus toteutettu valmiiksi. Asiakas itse tarkistaa testitulokset ja päättää niiden perusteella onko viimeisin versio tuotteesta julkaisukelpoinen. Jos testauksen aikana löytyy ohjelmointivirheitä, ne kirjataan ylös ja korjataan seuraavan iteraation aikana.\\
 
 Ketteränä menetelmänä XP on iteratiivinen, joten kun yksi iteraatio on loppunut, aloitetaan edellä mainittu prosessi uudestaan alkaen julkaisusuunnittelun kokouksella. Näin XP:n prosessia jatketaan, kunnes tuote on valmis. XP painottaa hyvin paljon asiakkaan kanssa kommunikointia ja läsnäoloa, jotta kehityksessä ei päädytä sivuraiteille. Asiakas on osana ryhmää ja hänen kanssaan tapahtuva kommunikointi ja yhteistyö vaikuttaa suuresti projektin onnistumiseen yhdessä ryhmän sisäisen kommunikoinnin kanssa.
 
@@ -295,7 +291,7 @@ Scrum on prosessimalli, joka painottaa tiimien yhteistyötä projektin
 kehityksessä~\cite{ScrumORG}. Scrum, kuten XP, on myös iteratiivinen 
 ja inkrementaalinen menetelmä.
 Kehitys tapahtuu lyhyissä 1-4 viikon sykleissä, 
-\emph{"Sprinteissä"}, joissa toteutetaan kehitettävää tuotetta tietyt 
+\emph{"sprinteissä"}, joissa toteutetaan kehitettävää tuotetta tietyt 
 toiminnallisuudet kerrallaan. Lyhyet kehityssyklit sallivat tiimien 
 mukautuvan asiakkaalta saatavaan palautteeseen ja vaatimusten 
 muutoksiin. Näin tuotteeseen voidaan tehdä ajoissa
@@ -306,15 +302,15 @@ on ja millainen projektin elinkaari on Scrumissa.
 
 \subsubsection{Tiimi}
 
-Scrumissa tiimit koostuvat \emph{monitaitoisista} ("cross-functional") 
+Scrumissa tiimit koostuvat \emph{monitaitoisista} (cross-functional) 
 jäsenistä, joilta löytyy tarpeellinen tekninen osaaminen, jota 
 vaaditaan
 tuotteen toteuttamiseksi. Tiimillä ei ole johtajaa tai 
 projektipäällikköä, jotka määräisivät tiimin tekemisistä. Sen sijaan 
 tiimi itse
-saa päättää tavoitteet joka Sprintille ja sen miten nämä tavoitteet 
+saa päättää tavoitteet joka sprintille ja sen miten nämä tavoitteet 
 saavutetaan. Toisin sanoen tiimi on \emph{itseorganisoituva}
-("self-organizing"). Tämä on Scrumille olennaista ja siitä näkee 
+(self-organizing). Tämä on Scrumille olennaista ja siitä näkee 
 kuinka suuressa arvossa tiimin jäsenten välistä yhteistyötä 
 pidetään~\cite{ScrumHandBook}.
 
@@ -322,28 +318,28 @@ pidetään~\cite{ScrumHandBook}.
 
 Scrumin ensimmäinen askel on luoda visio tuotteen vaatimista
 ei-toiminnalli\-sista ja toiminnallisista vaatimuksista. Vaatimukset
-kootaan listaksi, jota kutsutaan \emph{tuotteen kehitysjonoksi} ("product backlog")~\cite{ScrumFinnishGuide}. Kehitysjono on priorisoitu siten, että tärkeimmät vaatimukset ovat kehitysjonon kärjessä. Kehitysjono on jatkuvan muutoksen alaisena: uusia vaatimuksia
+kootaan listaksi, jota kutsutaan \emph{tuotteen kehitysjonoksi} (product backlog)~\cite{ScrumFinnishGuide}. Kehitysjono on priorisoitu siten, että tärkeimmät vaatimukset ovat kehitysjonon kärjessä. Kehitysjono on jatkuvan muutoksen alaisena: uusia vaatimuksia
 voi tulla lisää asiakkaan toimesta, tarpeettomia vaatimuksia karsitaan ja olemassaolevia muokataan tai tarkennetaan. Edellä mainitut tehtävät
-ovat niin kutsutun \emph{tuoteomistajan} ("product owner") vastuulla,
+ovat niin kutsutun \emph{tuoteomistajan} (product owner) vastuulla,
 joka on yksittäinen henkilö ja pitää huolen tuotteen arvon ja kehitystiimin työn arvon maksimoimisesta. Tuoteomistaja voi kuitenkin pyytää kehitystiimiä auttamaan edellä mainituissa tehtävissä.
 
 \subsubsection{Sprintin suunnittelupalaveri}
 
-Jokaisen Sprintin aluksi järjestetään kokous, jota kutsutaan \emph{Sprintin suunnittelupalaveriksi} ("Sprint planning meeting")~\cite{ScrumHandBook}. Palaveri on kaksiosainen.
+Jokaisen sprintin aluksi järjestetään kokous, jota kutsutaan \emph{sprintin suunnittelupalaveriksi} (sprint planning meeting)~\cite{ScrumHandBook}. Palaveri on kaksiosainen.
 Ensimmäisessä osassa tuoteomistaja ja kehitystiimi neuvottelevat
 siitä mitkä vaatimukset tiimin tulisi toteuttaa alkavassa
-Sprintissä. Päätösvastuu on kuitenkin tiimin jäsenillä.\\
+sprintissä. Päätösvastuu on kuitenkin tiimin jäsenillä.\\
 
 Toisessa osassa tiimi valitsee toteutettavat vaatimukset, jotka
-he sitoutuvat tekemään Sprintin loppuun mennessä. Vaatimukset
+he sitoutuvat tekemään sprintin loppuun mennessä. Vaatimukset
 valitaan aina kehitysjonon kärjestä ylhäältä alas järjestyksessä.
 Kun vaatimukset on valittu, ne hajotetaan pienemmiksi, teknisiksi
-tehtäviksi. Nämä tehtävät kirjataan \emph{Sprintin tehtävälistaan} ("Sprint backlog") aika-arvioineen, mitä tiimi käyttää hyödykseen Sprintin ajan. Tiimi saa siis itse valita toteutettavat vaatimukset alkavalle Sprintille ja suunnitella miten ne toteutetaan.
+tehtäviksi. Nämä tehtävät kirjataan \emph{sprintin tehtävälistaan} (sprint backlog) aika-arvioineen, mitä tiimi käyttää hyödykseen sprintin ajan. Tiimi saa siis itse valita toteutettavat vaatimukset alkavalle sprintille ja suunnitella miten ne toteutetaan.
 
 \subsubsection{Scrumin päiväpalaveri}
 
-Kun Sprintti alkaa, sen aikana harjoitetaan erästä Scrumin käytäntöä:
-\emph{päiväpalaveria} ("Daily Scrum"). Tämä on lyhyt, noin 15 minuuttia kestävä kokoontuminen joka päivä samaan aikaan, johon
+Kun sprintti alkaa, sen aikana harjoitetaan erästä Scrumin käytäntöä:
+\emph{päiväpalaveria} (daily Scrum). Tämä on lyhyt, noin 15 minuuttia kestävä kokoontuminen joka päivä samaan aikaan, johon
 kaikki tiimin jäsenet osallistuvat. Jokainen tiimin jäsen saa
 mahdollisuuden raportoida kolme asiaa muille tiimin jäsenille:
 mitä henkilö on saanut aikaan viime tapaamisen jälkeen, mitä henkilö
@@ -358,7 +354,7 @@ tuottaa heille paineita oman edistymisen tai ongelmien raportoinnista.
 
 \subsubsection{Sprintin katselmointi}
 
-Sprintin lopussa järjestetään \emph{Sprintin katselmointi} ("Sprint review"), jossa tiimi esittelee Sprintin aikana toteuttamiaan
+Sprintin lopussa järjestetään \emph{sprintin katselmointi} (sprint review), jossa tiimi esittelee sprintin aikana toteuttamiaan
 vaatimuksia tuoteomistajalle ja asiakkaalle. Asiakas ja tuoteomistaja
 tietävät näin miten projekti on edistynyt ja tiimi vastaavasti saa
 arvokasta palautetta kyseisiltä henkilöiltä. Tämä on motivoivaa
@@ -367,10 +363,10 @@ vaatimuksiin tai uusina vaatimuksina tuotteen kehitysjonoon.
 
 \subsubsection{Sprintin retrospektiivi}
 
-Viimeisenä asiana Sprintin lopuksi järjestetään \emph{Sprintin retrospektiivi}
-("Sprint retrospective"), jossa tiimi keskustelee kuinka heidän
-oma työprosessinsa sujui Sprintin aikana~\cite{Scrumprimer}. Käytännössä jäsenet
-keskustelevat yhdessä mikä Sprintissä sujui hyvin ja missä
+Viimeisenä asiana sprintin lopuksi järjestetään \emph{sprintin retrospektiivi}
+(sprint retrospective), jossa tiimi keskustelee kuinka heidän
+oma työprosessinsa sujui sprintin aikana~\cite{Scrumprimer}. Käytännössä jäsenet
+keskustelevat yhdessä mikä sprintissä sujui hyvin ja missä
 asioissa pitäisi parantaa. Jäsenien antama palaute ja kritiikki
 voi esimerkiksi kohdistua yksittäisen jäsenen työskentelytapoihin.
 Jos mahdollisia ongelmakohtia on, tiimin tulisi yhdessä päättää
@@ -380,8 +376,8 @@ mekanismi tuoda tiimin ongelmat näkyville ja ratkaista ne siten,
 että ryhmän työskentely vahvistuu ja paranee.\\
 
 Kun nämä kaikki edellä mainitut vaiheet on käyty läpi, alkaa uusi
-Sprintti. Käytännössä siis aloitetaan uusi sykli aloittaen
-Sprintin suunnittelupalaverista. Tätä periaatteessa jatketaan
+sprintti. Käytännössä aloitetaan uusi sykli aloittaen
+sprintin suunnittelupalaverista. Tätä periaatteessa jatketaan
 niin kauan, kunnes tuote on valmis eli asiakkaan kaikki vaatimukset
 on toteutettu. Kuten monista asioista kävi ilmi, kehitystiimin jäsenillä on paljon valtaa sen suhteen mitä he tekevät ja miten he
 sen tekevät. Suunnittelutyö ja toteutus on asia, jonka tiimin
@@ -403,23 +399,63 @@ Edellä mainitun lisäksi henkilön persoonallisuus vaikuttaa myös
 siihen
 kuinka mieluista kyseisen henkilön kanssa on työskennellä,
 miten henkilö lähestyy annettua tehtävää ja minkälaisiin tehtäviin
-hän soveltuu parhaiten~\cite{Begel:2008:PPW:1414004.1414026,Capretz:2010:MSS:1726559.1726574}.
-Seuraavissa osioissa tarkastellaan millaisia piirteitä hyvällä
+hän soveltuu parhaiten~\cite{Begel:2008:PPW:1414004.1414026,Capretz:2010:MSS:1726559.1726574}. Eräs tapa mitata henkilön persoonallisuutta on käyttää Myers-Briggsin tyyppi-indikaattoria.
+Seuraavissa osioissa
+ tarkastellaan millaisia piirteitä hyvällä
 ohjelmistokehittäjällä on ja mitkä erilaiset persoonallisuustyypit
-sopivat parhaiten projektien eri kehitysvaiheisiin.
+sopivat parhaiten projektien eri kehitysvaiheisiin. Ennen tätä kuitenkin kerrotaan millainen Myers-Briggsin tyyppi-indikaattori on, jonka avulla pohjustetaan tulevia osioita.
+
+\subsection{Myers-Briggsin tyyppi-indikaattori}
+
+Persoonallisuustyyppejä määriteltäessä käytetään apuna
+Myers-Briggsin tyyppi-indikaattoria, joka jakaa ihmisen persoonallisuuden neljään eri osioon: sosiaaliseen vuorovaikutukseen, tiedonkeruuseen, päätöksentekoon ja elämän\-tyyliin~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574,DaCunha:2007:PMA:1230819.1241672}. Joka osiossa on
+kaksi eri luonteenpiirrettä. Kussakin osiossa jokainen ihminen kallistuu enemmän toiseen piirteeseen kuin toiseen eli Myers-Briggsin
+tyyppi-indikaattorilla saadaan yksittäiselle henkilölle näistä osioista neljä luonteenpiirrettä, jotka määrittävät hänen persoonallisuuden. Yhteensä
+persoonallisuustyyppejä on $2^4$ = 16 erilaista.
+
+\begin{enumerate}
+
+\item Sosiaalinen vuorovaikutus: Ekstrovertti (E) --- Introvertti (I)
+
+Ekstrovertit ovat sosiaalisia, ulospäinsuuntautuneita ja nauttivat
+muiden ihmisten seurasta. Introvertit sen sijaan ovat sisäänpäinkääntyneitä, hiljaisia, varautuneita ja ovat mieluummin omissa oloissaan.
+
+\item Tiedonkeruu: Tosiasiallinen (S) --- Intuitiivinen (N)
+
+Tosiasialliset ihmiset etsivät yksityiskohtaista tietoa ja tunnettuja
+tosiasioita. He uskovat enemmän konkreettisiin asioihin, jotka
+voivat itse omin aistein todistaa. Intuitiiviset etsivät asioille
+yhteyksiä teoreettisemman ja abstraktisemmankin tiedon pohjalta ja
+he miettivät eri asioista aiheutuvia mahdollisuuksia.
+
+\item Päätöksenteko: Ajatteleva (T) --- Tunteva (F)
+
+Ajattelevat perustavat päätöksensä miettimällä tarkasti päätöksen syitä, seurauksia ja loogisuutta. He perustavat päätöksensä puhtaaseen järjen käyttöön. Tuntevilla on taipumusta tehdä päätös
+henkilökohtaisten arvojen perusteella ja sen mukaan miten päätös
+vaikuttaa muihin ihmisiin. Päätöksenteko-ulottuvuus vaikuttaa siihen minkälaisista tehtävistä
+henkilö kiinnostuu ja kuinka tyytyväinen hän on niihin.
+
+\item Elämäntyyli: Järjestelmällinen (J) --- Spontaani (P)
+
+Järjestelmälliset ihmiset ovat sananmukaisesti järjestelmällisiä
+ja täsmäl\-lisiä. He pitävät aikamääreistä kiinni ja suunnittelevat
+asioita etukäteen. Spontaanit taas ovat joustavia ja elävät
+hetkessä välittämättä suunnitelmallisuudesta ja järjestelmällisyydestä.
+Elämäntyyli-ulottuvuus vaikuttaa henkilön työskentelytapoihin.
+
+\end{enumerate}
 
 \subsection{Hyvän ohjelmistokehittäjän piirteet}
 
-Hyvälle ohjelmistokehittäjälle on aina tilaa ohjelmistoalalla.
+Usein todetaan, että hyvälle ohjelmistokehittäjälle on aina tilaa ohjelmistoalalla.
 Siinä missä tekninen osaaminen ja hyvä tietämys asioista on
 tärkeää, myös ihmistaidot ja kommunikointi on alkanut keräämään
 huomiota alalla~\cite{Hall:2007:CNT:1235000.1235043}. Esimerkiksi
 pariohjelmoinnissa työskentely vaatii kommunikointia ja sitä, että
-tulee toisten ihmisten kanssa toimeen.
+tulee toisten ihmisten kanssa toimeen. Seuraavaksi tarkastellaan ohjelmistokehittäjän piirteitä, jotka tekevät henkilöstä mieluisen työkumppanin teknisten taitojen lisäksi.
 Tutkimuksissa
 on haastateltu ohjelmistoalan ammattilaisia ja kysytty heiltä mitkä
-piirteet ja asiat tekevät hyvän ohjelmistokehittäjän~\cite{Acuna:2008:ESP:1414004.1414056,Begel:2008:PPW:1414004.1414026,Hall:2007:CNT:1235000.1235043}. Listataan haastattelujen perusteella tärkeimpiä
-piirteitä.
+piirteet ja asiat tekevät hyvän ohjelmistokehittäjän~\cite{Acuna:2008:ESP:1414004.1414056,Begel:2008:PPW:1414004.1414026,Hall:2007:CNT:1235000.1235043}. Haastattelujen perusteella seuraavat piirteet ovat tärkeimpiä:
 
 \begin{itemize}
 
@@ -481,46 +517,6 @@ hyvä tekninen osaaminen kaikissa vaiheissa, jolloin tarkastelu
 voidaan rajoittaa ainoastaan siihen kuinka hyvin he persoonallisuustyypeiltään soveltuvat suorittamaan tiettyjä
 kehityksen vaiheita.
 
-\subsubsection{Myers-Briggsin tyyppi-indikaattori}
-
-Persoonallisuustyyppejä määriteltäessä käytetään apuna
-Myers-Briggsin tyyppi-indikaattoria, joka jakaa ihmisen persoonallisuuden neljään eri osioon: sosiaaliseen vuorovaikutukseen, tiedonkeruuseen, päätöksentekoon ja elämän\-tyyliin~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574,DaCunha:2007:PMA:1230819.1241672}. Joka osiossa on
-kaksi eri luonteenpiirrettä. Kussakin osiossa jokainen ihminen kallistuu enemmän toiseen piirteeseen kuin toiseen eli Myers-Briggsin
-tyyppi-indikaattorilla saadaan yksittäiselle henkilölle näistä osioista neljä luonteenpiirrettä, jotka määrittävät hänen persoonallisuuden. Yhteensä
-persoonallisuustyyppejä on siis $2^4$ = 16 erilaista.
-
-\begin{enumerate}
-
-\item Sosiaalinen vuorovaikutus: Ekstrovertti (E) --- Introvertti (I)
-
-Ekstrovertit ovat sosiaalisia, ulospäinsuuntautuneita ja nauttivat
-muiden ihmisten seurasta. Introvertit sen sijaan ovat sisäänpäinkääntyneitä, hiljaisia, varautuneita ja ovat mieluummin omissa oloissaan.
-
-\item Tiedonkeruu: Tosiasiallinen (S) --- Intuitiivinen (N)
-
-Tosiasialliset ihmiset etsivät yksityiskohtaista tietoa ja tunnettuja
-tosiasioita. He uskovat enemmän konkreettisiin asioihin, jotka
-voivat itse omin aistein todistaa. Intuitiiviset etsivät asioille
-yhteyksiä teoreettisemman ja abstraktisemmankin tiedon pohjalta ja
-he miettivät eri asioista aiheutuvia mahdollisuuksia.
-
-\item Päätöksenteko: Ajatteleva (T) --- Tunteva (F)
-
-Ajattelevat perustavat päätöksensä miettimällä tarkasti päätöksen syitä, seurauksia ja loogisuutta. He siis perustavat päätöksensä puhtaaseen järjen käyttöön. Tuntevilla on taipumusta tehdä päätös
-henkilökohtaisten arvojen perusteella ja sen mukaan miten päätös
-vaikuttaa muihin ihmisiin. Päätöksenteko-ulottuvuus vaikuttaa siihen minkälaisista tehtävistä
-henkilö kiinnostuu ja kuinka tyytyväinen hän on niihin.
-
-\item Elämäntyyli: Järjestelmällinen (J) --- Spontaani (P)
-
-Järjestelmälliset ihmiset ovat sananmukaisesti järjestelmällisiä
-ja täsmäl\-lisiä. He pitävät aikamääreistä kiinni ja suunnittelevat
-asioita etukäteen. Spontaanit taas ovat joustavia ja elävät
-hetkessä välittämättä suunnitelmallisuudesta ja järjestelmällisyydestä.
-Elämäntyyli-ulottuvuus vaikuttaa henkilön työskentelytapoihin.
-
-\end{enumerate}
-
 \subsubsection{Vaatimusmäärittely}
 
 Perinteisesti ohjelmistotuotanto alkaa vaatimusmäärittelyllä~\cite{SWEBOK:409902,Sommerville:2005:IRE:1042197.1042341}. Tämän vaiheen tavoitteena on selvittää mitä vaatimuksia
@@ -538,14 +534,14 @@ kattavilta ja ristiriidattomilta, niin lopuksi vielä varmistetaan asiakkaalta, 
 edustavat sitä mielikuvaa tuotteesta, joka hänellä on.
 Lopuksi vaatimukset dokumentoidaan, jotta kehittäjät tietävät ja muistavat jatkossakin mitä heidän tulee toteuttaa sekä testata.\\
 
-Capretzilla ja Ahmedilla on selkeä käsitys millainen kehittäjä soveltuu
-parhaiten vaatimusmäärittelyyn~\cite{Capretz:2010:MSS:1726559.1726574}.
+Capretzilla ja Ahmedilla on käsitys millainen kehittäjä soveltuu
+parhaiten järjestelmäanalyysiin, joka on sidoksissa vaatimusmäärittelyn kanssa~\cite{Capretz:2010:MSS:1726559.1726574}.
 Vaatimusmäärittelyyn tarvitaan kehittäjiä, jotka ymmärtävät asiakkaan tarpeet ja käsittävät mitkä ovat ohjelman keskeisimmät toiminnot.
 Vaatimusmäärittely vaatii paljon kommunikointia asiakkaan kanssa,
 joten ekstrovertit (E) soveltuvat tähän hyvin, koska he ovat parempia
 puhumaan ja saamaan asiakkaasta vastauksia irti toisin kuin introvertit (I), jotka eivät ole yhtä hyviä ilmaisemaan asioita selkeästi.
 Kehittäjän tulee myös osata asettumaan käyttäjän rooliin ja miettimään
-käyttäjän tarpeita. Tähän tarpeeseen on tuntevat (F) ihmiset hyviä. Optimaalisinta olisi siis määrätä vaatimusmäärittelyyn kehittäjiä, jotka ovat sekä ekstrovertteja että tuntevia (EF).\\
+käyttäjän tarpeita. Tähän tarpeeseen on tuntevat (F) ihmiset hyviä. Optimaalisinta olisi määrätä vaatimusmäärittelyyn kehittäjiä, jotka ovat sekä ekstrovertteja että tuntevia (EF).\\
 
 Gorlan ja Lamin mielipiteet eroavat edellä mainitusta~\cite{Gorla:2004:WWB:990680.990684}. Heidän mukaan ajattelevat (T) kehittäjät ovat tuntevia (F) parempia tässä työssä, jos kyse on pienestä tiimistä. Pienemmissä tiimeissä vaatimusten määrittelyn lisäksi kehittäjä voi joutua tekemään paljon muutakin, kuten suunnittelua ja ohjelmointia, jolloin analyyttinen ajattelutapa on parempi.
 
@@ -556,7 +552,7 @@ Suunnittelussa hahmotellaan vaatimusten perusteella mistä komponenteista ja pie
 Tarkoituksena on luoda ohjelmasta malli, joka toteuttaa kirjatut vaatimukset, ja jonka voi muuttaa ohjelmakoodiksi.\\
 
 Suunnittelu on luovaa ja tutkivaa työtä, jossa suunnittelija miettii mitkä ovat järjestelmän avainkomponentit, ja hahmottelee parhaita ratkaisuja erilaisten käyttötilanteiden avulla. Suunnittelijalla tulisi olla kokonaiskuva järjestelmästä ja kyky erotella relevantit asiat annetusta datasta, kuten vaatimuksista. Tämä vaatii intuitiota.
-Suunnittelijoiden tulisi siis olla intuitiivisia (N), koska tällaiset henkilöt ovat luovia ja innostuvat uusien asioiden luomisesta ja kokeilevat erilaisista asioista tapahtuvien mahdollisuuksien yhdistelyä. Hyvän tuloksen saamiseksi tarvitaan ongelmanratkaisutaitoja, joita ajattelevilla (T) on. On siis suositeltavaa, että suunnittelija on sekä intuitiivinen ja ajatteleva (NT)~\cite{Capretz:2010:MSS:1726559.1726574}.
+Suunnittelijoiden tulisi siis olla intuitiivisia (N), koska tällaiset henkilöt ovat luovia ja innostuvat uusien asioiden luomisesta ja kokeilevat erilaisista asioista tapahtuvien mahdollisuuksien yhdistelyä. Hyvän tuloksen saamiseksi tarvitaan ongelmanratkaisutaitoja, joita ajattelevilla (T) on. On suositeltavaa, että suunnittelija on sekä intuitiivinen ja ajatteleva (NT)~\cite{Capretz:2010:MSS:1726559.1726574}.
 
 \subsubsection{Toteutus}
 
@@ -564,10 +560,10 @@ Kun suunnittelu on ohi, siirrytään toteutukseen~\cite{SWEBOK:409902}. Suunnitt
 ja mitkä ovat eri komponenttien tehtävät, voidaan ryhtyä toteuttamaan tätä mallia. Käytännössä tämä tarkoittaa
 mallin muuntamista koodiksi ja siten konkreettiseksi ohjelmaksi.\\
 
-Toteutus on siis ohjelmointia. Ohjelmoijan tulee tunnistaa ohjelman
+Toteutus on suurimmaksi osaksi ohjelmointia, johon liittyy suunnittelua ja testausta. Ohjelmoijan tulee tunnistaa ohjelman
 osille tärkeät muuttujat, rakenteet ja tietorakenteet. Ohjelmoijan
 tulee luonnollisesti hallita ohjelmointikieli, jolla ohjelma kirjoitetaan. Siinä missä ohjelmalle tehty malli voi olla hyvinkin korkeatasoinen, koodin kirjoittaminen vaatii paneutumista yksityiskohtiin ja mallin sekä vaatimusten muuntaminen suoraviivaiseksi koodiksi vaatii loogista ajattelutapaa. Ajatteleva (T)
-henkilö soveltuu loogiseen ajatteluun paremmin kuin tunteva (F). Lisäksi yksityiskohtiin ja faktatietoihin paneutuminen on tosiasiallisen (S) ihmisen aluetta enemmän kuin intuitiivisen (N). Vaikka aiemmin on todettu kehityksen vaativan ryhmätyötä ja kommunikointia, Capretz ja Ahmed näkevät ohjelmoinnin teknisenä työnä, joka loppupeleissä vaatii itsenäistä työskentelyä ja keskittymiskykyä enemmän kuin ryhmätyöskentelyä. Täten introvertit (I) sopivat ohjelmoijiksi ekstrovertteja (E) paremmin. Ihanteellinen yhdistelmä ohjelmoijalle olisi siis, että hän on introvertti, tosiasiallinen ja ajatteleva (IST). Tätä väitettä tukee se, että monien tutkimusten mukaan useimmat ohjelmistokehittäjät ovat persoonallisuustyyppiä ISTJ~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574}.\\
+henkilö soveltuu loogiseen ajatteluun paremmin kuin tunteva (F). Lisäksi yksityiskohtiin ja faktatietoihin paneutuminen on tosiasiallisen (S) ihmisen aluetta enemmän kuin intuitiivisen (N). Vaikka aiemmin on todettu kehityksen vaativan ryhmätyötä ja kommunikointia, Capretz ja Ahmed näkevät ohjelmoinnin teknisenä työnä, joka loppupeleissä vaatii itsenäistä työskentelyä ja keskittymiskykyä enemmän kuin ryhmätyöskentelyä. Täten introvertit (I) sopivat ohjelmoijiksi ekstrovertteja (E) paremmin. Ihanteellinen yhdistelmä ohjelmoijalle olisi, että hän on introvertti, tosiasiallinen ja ajatteleva (IST). Tätä väitettä tukee se, että monien tutkimusten mukaan useimmat ohjelmistokehittäjät ovat persoonallisuustyyppiä ISTJ~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574}.\\
 
 Gorlan ja Lamin havainnot poikkeavat ideaalista ohjelmoijasta~\cite{Gorla:2004:WWB:990680.990684}, kun kyse on pienistä tiimeistä. Tiimin suorituskyky on parempi, jos ohjelmoijat ovat ekstrovertteja (E). Pienissä tiimeissä ohjelmoijien pitää kommunikoida useiden osapuolten kanssa, kuten esimerkiksi muiden tiimin jäsenten kanssa. Lisäksi pienissä tiimeissä ohjelmoija voi joutua tekemään monia muitakin tehtäviä kuin vain ohjelmointia, kuten ohjelman suunnittelua ja kommunikointia asiakkaan tai käyttäjien kanssa. Tällöin ekstroverttius on eduksi.
 \looseness=-1
@@ -587,7 +583,7 @@ Yksikkötestauksessa testataan ohjelman sisältämiä komponentteja, luokkia
 ja metodeita yksilöllisesti. Integraatiotestauksessa varmistetaan, että nämä komponentit, luokat ja metodit toimivat niiden ollessa keskinäisessä vuorovaikutuksessa toistensa kanssa, pyytäen ja tarjoten palveluita toisilleen. Järjestelmätestauksessa ohjelmaa testataan sen rajapinnan eli useimmiten käyttöliittymän kautta. Järjestelmätestaus liittyy vahvasti vaatimuksiin, jotka määrittävät, että järjestelmällä pitäisi pystyä tekemään jotain ja järjestelmän tulisi vastata tähän toimintoon vaatimusten mukaisesti.\\
 
 Testaukseen on monenlaisia strategioita, jotka noudattavat järjestelmälli\-siä lähestymistapoja. Testaus vaatii paneutumista yksityiskohtiin, jotta testaaja varmasti tarkistaa, että pienimmätkin ohjelman osat toimivat oikein. Tarkkuus ja järjestelmällisyys ovat
-haluttavia ominaisuuksia testaajalle, joita tosiasialliset (S) ja järjestelmälliset (J) henkilöt edustavat. Menestyvät testaajat olisivat siis sekä tosiasiallisia että järjestelmällisiä (SJ)~\cite{Capretz:2010:MSS:1726559.1726574}.
+haluttavia ominaisuuksia testaajalle, joita tosiasialliset (S) ja järjestelmälliset (J) henkilöt edustavat. Menestyvät testaajat olisivat sekä tosiasiallisia että järjestelmällisiä (SJ)~\cite{Capretz:2010:MSS:1726559.1726574}.
 
 \subsubsection{Ylläpito}
 
@@ -597,7 +593,9 @@ korjaamista ja optimointia. Ylläpidossa saatetaan lisätä myös aivan uusia to
 ohjelmaan. Kaiken tämän tarkoituksena on pidentää ohjelman käyttöikää ja varmistaa käyttäjien
 tyytyväisyys.\\
 
-Ohjelman ylläpitäminen ja parantelu sopii tosiasiallisille (S) kehittäjille, koska he suosivat tuttujen tehtävien tekoa, jotka eivät vaadi uusien asioiden kokeilua. Intuitiiviset (N) sen sijaan haluavat kokeilla jotain uutta ja luultavasti tylsistyisivät ylläpitoon, jossa tehdään jonkinlaisia parannuksia ja pieniä ohjelmointivirheiden korjauksia. Tosiasialliset suosivat töitä, joissa aiemmin opitun tiedon käyttö on riittävää tehtävän suorittamiseen sen sijaan, että tulisi keksiä uusia ratkaisuja. He myös osaavat keskittyä yksityiskohtiin ja haluavat tietää miten asiat toimivat, joten heillä olisi hyvä kokonaiskuva järjestelmästä, jota ylläpitäminen vaatii. Spontaanit (P) sopeutuvat muutoksiin, jolloin heitä ei haittaisi järjestelmän jatkuva muokkaaminen. Siten tosiasialliset ja spontaanit kehittäjät ovat hyviä ylläpitäjiä (SP)~\cite{Capretz:2010:MSS:1726559.1726574}. 
+Ohjelman ylläpitäminen ja parantelu sopii tosiasiallisille (S) kehittäjille, koska he suosivat tuttujen tehtävien tekoa, jotka eivät vaadi uusien asioiden kokeilua. Intuitiiviset (N) sen sijaan haluavat kokeilla jotain uutta ja luultavasti tylsistyisivät ylläpitoon, jossa tehdään jonkinlaisia parannuksia ja pieniä ohjelmointivirheiden korjauksia. Tosiasialliset suosivat töitä, joissa aiemmin opitun tiedon käyttö on riittävää tehtävän suorittamiseen sen sijaan, että tulisi keksiä uusia ratkaisuja. He myös osaavat keskittyä yksityiskohtiin ja haluavat tietää miten asiat toimivat, joten heillä olisi hyvä kokonaiskuva järjestelmästä, jota ylläpitäminen vaatii. Spontaanit (P) sopeutuvat muutoksiin, jolloin heitä ei haittaisi järjestelmän jatkuva muokkaaminen. Siten tosiasialliset ja spontaanit kehittäjät ovat hyviä ylläpitäjiä (SP)~\cite{Capretz:2010:MSS:1726559.1726574}.\\
+
+Edellä mainitut vaiheet ovat kaikki oleellisia ketterissä menetelmissä. Ketterät menetelmät perustuvat iteratiiviseen ja inkrementaaliseen kehitysmalliin, jonka ideana on tehdä ohjelmisto sykleissä, joissa ohjelmistosta tuotetaan vain osa. Tämä osa tuotetaan valmiiksi niin, että sykli sisältää vaatimusmäärittelyn, suunnittelun, toteutuksen, testauksen ja ylläpidon. Käytännössä tämä tarkoittaa, että yhden syklin aikana sama tiimi työstää yhdessä näitä vaiheita eli tiimin jäseniä ei eroteta ottamaan vastuuta vain tietystä vaiheesta. Kuten on todettu, monipuolinen tiimi eri persoonallisuuksilla täytettynä tuottaa paljon eri näkökulmia ja ratkaisuja. Persoonallisuutta katsottaessa yksittäinen henkilö saattaa olla toista henkilöä parempi tietyssä kehityksen vaiheessa, joten ketterissä menetelmissä on hyvä olla tiimi, jonka jäsenet ovat erilaisia luonteiltaan.
 
 \section{Ryhmätyötaitojen parantaminen}
 
