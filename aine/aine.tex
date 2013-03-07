@@ -129,13 +129,17 @@ tavanomaista, että ohjelmistoprojektit toteutetaan ryhmätyönä.\\
 
 Ryhmätyö vaatii teknisten taitojen lisäksi yhteistyö- ja kommunikointitaitoja, koska
 se vaikuttaa ryhmän suorituskykyyn~\cite{Hall:2007:CNT:1235000.1235043}. Ryhmätyön merkitys ollaan
-tunnettu jo kauan ja sitä painotetaan yhä enemmän tietojenkäsittelytieteiden opetusohjelmissa~\cite{Cushing:2003:TBP:948785.948797,5593527,1158709,Pieterse:2012:PPS:2157136.2157218}.
+tunnettu jo kauan ja sitä painotetaan yhä enemmän tietojenkäsittelytieteen opetuksessa~\cite{Cushing:2003:TBP:948785.948797,5593527,1158709,Pieterse:2012:PPS:2157136.2157218}.
 Useat prosessimallit jopa sanelevat miten ryhmätyöskentely tapahtuu, jotta kehitys sujuisi luontevammin ja tuotteliaammin.
 Kehittäjien välinen yhteistyö riippuu myös yksilöstä ja siitä miten heidän persoonallisuudet ja
-luonteenpiirteet sopivat yhteen~\cite{Acuna:2008:ESP:1414004.1414056,Hall:2007:CNT:1235000.1235043}. Tarkoituksena on tarkastella ketteriä menetelmiä ja tutkia miten muutamat esimerkkimenetelmät
-määräävät ohjelmistokehityksen luonteesta painottaen ryhmän sisäistä toimintaa. Lisäksi kuvataan
-millainen on ideaali ryhmän jäsen ja
-millä luonteenpiirteillä on vahvimmat positiiviset vaikutukset kehityksen eri vaiheisiin. \\
+luonteenpiirteet sopivat yhteen~\cite{Acuna:2008:ESP:1414004.1414056,Hall:2007:CNT:1235000.1235043}.\\
+
+Tämän artikkelin tarkoituksena on tarkastella ryhmätyöskentelyä.
+Luvussa 2 tutkitaan kahta ohjelmistotuotantoon tarkoitettua
+prosessimallia nimeltä Extreme Programming ja Scrum. Malleista
+kuvataan miten ne määräävät projektin kehityksestä ja kuinka ryhmätyö niissä painottuu. Luvussa 3 tutkitaan yksilön persoonallisuuden vaikutusta ohjelmistokehitykseen. Alussa kerrotaan
+mikä on Myers-Briggsin tyyppi-indikaattori ja kuvaillaan ohjelmistokehittäjän eri piirteitä, jotka vaikuttavat sekä positiivisesti että negatiivisesti ryhmän työskentelyyn. Tämän jälkeen kerrotaan Myers-Briggsin tyyppi-indikaattoria käyttäen millä luonteenpiirteillä on positiivisimmat vaikutukset perinteisen ohjelmistotuotannon eri vaiheissa. Luvussa 4 kuvataan
+menetelmiä, joilla voidaan orientoida ihmisiä ryhmätyöhön ja menetelmiä, joilla ryhmätyötaitoja voidaan kehittää paremmiksi.
 
 \section{Ketterät menetelmät ja ryhmätyöskentely}
 
@@ -453,17 +457,27 @@ Elämäntyyli-ulottuvuus vaikuttaa henkilön työskentelytapoihin.
 
 \end{enumerate}
 
-\subsection{Hyvän ohjelmistokehittäjän piirteet}
+\subsection{Ohjelmistokehittäjän piirteet}
 
 Usein todetaan, että hyvälle ohjelmistokehittäjälle on aina tilaa ohjelmistoalalla.
 Siinä missä tekninen osaaminen ja hyvä tietämys asioista on
 tärkeää, myös ihmistaidot ja kommunikointi on alkanut keräämään
 huomiota alalla~\cite{Hall:2007:CNT:1235000.1235043}. Esimerkiksi
 pariohjelmoinnissa työskentely vaatii kommunikointia ja sitä, että
-tulee toisten ihmisten kanssa toimeen. Seuraavaksi tarkastellaan ohjelmistokehittäjän piirteitä, jotka tekevät henkilöstä mieluisen työkumppanin teknisten taitojen lisäksi.
+tulee toisten ihmisten kanssa toimeen. Hyvä ohjelmistokehittäjä
+on mieluinen työkumppani. Vastakohtana ohjelmistoalalla
+on väistämättä huonojakin ohjelmistokehittäjiä, jotka tekevät
+yhteistyöstä epämiellyttävää.\\
+
+Seuraavaksi tarkastellaan ohjelmistokehittäjän hyviä ja huonoja
+piirteitä. Hyvissä piirteissä painotus on ominaisuuksissa, jotka
+tekevät kehittäjästä mieluisan työkumppanin hyvien teknisten
+taitojen lisäksi. Samalla tavalla huonoissa piirteissä tarkastellaan
+enimmäkseen ominaisuuksia, jotka tekevät kehittäjästä epämieluisan työkumppanin. Tekninen osaaminen on sivuroolissa.\\
+
 Tutkimuksissa
 on haastateltu ohjelmistoalan ammattilaisia ja kysytty heiltä mitkä
-piirteet ja asiat tekevät hyvän ohjelmistokehittäjän~\cite{Acuna:2008:ESP:1414004.1414056,Begel:2008:PPW:1414004.1414026,Hall:2007:CNT:1235000.1235043}. Haastattelujen perusteella seuraavat piirteet ovat tärkeimpiä:
+piirteet tekevät hyvän ohjelmistokehittäjän~\cite{Acuna:2008:ESP:1414004.1414056,Begel:2008:PPW:1414004.1414026,Hall:2007:CNT:1235000.1235043}. Haastattelujen perusteella seuraavat piirteet ovat tärkeimpiä:
 
 \begin{itemize}
 
@@ -505,6 +519,41 @@ Muita mainittuja piirteitä olivat muun muassa, että ohjelmistokehittäjä
 on tietäväinen, innovatiivinen, itsenäinen, kykenee keskittymään työhönsä, ja noudattaa käytettyä prosessia.
 
 \end{itemize}
+
+Huonot ohjelmistokehittäjät eivät ole haluttavia ryhmän jäseniä tai
+työkumppaneita. Hallin ja kumppaneiden haastatteluissa kysyttiin millaisia ovat huonot kehittäjät~\cite{Hall:2007:CNT:1235000.1235043}. Tuloksena oli, että huono ohjelmistokehittäjä on tekniseltä osaamiseltaan heikko ja hänellä on huonot kommunikointitaidot. Huonoilla kommunikointitaidoilla haastateltavat tarkoittivat seuraavia asioita:
+
+\begin{enumerate}
+
+\item Ei raportoi ongelmista.
+\item Haluton kuuntelemaan muiden ideoita.
+\item Itsepäinen.
+\item Ei kunnioita ylempiarvoisia.
+
+\end{enumerate}
+
+Kun tähän lisätään hyvien piirteiden vastakohtia, on huono kehittäjä huumorintajuton, ei ota työstään vastuuta ja hänellä on vaikeuksia omaksua uusia työtapoja tai rooleja. Tekniseltä osaamiseltaan kehittäjän ongelmanratkaisutaidot ovat heikot eikä hänellä ole kykyä ajatella asioita abstraktisti.\\
+
+Mainitsemisen arvoisia ovat Pietersen ja kumppaneiden kertomista yksittäisen henkilön osallistumisen tasoista ryhmätyös\-kentelyssä~\cite{Pieterse:2012:PPS:2157136.2157218}. Tasoja on neljä, joista
+kaksi eivät ole ryhmälle hyväksi:
+
+\begin{itemize}
+
+\item {\bf Diligent isolate}
+
+Yksilö luottaa vain itseensä tehtäviä suoritettaessa eikä halua muilta apua. Hän näkee
+muut ryhmän jäsenet tehottomina ja kyvyttöminä suorittamaan tehtävää ja tuloksena voi olla, että
+hän lannistaa muiden ryhmän jäsenien motivaatiota.
+
+\item {\bf Social loafer}
+
+Yksilön panos ryhmätyöhön on vähäisempi kuin muiden ryhmän jäsenten ja hän
+tekee vähemmän kuin mitä häneltä odotetaan. Joskus hän saattaa ottaa kunnian muiden
+tekemästä työstä.
+
+\end{itemize}
+
+Pietersen ja kumppaneiden tekemässä ryhmätyöhön liittyvässä kokeilussa havaittiin, että ryhmistä löytyi jäseniä, joiden osallistumisen taso vastasi edellä mainittuja.
 
 \subsection{Persoonallisuustyypit eri kehityksen vaiheissa}
 
@@ -605,43 +654,6 @@ Ohjelman ylläpitäminen ja parantelu sopii tosiasiallisille (S) kehittäjille, 
 
 Edellä mainitut vaiheet ovat kaikki oleellisia ketterissä menetelmissä. Ketterät menetelmät perustuvat iteratiiviseen ja inkrementaaliseen kehitysmalliin, jonka ideana on tehdä ohjelmisto sykleissä, joissa ohjelmistosta tuotetaan vain osa. Tämä osa tuotetaan valmiiksi niin, että sykli sisältää vaatimusmäärittelyn, suunnittelun, toteutuksen, testauksen ja ylläpidon. Käytännössä tämä tarkoittaa, että yhden syklin aikana sama tiimi työstää yhdessä näitä vaiheita eli tiimin jäseniä ei eroteta ottamaan vastuuta vain tietystä vaiheesta. Kuten on todettu, monipuolinen tiimi eri persoonallisuuksilla täytettynä tuottaa paljon eri näkökulmia ja ratkaisuja. Persoonallisuutta katsottaessa yksittäinen henkilö saattaa olla toista henkilöä parempi tietyssä kehityksen vaiheessa, joten ketterissä menetelmissä on hyvä olla tiimi, jonka jäsenet ovat erilaisia luonteiltaan.
 
-\subsection{Huonon ohjelmistokehittäjän piirteet}
-
-Ohjelmistoalalla on väistämättä huonojakin ohjelmistokehittäjiä, jotka
-tekevät yhteistyöstä epämiellyttävää. Hallin ja kumppaneiden haastatteluissa kysyttiin millaisia ovat huonot kehittäjät~\cite{Hall:2007:CNT:1235000.1235043}. Tuloksena oli, että huono ohjelmistokehittäjä on tekniseltä osaamiseltaan heikko ja hänellä on huonot kommunikointitaidot. Huonoilla kommunikointitaidoilla haastateltavat tarkoittivat seuraavia asioita:
-
-\begin{enumerate}
-
-\item Ei raportoi ongelmista.
-\item Haluton kuuntelemaan muiden ideoita.
-\item Itsepäinen.
-\item Ei kunnioita ylempiarvoisia.
-
-\end{enumerate}
-
-Kun tähän lisätään luvun 3.2 hyvien piirteiden vastakohtia, on huono kehittäjä huumorintajuton, ei ota työstään vastuuta ja hänellä on vaikeuksia omaksua uusia työtapoja tai rooleja. Tekniseltä osaamiseltaan kehittäjän ongelmanratkaisutaidot ovat heikot eikä hänellä ole kykyä ajatella asioita abstraktisti.\\
-
-Mainitsemisen arvoisia ovat Pietersen ja kumppaneiden kertomista yksittäisen henkilön osallistumisen tasoista ryhmätyös\-kentelyssä~\cite{Pieterse:2012:PPS:2157136.2157218}. Tasoja on neljä, joista
-kaksi eivät ole ryhmälle hyväksi:
-
-\begin{itemize}
-
-\item {\bf Diligent isolate}
-
-Yksilö luottaa vain itseensä tehtäviä suoritettaessa eikä halua muilta apua. Hän näkee
-muut ryhmän jäsenet tehottomina ja kyvyttöminä suorittamaan tehtävää ja tuloksena voi olla, että
-hän lannistaa muiden ryhmän jäsenien motivaatiota.
-
-\item {\bf Social loafer}
-
-Yksilön panos ryhmätyöhön on vähäisempi kuin muiden ryhmän jäsenten ja hän
-tekee vähemmän kuin mitä häneltä odotetaan. Joskus hän saattaa ottaa kunnian muiden
-tekemästä työstä.
-
-\end{itemize}
-
-Pietersen ja kumppaneiden tekemässä ryhmätyöhön liittyvässä kokeilussa havaittiin, että ryhmistä löytyi jäseniä, joiden osallistumisen taso vastasi edellä mainittuja.
-
 \section{Ryhmätyötaitojen parantaminen}
 
 Hyvät ryhmätyö- ja kommunikointitaidot eivät ole itsestäänselvyys. Itse asiassa monesti on todettu, että
@@ -658,13 +670,21 @@ jotka eivät ole vielä työelämässä.
 
 \subsection{Ryhmätyöhön orientoituminen}
 
-\subsubsection{Vuorovaikutteinen luokkahuone}
+Seuraavat menetelmät ovat kevyitä tapoja painottaa opiskelijoita
+ryhmätyöhön ja kommunikointiin muiden kanssa. Ne eivät kuitenkaan
+painota ryhmätaitojen oppimista. Menetelmät, joita tarkastellaan
+ovat vuorovaikutteinen luokkahuone ja tarkkailija-kommunikoija-rakentaja.
+
+
+\begin{itemize}
+
+\item {\bf Vuorovaikutteinen luokkahuone}
 
 \emph{Vuorovaikutteinen luokkahuone} (the conversational classroom) on menetelmä, jolla demonstroidaan opiskelijoille yhteistyön etuja~\cite{Waite:2004:SCV:1028174.971308}. Tässä menetelmässä opettaja panee aluille keskustelua kurssimateriaaliin liittyen sen sijaan, että pitäisi luennon kurssimateriaalista itse. Näin opettaja kannustaa opiskelijoita keskustelemaan keskenään materiaalista. Opiskelijat oppivat toisiltaan asioita ja se
 aktivoi heitä verrattuna perinteiseen luentoon, jossa opiskelijan
 rooli on olla passiivinen kuuntelija. Waiten ja kumppaneiden mukaan hänen yliopistossaan vuorovaikutteinen luokkahuone on ollut onnistunut kokeilu, joka on parantanut opiskelijoiden tehokkuutta ja yhteistyötaitoja.
 
-\subsubsection{Tarkkailija-kommunikoija-rakentaja}
+\item {\bf Tarkkailija-kommunikoija-rakentaja}
 
 \emph{Tarkkailija-kommunikoija-rakentaja} (observer-communicator-builder) on kevyt harjoitus, jossa
 opiskelijat jaetaan ryhmiin tarkoituksena kehittää
@@ -681,13 +701,22 @@ sanallisesti kommunikoijalle, joka välittää ohjeet eteenpäin rakentajalle. H
 jäsen pääsee kokeilemaan kaikkia rooleja. Iteraatioiden kautta
 ryhmän jäsenien kommunikointitaidot kehittyvät ja he vähitellen päätyvät samalle aaltopituudelle siten, että jäsenet ymmärtävät ja tulkitsevat toistensa viestit samalla tavalla.
 
+\end{itemize}
+
 \subsection{Ryhmätyön harjoittelu}
 
-\subsubsection{Projektioppiminen}
+Seuraavat menetelmät ovat kehiteltyjä tapoja, joilla kehittää
+opiskelijoiden ryhmätaitoja, kommunikoimista ja yhdessä toimimista
+yleisesti ottaen. Menetelmät, joita tarkastellaan ovat 
+projektioppiminen ja "rocking the boat".
+
+\begin{itemize}
+
+\item {\bf Projektioppiminen}
 
 \emph{Projektioppiminen} (project-based learning) on menetelmä, jonka voi sisällyttää opetukseen ja sen perustana on
 antaa opiskelijoille monimutkainen reaalimaailman ongelma, jonka opiskelijat
-ratkaisevat ryhmissä~\cite{Larmer:2009,Markham:2003}. Projektioppimisen eräs määritelmä on, että se on järjestelmällinen
+ratkaisevat ryhmissä~\cite{5593527,Larmer:2009,Markham:2003}. Projektioppimisen eräs määritelmä on, että se on järjestelmällinen
 opetusmenetelmä, joka sitoo opiskelijat oppimaan tietoja ja taitoja pitkäjänteisen tutkimusprosessin
 avulla, joka keskittyy monimutkaisten ja todellisten ongelmien ympärille, joita yhteistyössä
 ratkaistaan~\cite{Markham:2003}. Projektissa opiskelijat pääsevät itsenäisesti suunnittelemaan ja kehittämään
@@ -702,7 +731,9 @@ tärkeitä prosesseja, kuten kommunikointia ja suunnittelua. Opettajat ovat rapo
 kehittää opiskelijan vastuullisuutta, ajattelua ja ongelmanratkaisutaitoja sekä itseorganisointia. Yhteistyö-
 ja ryhmätaidot kehittyvät projektin myötä, koska ryhmät ovat suurimmaksi osaksi itse vastuussa toiminnastaan.
 
-\subsubsection{Rocking the boat}
+\item {\bf Rocking the boat}
+
+\end{itemize}
 
 \section{Yhteenveto}
 
