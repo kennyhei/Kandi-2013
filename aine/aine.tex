@@ -111,7 +111,9 @@
 %\makeabstract     % abstract page
 
 \tableofcontents  % table of contents
+\thispagestyle{empty}
 \newpage          % clear page after the table of contents
+\pagenumbering{arabic}
 
 
 % --- Main matter ---
@@ -131,19 +133,19 @@ toteuttamaan yhteistyössä kaikki kehityksen vaiheet. On hyvin
 tavanomaista, että ohjelmistoprojektit toteutetaan ryhmätyönä.\\
 
 Ryhmätyö vaatii teknisten taitojen lisäksi yhteistyö- ja kommunikointitaitoja, koska
-ne vaikuttavat ryhmän suorituskykyyn~\cite{Hall:2007:CNT:1235000.1235043}. Ryhmätyön merkitys ollaan
+ne vaikuttavat ryhmän suorituskykyyn~\cite{Hall:2007:CNT:1235000.1235043}. Ryhmätyön merkitys on
 tunnettu jo kauan ja sitä painotetaan yhä enemmän tietojenkäsittelytieteen opetuksessa~\cite{Cushing:2003:TBP:948785.948797,Jun:2010,1158709,Pieterse:2012:PPS:2157136.2157218}.
-Useat prosessimallit jopa sanelevat miten ryhmätyöskentely tapahtuu, jotta kehitys sujuisi luontevammin ja tuotteliaammin.
-Kehittäjien välinen yhteistyö riippuu yksilöistä ja siitä miten heidän persoonallisuudet ja
+Useat prosessimallit jopa sanelevat, miten ryhmätyöskentely tapahtuu, jotta kehitys sujuisi luontevammin ja tuotteliaammin.
+Kehittäjien välinen yhteistyö riippuu yksilöistä ja siitä, miten heidän persoonallisuudet ja
 luonteenpiirteet sopivat ryhmätyöskentelyyn~\cite{Acuna:2008:ESP:1414004.1414056,Hall:2007:CNT:1235000.1235043}.\\
 
 Tämän artikkelin tarkoituksena on tarkastella ryhmätyöskentelyä ohjelmistoalalla, yksilön vaikutusta ryhmätyöhön sekä tapoja kehittää ryhmätyö\-taitoja.
 Luvussa 2 tutkitaan kahta ohjelmistotuotantoon tarkoitettua
-prosessimallia nimeltä Extreme Programming ja Scrum. Malleista
-kuvataan miten ne määräävät projektin kehittämisestä ja kuinka ryhmätyö niissä painottuu. Luvussa 3 tutkitaan yksilön persoonallisuuden vaikutusta ohjelmistokehitykseen. Alussa kerrotaan
-mikä on Myers-Briggsin tyyppi-indikaattori ja kuvaillaan ohjelmistokehittäjän eri piirteitä, jotka vaikuttavat sekä positiivisesti että negatiivisesti ryhmän työskentelyyn. Tämän jälkeen kerrotaan Myers-Briggsin tyyppi-indikaattoriin perustuen millä luonteenpiirteillä on positiivisimmat vaikutukset perinteisen ohjelmistotuotannon eri vaiheissa. Luvussa 4 kuvataan
+prosessimallia, jotka ovat Extreme Programming ja Scrum. Malleista
+kuvataan, miten ne ohjeistavat projektin kehitystä ja kuinka ryhmätyö niissä painottuu. Luvussa 3 tutkitaan yksilön persoonallisuuden vaikutusta ohjelmistokehitykseen. Alussa kerrotaan,
+mikä on Myers--Briggsin tyyppi-indikaattori ja kuvaillaan ohjelmistokehittäjän eri piirteitä, jotka vaikuttavat sekä positiivisesti että negatiivisesti ryhmän työskentelyyn. Tämän jälkeen kerrotaan Myers-Briggsin tyyppi-indikaattoriin perustuen, millä luonteenpiirteillä on positiivisimmat vaikutukset perinteisen ohjelmistotuotannon eri vaiheissa. Luvussa 4 kuvataan
 menetelmiä, joilla voidaan rohkaista ihmisiä ryhmätyöhön ja menetelmiä, joilla ryhmätyötaitoja voidaan kehittää paremmiksi. Luku 5 on yhteenveto
-edellä mainituista.
+edellisistä.
 
 \section{Ketterät menetelmät ja ryhmätyöskentely}
 
@@ -339,7 +341,7 @@ Toisessa osassa tiimi valitsee toteutettavat vaatimukset, jotka
 he sitoutuvat tekemään Sprintin loppuun mennessä. Vaatimukset
 valitaan aina kehitysjonon kärjestä.
 Kun vaatimukset on valittu, ne pilkotaan pienemmiksi, teknisiksi
-tehtäviksi, joille arvioidaan niihin kuluva aika. Nämä tehtävät kirjataan aika-arvioineen \emph{Sprintin tehtävälistaan} (Sprint backlog), jota tiimi käyttää hyödykseen Sprintin ajan. Tiimi saa itse valita toteutettavat vaatimukset alkavalle Sprintille sekä suunnitella miten ne toteutetaan.
+tehtäviksi, joille arvioidaan niihin kuluva aika. Nämä tehtävät kirjataan aika-arvioineen \emph{Sprintin tehtävälistaan} (Sprint backlog), jota tiimi käyttää hyödykseen Sprintin ajan. Tiimi saa itse valita toteutettavat vaatimukset alkavalle Sprintille sekä suunnitella, miten ne toteutetaan.
 
 \subsubsection{Scrumin päiväpalaveri}
 
@@ -359,7 +361,7 @@ tuottaa heille paineita oman edistymisen tai ongelmien raportoinnista.
 
 Sprintin lopussa järjestetään \emph{Sprintin katselmointi} (Sprint review), jossa tiimi esittelee sprintin aikana toteuttamiaan
 vaatimuksia tuoteomistajalle ja asiakkaalle. Asiakas ja tuoteomistaja
-tietävät näin miten projekti on edistynyt ja tiimi vastaavasti saa
+tietävät näin, miten projekti on edistynyt ja tiimi vastaavasti saa
 arvokasta palautetta. Annettu palaute kirjataan mahdollisina muutoksina
 vaatimuksiin tai uusina vaatimuksina tuotteen kehitysjonoon.
 
@@ -371,7 +373,7 @@ oma työprosessinsa sujui Sprintin aikana. Jäsenet
 keskustelevat yhdessä mikä Sprintissä sujui hyvin ja missä
 asioissa pitäisi parantaa. Jäsenien antama palaute ja kritiikki
 voi esimerkiksi kohdistua yksittäisen jäsenen työskentelytapoihin.
-Jos mahdollisia ongelmakohtia on, tiimin tulisi yhdessä päättää
+Jos mahdollisia ongelmakohtia on, tiimin tulisi yhdessä päättää,
 miten ongelmat ratkaistaan. Retrospektiivi on tärkeä vaihe
 ryhmätyöskentelyn kannalta, koska se on Scrumin pääasiallisin
 mekanismi tuoda tiimin ongelmat näkyville ja ratkaista ne siten,
@@ -400,16 +402,16 @@ eri näkökulmia tuotetta kehitettäessä, jotka johtavat parempiin ratkaisuihin
 Edellä mainitun lisäksi henkilön persoonallisuus vaikuttaa
 kuinka mieluista kyseisen henkilön kanssa on työskennellä,
 miten henkilö lähestyy annettua tehtävää ja minkälaisiin tehtäviin
-hän soveltuu parhaiten~\cite{Begel:2008:PPW:1414004.1414026,Capretz:2010:MSS:1726559.1726574}. Yksi tapa mitata henkilön persoonallisuutta on käyttää Myers-Briggsin tyyppi-indikaattoria~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574,DaCunha:2007:PMA:1230819.1241672}.
+hän soveltuu parhaiten~\cite{Begel:2008:PPW:1414004.1414026,Capretz:2010:MSS:1726559.1726574}. Yksi tapa mitata henkilön persoonallisuutta on käyttää Myers--Briggsin tyyppi-indikaattoria~\cite{Capretz:2003:PTS:766407.766410,Capretz:2010:MSS:1726559.1726574,DaCunha:2007:PMA:1230819.1241672}.
 Seuraavissa osioissa tarkastellaan millaisia piirteitä hyvällä
 ohjelmistokehittäjällä on ja mitkä erilaiset persoonallisuustyypit
-sopivat parhaiten projektien eri kehitysvaiheisiin. Ennen tätä kuitenkin kerrotaan millainen Myers-Briggsin tyyppi-indikaattori on, jonka avulla pohjustetaan tulevia osioita.
+sopivat parhaiten projektien eri kehitysvaiheisiin. Ennen tätä kuitenkin kerrotaan millainen Myers--Briggsin tyyppi-indikaattori on, jonka avulla pohjustetaan tulevia osioita.
 
-\subsection{Myers-Briggsin tyyppi-indikaattori}
+\subsection{Myers--Briggsin tyyppi-indikaattori}
 
 Persoonallisuustyyppejä määriteltäessä voidaan käyttää apuna
-Myers-Briggsin tyyppi-indikaattoria, joka jakaa ihmisen persoonallisuuden neljään eri osioon: sosiaaliseen vuorovaikutukseen, tiedonkeruuseen, päätöksentekoon ja elämän\-tyyliin. Joka osiossa on
-kaksi eri luonteenpiirrettä. Kussakin osiossa jokainen ihminen kallistuu enemmän toiseen piirteeseen kuin toiseen eli Myers-Briggsin
+Myers--Briggsin tyyppi-indikaattoria, joka jakaa ihmisen persoonallisuuden neljään eri osioon: sosiaaliseen vuorovaikutukseen, tiedonkeruuseen, päätöksentekoon ja elämän\-tyyliin. Joka osiossa on
+kaksi eri luonteenpiirrettä. Kussakin osiossa jokainen ihminen kallistuu enemmän toiseen piirteeseen kuin toiseen eli Myers--Briggsin
 tyyppi-indikaattorilla saadaan yksittäiselle henkilölle näistä osioista neljä luonteenpiirrettä, jotka määrittävät hänen persoonallisuuden. Yhteensä
 persoonallisuustyyppejä on $2^4$ = 16 erilaista.
 
@@ -576,7 +578,7 @@ Gorlan ja Lamin mielipiteet eroavat edellä mainitusta~\cite{Gorla:2004:WWB:9906
 \subsubsection{Suunnittelu}
 
 Suunnittelu on prosessi, jossa määritellään ohjelman arkkitehtuuri, komponentit, rajapinnat sekä muut ohjelmaan liittyvät osat~\cite{SWEBOK:409902}.
-Suunnittelussa hahmotellaan vaatimusten perusteella mistä komponenteista ja pienemmistä osasista järjestelmä koostuu, ja mitkä ovat niiden tehtävät. Suunnittelussa mietitään miten järjestelmän eri osat ovat vuorovaikutuksessa toistensa kanssa, millaiset rajapinnat niillä on ja mitä palveluita ne tarvitsevat muilta järjestelmän osilta.
+Suunnittelussa hahmotellaan vaatimusten perusteella mistä komponenteista ja pienemmistä osasista järjestelmä koostuu, ja mitkä ovat niiden tehtävät. Suunnittelussa mietitään, miten järjestelmän eri osat ovat vuorovaikutuksessa toistensa kanssa, millaiset rajapinnat niillä on ja mitä palveluita ne tarvitsevat muilta järjestelmän osilta.
 Tarkoituksena on luoda ohjelmasta malli, joka toteuttaa kirjatut vaatimukset, ja jonka voi muuttaa ohjelmakoodiksi.\\
 
 Suunnittelu on luovaa ja tutkivaa työtä, jossa suunnittelija miettii mitkä ovat järjestelmän avainkomponentit, ja hahmottelee parhaita ratkaisuja erilaisten käyttötilanteiden avulla. Suunnittelijalla tulisi olla kokonaiskuva järjestelmästä ja kyky erotella relevantit asiat annetusta datasta, kuten vaatimuksista. Tämä vaatii intuitiota.
@@ -584,7 +586,7 @@ Suunnittelijoiden tulisi siis olla intuitiivisia (N), koska tällaiset henkilöt
 
 \subsubsection{Toteutus}
 
-Kun suunnittelu on ohi, siirrytään toteutukseen~\cite{SWEBOK:409902}. Suunnitteluvaiheessa ohjelmasta ollaan luotu korkean tason malli, joka kertoo millaisista komponenteista ohjelma koostuu
+Kun suunnittelu on ohi, siirrytään toteutukseen~\cite{SWEBOK:409902}. Suunnitteluvaiheessa ohjelmasta on luotu korkean tason malli, joka kertoo millaisista komponenteista ohjelma koostuu
 ja mitkä ovat eri komponenttien tehtävät. Toteutuksessa muunnetaan malli ohjelmakoodiksi ja siten konkreettiseksi ohjelmaksi.\\
 
 Toteutus on suurimmaksi osaksi ohjelmointia, johon liittyy suunnittelua ja testausta. Ohjelmoijan tulee tunnistaa ohjelman
@@ -791,9 +793,9 @@ Harjoitusta seuraa raportin kirjoittaminen, jossa opiskelijat kertovat kuinka he
 
 Ryhmätyö on tärkeä osa ohjelmistokehitystä. Luvussa 2 kerrottiin ketteristä menetelmistä, joista tutkittiin XP:tä ja Scrumia. Molemmat pitävät ryhmätyötä suuressa osassa ketterien menetelmien tapaisesti. XP painottaa asiakkaan kanssa kommunikointia ja pariohjelmoinnin kautta varmistetaan ryhmän sisäinen kommunikointi ja ohjelmiston laatu. Scrum korostaa ryhmän itseorganisoituvuutta antaen ryhmälle valtaa päättää omista tekemisistään. Scrumissa ryhmät XP:n tapaan keskustelevat säännöllisesti asiakkaan kanssa. Sprintin retrospektiivi mahdollistaa, että ryhmä miettii kuinka tulla paremmaksi, jotta yhteis- ja kehitystyö on saumatonta.\\
 
-Luvussa 3 kerrottiin hyvän ja huonon ohjelmistokehittäjän piirteistä, jotka tekevät yhteistyöstä kehittäjän kanssa joko mieluista tai epämieluista. Huonoihin piirteisiin liitettiin itsepäisyys sekä haluttomuus auttaa tai antaa muiden auttaa. Hyviin piirteisiin kuuluu avoimuus, rakentava kritiikki ja sosiaalisuus. Lisäksi kerrottiin mitkä persoonallisuustyypit soveltuvat parhaiten perinteisen ohjelmistotuotannon kehitysvaiheisiin. Myers-Briggsin tyyppi-indikaattorin määrittelemät luonteenpiirteet soveltuivat kaikki ainakin yhteen vaiheeseen parhaiten. Mikään luonteenpiirre ei ole turha. Tätä puoltaa usein mainittu ajatus, että parhaimmat ryhmät muodostuvat henkilöistä, jotka ovat mahdollisimman erilaisia.\\
+Luvussa 3 kerrottiin hyvän ja huonon ohjelmistokehittäjän piirteistä, jotka tekevät yhteistyöstä kehittäjän kanssa joko mieluista tai epämieluista. Huonoihin piirteisiin liitettiin itsepäisyys sekä haluttomuus auttaa tai antaa muiden auttaa. Hyviin piirteisiin kuuluu avoimuus, rakentava kritiikki ja sosiaalisuus. Lisäksi kerrottiin mitkä persoonallisuustyypit soveltuvat parhaiten perinteisen ohjelmistotuotannon kehitysvaiheisiin. Myers--Briggsin tyyppi-indikaattorin määrittelemät luonteenpiirteet soveltuivat kaikki ainakin yhteen vaiheeseen parhaiten. Mikään luonteenpiirre ei ole turha. Tätä puoltaa usein mainittu ajatus, että parhaimmat ryhmät muodostuvat henkilöistä, jotka ovat mahdollisimman erilaisia.\\
 
-Luvussa 4 kerrottiin erilaisia menetelmiä, joilla rohkaista ryhmätyöhön sekä parantaa ryhmätyötaitoja. Huonot ryhmätyötaidot voivat johtua kokemattomuudesta tai omasta persoonasta. Luvun 3 mukaisesti luonteenpiirteet vaikuttavat suuresti kehitystyöhön ja siihen kuinka mielekästä yksilön kanssa on työskennellä. Menetelmät opettavat tärkeitä ryhmätyötaitoja, mutta ne eivät ole avuksi ihmisille, jotka luonteeltaan ovat kielteisiä ja haluttomia työskentelemään muiden kanssa. Tietojenkäsittelytiedettä opiskelevien tapauksessa huonot ryhmätyötaidot johtuvat usein kokemattomuudesta, johon menetelmät tarjoavat avun. Menetelmät on helppo sulauttaa osaksi kurssia tai opetusohjelmaa.\\
+Luvussa 4 kuvailtiin erilaisia menetelmiä, joilla rohkaista ryhmätyöhön sekä parantaa ryhmätyötaitoja. Huonot ryhmätyötaidot voivat johtua kokemattomuudesta tai omasta persoonasta. Luvun 3 mukaisesti luonteenpiirteet vaikuttavat suuresti kehitystyöhön ja siihen kuinka mielekästä yksilön kanssa on työskennellä. Menetelmät opettavat tärkeitä ryhmätyötaitoja, mutta ne eivät ole avuksi ihmisille, jotka luonteeltaan ovat kielteisiä ja haluttomia työskentelemään muiden kanssa. Tietojenkäsittelytiedettä opiskelevien tapauksessa huonot ryhmätyötaidot johtuvat usein kokemattomuudesta, johon menetelmät tarjoavat avun. Menetelmät on helppo sulauttaa osaksi kurssia tai opetusohjelmaa.\\
 
 Ryhmätyöskentelyn osaaminen on tärkeää ihmiselle, joka pyrkii ohjelmistoalalle. Suuret projektit vaativat monen eri henkilön panoksen, joiden tiedot, taidot ja luonteenpiirteet vaihtelevat. Ilman kommunikointia ja yhteistyötä eri henkilöiden kykyjä ei pystytä valjastamaan yhteisen tavoitteen eduksi. Opetuksessa tulisi korostaa ryhmätyötaitojen opettelua, jotta opiskelijoilla on täydet valmiudet olla tehokkaita ryhmän jäseniä työelämässä.
 
