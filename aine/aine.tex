@@ -182,7 +182,8 @@ määrittelevät projektin kehitykselle ja miten niissä otetaan ryhmätyöskent
 \emph{Extreme Programming} (XP) on Kent Beckin luoma ketterä menetelmä, joka painottaa kommunikointia ja ryhmätyöskentelyä. XP keskittyy asiakkaan tyytyväisyyteen kehittämällä toiminnallisuuksia
 tuotteeseen mahdollisimman nopeasti ja tehokkaasti. XP:ssä kehitys tapahtuu lyhyissä, 1-4 viikon iteraatioissa, jolloin on helppoa varautua mahdollisiin
 toiminnallisuuksien muutoksiin. Kehitysprosessi sisältää monia XP:n itse määrittelemiä vaiheita, jotka
-näkyvät kuvassa \ref{xprocess}. Nämä vaiheet tullaan käsittelemään tässä luvussa.
+näkyvät kuvassa \ref{xprocess}. Tässä luvussa käsitellään ensin miten millaista kommunikointi XP:ssä on ja kerrotaan pariohjelmoinnista. Lopuksi
+käsitellään XP:n prosessista vaiheet, jotka ovat \emph{julkaisusuunnittelu} (release planning), \emph{iteraatio} (iteration) ja \emph{hyväksymätestaus} (acceptance testing)~\cite{XP.ORG}.
 
 \begin{figure}[ht]
      \includegraphics[width=12cm]{xp.png}
@@ -191,8 +192,7 @@ näkyvät kuvassa \ref{xprocess}. Nämä vaiheet tullaan käsittelemään täss�
 
 \subsubsection{Kommunikointi}
 
-Kasvokkaista ja usein tapahtuvaa kommunikointia painotetaan järjestämällä tiimin jäsenet yhteiseen tilaan. Tämän lisäksi projektia varten on vähintään yksi paikan päällä oleva asiakas, joka toimii osana kehitystiimiä auttaakseen projektin edistymisessä. Paikan päällä oleva asiakas päättää sekä tuotteen vaatimuksista että niiden priorisoinnista. Asiakkaan läsnäolo on suuri etu, sillä tiimi voi kysyä häneltä hetkessä esimerkiksi jonkin toteutettavan vaatimuksen yksityiskohdista ja asiakas voi vastaavasti antaa heti palautetta työstä. Ryhmän sisäinen kommunikointi on suuressa osassa sillä hyvät ratkaisut saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} (pair 
-programming), joka on yksi XP:n keskeisimpiä käytänteitä.
+Kasvokkaista ja usein tapahtuvaa kommunikointia painotetaan järjestämällä tiimin jäsenet yhteiseen tilaan. Tämän lisäksi projektia varten on vähintään yksi paikan päällä oleva asiakas, joka toimii osana kehitystiimiä auttaakseen projektin edistymisessä. Paikan päällä oleva asiakas päättää sekä tuotteen vaatimuksista että niiden priorisoinnista. Asiakkaan läsnäolo on suuri etu, sillä tiimi voi kysyä häneltä hetkessä esimerkiksi jonkin toteutettavan vaatimuksen yksityiskohdista ja asiakas voi vastaavasti antaa heti palautetta työstä. Ryhmän sisäinen kommunikointi on suuressa osassa sillä hyvät ratkaisut saadaan useimmiten yhteistyön tuloksena. Kommunikoinnin ja yhteistyön merkitystä kuvastaa esimerkiksi \emph{pariohjelmointi} (pair programming), joka on yksi XP:n keskeisimpiä käytänteitä.
 
 \subsubsection{Pariohjelmointi}
 
@@ -258,8 +258,6 @@ toistensa kanssa. Ilman keskinäistä vuorovaikutusta ei voi odottaa,
 että edellä mainitut asiat toteutuisivat. Pariohjelmointi 
 rohkaisee kehittäjiä puhumaan toisilleen, joten tästä ei pitäisi olla 
 huolta~\cite{Zarb:2012:UCW:2384716.2384738}.\\
-
-Seuraavaksi käsitellään XP:n prosessin eri vaiheet (ks. kuva \ref{xprocess}). Näistä vaiheista tullaan käsittelemään \emph{julkaisusuunnittelu} (release planning), \emph{iteraatio} (iteration) ja \emph{hyväksymätestaus} (acceptance testing)~\cite{XP.ORG}.
 
 \subsubsection{Julkaisusuunnittelu}
 
@@ -516,11 +514,9 @@ työkumppaneita. Hallin ja kumppaneiden haastatteluissa kysyttiin millaisia ovat
 
 \end{enumerate}
 
-Kun tähän lisätään hyvien piirteiden vastakohtia, on huono kehittäjä huumorintajuton, ei ota työstään vastuuta ja hänellä on vaikeuksia omaksua uusia työtapoja tai rooleja. Tekniseltä osaamiseltaan kehittäjän ongelmanratkaisutaidot ovat heikot eikä hänellä ole kykyä ajatella asioita abstraktisti.\\
+Kun tähän lisätään hyvien piirteiden vastakohtia, on huono kehittäjä huumorintajuton, ei ota työstään vastuuta ja hänellä on vaikeuksia omaksua uusia työtapoja tai rooleja. Tekniseltä osaamiseltaan kehittäjän ongelmanratkaisutaidot ovat heikot eikä hänellä ole kykyä ajatella asioita abstraktisti. Ennen kaikkea huono kehittäjä ei luota muiden apuun ja on haluton yhteistyöhön.\\
 
-Maininnan arvoisia ovat Pietersen ja kumppaneiden kertomat yksittäisen henkilön osallistumisen tasot ryhmä\-työskentelyssä~\cite{Pieterse:2012:PPS:2157136.2157218}.
-Huono kehittäjä ei luota muiden apuun ja haluaa tehdä asioita yksin. Kehittäjä näkee muut ryhmän jäsenet epäpätevinä ja hänen asenteensa mahdollisesti lannistaa muiden ryhmän jäsenten motivaatiota. Toisenlainen huono kehittäjä taas tekee vähemmän työtä kuin mitä häneltä odotetaan.
-Pietersen ja kumppaneiden tekemässä ryhmätyöhön liittyvässä kokeilussa havaittiin, että ryhmistä löytyi jäseniä, jotka vastasivat edellä mainittuja huonoja ryhmän jäseniä.
+%Maininnan arvoisia ovat Pietersen ja kumppaneiden kertomat yksittäisen henkilön osallistumisen tasot ryhmä\-työskentelyssä~\cite{Pieterse:2012:PPS:2157136.2157218}. Huono kehittäjä ei luota muiden apuun ja haluaa tehdä asioita yksin. Kehittäjä näkee muut ryhmän jäsenet epäpätevinä ja hänen asenteensa mahdollisesti lannistaa muiden ryhmän jäsenten motivaatiota. Toisenlainen huono kehittäjä taas tekee vähemmän työtä kuin mitä häneltä odotetaan. Pietersen ja kumppaneiden tekemässä ryhmätyöhön liittyvässä kokeilussa havaittiin, että ryhmistä löytyi jäseniä, jotka vastasivat edellä mainittuja huonoja ryhmän jäseniä.
 
 \subsection{Persoonallisuustyypit eri kehityksen vaiheissa}
 
@@ -594,11 +590,10 @@ Gorlan ja Lamin havainnot poikkeavat ideaalista ohjelmoijasta, kun kyse on pieni
 \subsubsection{Testaus}
 
 Testausvaiheessa on tarkoituksena tehdä testejä, joilla varmistetaan ohjelman toimivuus~\cite{SWEBOK:409902}. Vaatimukset ovat ensisijaisia
-testauskohteita eli testien avulla tarkistetaan, että ohjelmalle asetetut vaatimukset, jotka ovat toteutettu, toimivat
-moitteettomasti. Testauksella pyritään myös löytämään ohjelmasta mahdollisimman paljon virheitä tekemällä testitilanteita, joissa yritetään
-tehdä jotain luvatonta toimintaa, jota ohjelman ei tulisi sallia. Esimerkiksi, jos ohjelma on yksinkertainen laskin,
-joka pyytää syöttämään yhteenlaskua varten kaksi lukua ja käyttäjä yrittää syöttää kirjaimista koostuvan merkkijonon, ohjelman
-tulee osata varautua tähän ilman, että se hajoaa.\\
+testauskohteita eli testien avulla tarkistetaan, että ohjelmalle asetetut vaatimukset toimivat
+moitteettomasti. Testauksella pyritään myös löytämään ohjelmasta mahdollisimman paljon virheitä korjaustoimenpiteitä varten.\\
+
+%tekemällä testitilanteita, joissa yritetään tehdä jotain luvatonta toimintaa, jota ohjelman ei tulisi sallia. Esimerkiksi, jos ohjelma on yksinkertainen laskin, joka pyytää syöttämään yhteenlaskua varten kaksi lukua ja käyttäjä yrittää syöttää kirjaimista koostuvan merkkijonon, ohjelman tulee osata varautua tähän ilman, että se hajoaa.\\
 
 Testauksella on monta eri tasoa, joita ovat muun muassa yksikkötestaus,
 integrointitestaus ja järjestelmätestaus~\cite{Capretz:2010:MSS:1726559.1726574}.
