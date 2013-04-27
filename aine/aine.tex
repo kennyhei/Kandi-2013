@@ -542,17 +542,10 @@ kehityksen vaiheita.
 Perinteisesti ohjelmistotuotanto alkaa vaatimusmäärittelyllä~\cite{SWEBOK:409902,Sommerville:2005:IRE:1042197.1042341}. Tämän vaiheen tavoitteena on selvittää mitä vaatimuksia
 tuotteella eli valmiilla ohjelmalla on. Vaatimuksilla voidaan tarkoittaa toiminnallisia vaatimuksia eli
 mitä ohjelma tekee tai mitä sillä pystytään tekemään, tai ei-toiminnallisia vaatimuksia eli esimerkiksi millä kielellä
-ohjelma kirjoitetaan, kuinka käytettävä tai tehokas sen tulee olla ja niin edelleen.\\
+ohjelma kirjoitetaan, kuinka käytettävä tai tehokas sen tulee olla ja niin edelleen. Vaatimusmäärittely tehdään usein asiakkaan kanssa, jolla on etukäteen kokonaiskuva valmiista ohjelmasta. Yhdessä asiakkaan kanssa luodaan lista ohjelmaan liittyvistä vaatimuksista.\\
 
-Vaatimusmäärittely tehdään usein asiakkaan kanssa, jolla on etukäteen jonkinlainen kokonaiskuva valmiista ohjelmasta.
-Kehittäjien täytyy keskustella asiakkaan kanssa saadakseen selville millaisesta ohjelmasta on kyse ja mitä sen tulisi tehdä.
-Vaatimusmäärittelyssä tulee kartoittaa ensinnäkin keitä ovat ohjelman käyttäjät ja millaisia käyttötilanteita
-käyttäjillä on ohjelmaan liittyen. Asiakkaan kanssa luodaan lopuksi lista vaatimuksia toteutettavalle ohjelmalle,
-jotka seuraavaksi analysoidaan. Analysoinnilla tutkitaan ovatko vaatimukset tarpeeksi kattavat eli määrittävätkö ne asiakkaan
-haluaman tuotteen sekä tarkistetaan, että vaatimukset eivät ole ristiriidassa toistensa kanssa. Jos vaatimukset vaikuttavat
-kattavilta ja ristiriidattomilta, niin lopuksi vielä varmistetaan asiakkaalta, että vaatimukset ovat hänen mieleensä ja
-edustavat sitä mielikuvaa tuotteesta, joka hänellä on.
-Lopuksi vaatimukset dokumentoidaan, jotta kehittäjät tietävät ja muistavat jatkossakin mitä heidän tulee toteuttaa sekä testata.\\
+%Vaatimusmäärittely tehdään usein asiakkaan kanssa, jolla on etukäteen jonkinlainen kokonaiskuva valmiista ohjelmasta. Kehittäjien täytyy keskustella asiakkaan kanssa saadakseen selville millaisesta ohjelmasta on kyse ja mitä sen tulisi tehdä. Vaatimusmäärittelyssä tulee kartoittaa ensinnäkin keitä ovat ohjelman käyttäjät ja millaisia käyttötilanteita käyttäjillä on ohjelmaan liittyen. Asiakkaan kanssa luodaan lopuksi lista vaatimuksia toteutettavalle ohjelmalle, jotka seuraavaksi analysoidaan. Analysoinnilla tutkitaan ovatko vaatimukset tarpeeksi kattavat eli määrittävätkö ne asiakkaan haluaman tuotteen sekä tarkistetaan, että vaatimukset eivät ole ristiriidassa toistensa kanssa. Jos vaatimukset vaikuttavat kattavilta ja ristiriidattomilta, niin lopuksi vielä varmistetaan asiakkaalta, että vaatimukset ovat hänen mieleensä ja edustavat sitä mielikuvaa tuotteesta, joka hänellä on. Lopuksi vaatimukset dokumentoidaan, jotta kehittäjät tietävät ja muistavat jatkossakin mitä heidän tulee toteuttaa sekä testata.\\
+\enlargethispage{\baselineskip}
 
 Capretz ja Ahmed ovat tutkineet millainen kehittäjä soveltuu
 parhaiten järjestelmäanalyysiin, joka on sidoksissa vaatimusmäärittelyyn~\cite{Capretz:2010:MSS:1726559.1726574}.
@@ -568,7 +561,7 @@ Gorlan ja Lamin mielipiteet eroavat edellä mainitusta~\cite{Gorla:2004:WWB:9906
 \subsubsection{Suunnittelu}
 
 Suunnittelu on prosessi, jossa määritellään ohjelman arkkitehtuuri, komponentit, rajapinnat sekä muut ohjelmaan liittyvät osat~\cite{SWEBOK:409902}.
-Suunnittelussa hahmotellaan vaatimusten perusteella mistä komponenteista ja pienemmistä osasista järjestelmä koostuu, ja mitkä ovat niiden tehtävät. Suunnittelussa mietitään, miten järjestelmän eri osat ovat vuorovaikutuksessa toistensa kanssa, millaiset rajapinnat niillä on ja mitä palveluita ne tarvitsevat muilta järjestelmän osilta.
+Suunnittelussa hahmotellaan vaatimusten perusteella mistä komponenteista ja pienemmistä osasista järjestelmä koostuu, ja mitkä ovat niiden tehtävät. Lisäksi mietitään, miten järjestelmän eri osat ovat vuorovaikutuksessa toistensa kanssa, millaiset rajapinnat niillä on ja mitä palveluita ne tarvitsevat muilta järjestelmän osilta.
 Tarkoituksena on luoda ohjelmasta malli, joka toteuttaa kirjatut vaatimukset, ja jonka voi muuttaa ohjelmakoodiksi.\\
 
 Suunnittelu on luovaa ja tutkivaa työtä, jossa suunnittelija miettii mitkä ovat järjestelmän avainkomponentit, ja hahmottelee parhaita ratkaisuja erilaisten käyttötilanteiden avulla. Suunnittelijalla tulisi olla kokonaiskuva järjestelmästä ja kyky erotella relevantit asiat annetusta datasta, kuten vaatimuksista. Tämä vaatii intuitiota.
@@ -595,19 +588,17 @@ moitteettomasti. Testauksella pyritään myös löytämään ohjelmasta mahdolli
 
 %tekemällä testitilanteita, joissa yritetään tehdä jotain luvatonta toimintaa, jota ohjelman ei tulisi sallia. Esimerkiksi, jos ohjelma on yksinkertainen laskin, joka pyytää syöttämään yhteenlaskua varten kaksi lukua ja käyttäjä yrittää syöttää kirjaimista koostuvan merkkijonon, ohjelman tulee osata varautua tähän ilman, että se hajoaa.\\
 
-Testauksella on monta eri tasoa, joita ovat muun muassa yksikkötestaus,
-integrointitestaus ja järjestelmätestaus~\cite{Capretz:2010:MSS:1726559.1726574}.
-Yksikkötestauksessa testataan ohjelman komponentteja, luokkia
-ja metodeita. Integraatiotestauksessa varmistetaan, että nämä komponentit, luokat ja metodit toimivat niiden ollessa keskinäisessä vuorovaikutuksessa, pyytäen ja tarjoten palveluita toisilleen. Järjestelmätestauksessa ohjelmaa testataan sen tarjoaman rajapinnan kuten käyttöliittymän kautta. Järjestelmätestaus liittyy vaatimuksiin, jotka määrittävät, että järjestelmällä pitäisi pystyä tekemään jotain ja järjestelmän tulisi vastata tähän toimintoon vaatimusten mukaisesti.\\
+%Testauksella on monta eri tasoa, joita ovat muun muassa yksikkötestaus, integrointitestaus ja järjestelmätestaus~\cite{Capretz:2010:MSS:1726559.1726574}. Yksikkötestauksessa testataan ohjelman komponentteja, luokkia ja metodeita. Integraatiotestauksessa varmistetaan, että nämä komponentit, luokat ja metodit toimivat niiden ollessa keskinäisessä vuorovaikutuksessa, pyytäen ja tarjoten palveluita toisilleen. Järjestelmätestauksessa ohjelmaa testataan sen tarjoaman rajapinnan kuten käyttöliittymän kautta. Järjestelmätestaus liittyy vaatimuksiin, jotka määrittävät, että järjestelmällä pitäisi pystyä tekemään jotain ja järjestelmän tulisi vastata tähän toimintoon vaatimusten mukaisesti.\\
 
 Testaukseen on monenlaisia strategioita, jotka noudattavat järjestelmälli\-siä lähestymistapoja. Testaus vaatii paneutumista yksityiskohtiin, jotta testaaja varmasti tarkistaa, että pienimmätkin ohjelman osat toimivat oikein. Tarkkuus ja järjestelmällisyys ovat
 haluttavia ominaisuuksia testaajalle, joita tosiasialliset (S) ja järjestelmälliset (J) henkilöt edustavat. Menestyvät testaajat olisivat sekä tosiasiallisia että järjestelmällisiä (SJ)~\cite{Capretz:2010:MSS:1726559.1726574}.
 
 \subsubsection{Ylläpito}
 
-Ennen ylläpitoa ohjelma on julkaistu kohderyhmän käyttöön valmiina tuotteena, joka toteuttaa vaatimukset~\cite{SWEBOK:409902}. Ylläpidon
+%Ennen ylläpitoa ohjelma on julkaistu kohderyhmän käyttöön valmiina tuotteena, joka toteuttaa vaatimukset
+Ylläpidon
 tarkoituksena on parannella tai muokata ohjelmaa, jolla tarkoitetaan lähinnä ohjelmointivirheiden
-korjaamista ja optimointia. Ylläpidossa saatetaan lisätä myös aivan uusia toiminnallisuuksia
+korjaamista ja optimointia~\cite{SWEBOK:409902}. Ylläpidossa saatetaan lisätä myös aivan uusia toiminnallisuuksia
 ohjelmaan. Kaiken tämän tarkoituksena on pidentää ohjelman käyttöikää sekä varmistaa käyttäjien
 tyytyväisyys.\\
 
@@ -764,7 +755,7 @@ joissa ryhmän jäsenet pääsevät pohtimaan omaa ja muiden suoritusta. Uusissa
 opiskelijat oppivat toimimaan erilaisten ihmisten kanssa.
 RTB:n loputtua opiskelijoilla on valmiudet toimia ryhmässä ja käsitellä ongelmatilanteita oikeassa projektityössä, joka yleensä alkaa heti RTB:n jälkeen. Opiskelijat muodostetaan lopullisiin ryhmiin, jossa he voivat aloittaa oikean projektityön teon.\\
 
-RTB on hyvä menetelmä muodostamaan positiivisen asenteen ryhmätyöhön. RTB:n avulla opiskelijat tunnistavat
+RTB on hyvä menetelmä muodostamaan positiivisen asenteen ryhmätyö\-hön. RTB:n avulla opiskelijat tunnistavat
 riskitekijöitä, jotka vaikuttavat ryhmäläisten osallistumisen tasoon ja he oppivat välttämään niitä. Erilaisissa ryhmissä ollessaan ja vertaisarviointia tehtäessä opiskelijat tunnistavat omat vahvuutensa ja heikkoutensa.
 
 \item {\bf Suojattu kananmuna}
